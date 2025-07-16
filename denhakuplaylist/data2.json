@@ -1,0 +1,1824 @@
+{
+  "latestReleasesOfPlaylist": [
+    {
+      "name": "Waiting",
+      "artists": "NORII, URBANO",
+      "album": "Waiting",
+      "release_date": "2025-06-27",
+      "duration_ms": 219375,
+      "popularity": 33,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738362e91ec085175e69069066",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1GbQEz8FWSe2RG1HKZhiRx"
+      }
+    },
+    {
+      "name": "Drown (feat. Bertie Scott)",
+      "artists": "Alex Skrindo, Bertie Scott",
+      "album": "Drown (feat. Bertie Scott)",
+      "release_date": "2025-06-06",
+      "duration_ms": 161678,
+      "popularity": 46,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731ab2553f1a79f4da2517b5b6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/54G1rwfGrPazeqJBrlQZ6O"
+      }
+    },
+    {
+      "name": "Lost in Tomorrow",
+      "artists": "Öwnboss, RYVM",
+      "album": "Lost in Tomorrow",
+      "release_date": "2025-05-16",
+      "duration_ms": 249230,
+      "popularity": 53,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736772526c1ee4a566b0a53840",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4VoIGASzJefVhZB9ah3E9D"
+      }
+    },
+    {
+      "name": "Old School",
+      "artists": "BYOR",
+      "album": "Old School",
+      "release_date": "2025-03-21",
+      "duration_ms": 155625,
+      "popularity": 58,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735a86ef148e5f13f8df98dea3",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0VDGPqjFj9pXFCEFa6bNKL"
+      }
+    },
+    {
+      "name": "Tomorrow Isn't Promised",
+      "artists": "DJ Fluke, Achilles",
+      "album": "Tomorrow Isn't Promised",
+      "release_date": "2025-03-07",
+      "duration_ms": 174857,
+      "popularity": 41,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731e3f45b210cc3561473ea8eb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2iWouXvIwW9pq0RTjWoguz"
+      }
+    },
+    {
+      "name": "So Cold",
+      "artists": "Mephi",
+      "album": "So Cold",
+      "release_date": "2025-02-21",
+      "duration_ms": 151818,
+      "popularity": 37,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d8d2d44559d6cbbaf95d988c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4W6Ai6RL3LroGolWHwWpMu"
+      }
+    },
+    {
+      "name": "Don't Give Up",
+      "artists": "Valy Mo, DJ SODA",
+      "album": "Don't Give Up",
+      "release_date": "2025-02-07",
+      "duration_ms": 126237,
+      "popularity": 46,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733a0fd042822ead562bc74a55",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3hXfHeQJfrDcAyjJEzXghU"
+      }
+    },
+    {
+      "name": "La Di Da",
+      "artists": "DJ TORA",
+      "album": "La Di Da",
+      "release_date": "2025-01-10",
+      "duration_ms": 175476,
+      "popularity": 41,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e68b0eb3a3cf3c842a1a7652",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/56DOx6Wt2TvQTH0R0Ra86W"
+      }
+    },
+    {
+      "name": "Connect",
+      "artists": "Going Deeper, RITN",
+      "album": "Connect",
+      "release_date": "2024-12-20",
+      "duration_ms": 195529,
+      "popularity": 41,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732c0cc81262dd93e7b55570cd",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6tFtYwzu7Oo3NTYvneiQcr"
+      }
+    },
+    {
+      "name": "Dynamite - VESK GREEN Remix",
+      "artists": "GISHIN, Blosso, VESK GREEN",
+      "album": "Dynamite Remixes",
+      "release_date": "2024-12-13",
+      "duration_ms": 201600,
+      "popularity": 10,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7bab073952e019a947b3a10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1zqdXV2EgExJMkizsku7Qp"
+      }
+    },
+    {
+      "name": "What You Got",
+      "artists": "Aurelios",
+      "album": "What You Got",
+      "release_date": "2024-11-22",
+      "duration_ms": 150720,
+      "popularity": 30,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ef6049f3532ab00178b09040",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2j1DJKfhX5JpSjzNLKJdXd"
+      }
+    },
+    {
+      "name": "La Musique (hbrp & Adnan Veron Remix)",
+      "artists": "Brett Allen, HΛNNΛH X, Adnan Veron, hbrp",
+      "album": "La Musique (hbrp & Adnan Veron Remix)",
+      "release_date": "2024-11-15",
+      "duration_ms": 164384,
+      "popularity": 30,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730869d15dd6438be221d14c6b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/77CDn7eFbhfjYkMgn3kdxo"
+      }
+    },
+    {
+      "name": "Tatata",
+      "artists": "NORII",
+      "album": "Tatata",
+      "release_date": "2024-11-08",
+      "duration_ms": 166875,
+      "popularity": 32,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273111cc626ef4ee386d8ac5311",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4x1fzVsXHlTmRFBJk7dK1n"
+      }
+    },
+    {
+      "name": "Elevate",
+      "artists": "Highup, Stafford Brothers, Veronica Bravo",
+      "album": "Elevate",
+      "release_date": "2024-10-25",
+      "duration_ms": 133333,
+      "popularity": 34,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273dcb0ecb619cbe104a40c855d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5mevARGhrtGaV6UiRsb4lx"
+      }
+    },
+    {
+      "name": "Bucky Done Gun",
+      "artists": "Brett Allen",
+      "album": "Bucky Done Gun",
+      "release_date": "2024-10-11",
+      "duration_ms": 136240,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ab674ac42eb50786bf29f323",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3VPfg2ns7HY1fltoyG5FjI"
+      }
+    },
+    {
+      "name": "Rock Like This",
+      "artists": "Valy Mo, Devarra",
+      "album": "Rock Like This",
+      "release_date": "2024-10-04",
+      "duration_ms": 128332,
+      "popularity": 30,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f0b62bdff63f1d3f1ab2db",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7o0CQBuPwq1t21s5iVriwr"
+      }
+    },
+    {
+      "name": "Thanks a Lot",
+      "artists": "ORLINSKI",
+      "album": "Thanks a Lot",
+      "release_date": "2024-09-27",
+      "duration_ms": 234240,
+      "popularity": 35,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273dfb929bc6aff3119b44d8eb7",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/09IhaclGEFx2tjZRgpf6q3"
+      }
+    },
+    {
+      "name": "All Night",
+      "artists": "KDH, ALAN SHIRAHAMA, SMACK",
+      "album": "All Night",
+      "release_date": "2024-09-20",
+      "duration_ms": 127500,
+      "popularity": 37,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735338b7a92fb713a2b485ca56",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/12FexUYxc6mjKKQBpW67E2"
+      }
+    },
+    {
+      "name": "Move ya Body",
+      "artists": "CHRSTPHR",
+      "album": "Move ya Body EP",
+      "release_date": "2024-08-23",
+      "duration_ms": 186785,
+      "popularity": 36,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d0d75281435e2fca4cfd7f4b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/01sagGqCgmhrSTXA1h5Yt6"
+      }
+    },
+    {
+      "name": "R U Ready",
+      "artists": "DJ TORA, Nutter Tut",
+      "album": "R U Ready",
+      "release_date": "2024-08-02",
+      "duration_ms": 138046,
+      "popularity": 31,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ecf8f9e871a9c86eb0ee5365",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6LNof3r9JONMPxIwhX3t4V"
+      }
+    },
+    {
+      "name": "Numb",
+      "artists": "ORLINSKI",
+      "album": "Numb",
+      "release_date": "2024-07-26",
+      "duration_ms": 192000,
+      "popularity": 24,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735949873f898a320669036630",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5seqtrVGXPZnzBEn6sMdZy"
+      }
+    },
+    {
+      "name": "Take me Home",
+      "artists": "BYOR",
+      "album": "Take me Home",
+      "release_date": "2024-07-19",
+      "duration_ms": 156377,
+      "popularity": 49,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ab0aaa73c6471ea5f84bd4ed",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6xzgHUMLIHEJTSZRemVN38"
+      }
+    },
+    {
+      "name": "Don't Stop",
+      "artists": "Brett Allen, Noola",
+      "album": "Don't Stop",
+      "release_date": "2024-07-12",
+      "duration_ms": 142031,
+      "popularity": 20,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273501576a55c3eb986a95ec6bb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1BOaawwedYM2hvU4yYuyuu"
+      }
+    },
+    {
+      "name": "Before You Go",
+      "artists": "Rudeejay, Blackcode, David Allen",
+      "album": "Before You Go",
+      "release_date": "2024-06-28",
+      "duration_ms": 160615,
+      "popularity": 21,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fc594c518511c9dbd78023e2",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1eBqXCKEhVkjh4xc0X9Nak"
+      }
+    },
+    {
+      "name": "Lies",
+      "artists": "DJ Fluke, mavzy grx, SBSTN",
+      "album": "Lies",
+      "release_date": "2024-06-21",
+      "duration_ms": 130476,
+      "popularity": 29,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27310a55b8b27a92772edcbfc1e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3qtvBIookV0prgu6LUHUEn"
+      }
+    },
+    {
+      "name": "Dynamite",
+      "artists": "GISHIN, Blosso",
+      "album": "Dynamite",
+      "release_date": "2024-06-07",
+      "duration_ms": 172800,
+      "popularity": 41,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273660a8f2464a8d5b2bbb1d9fe",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3NcNKoNicPbINhaBpYyz74"
+      }
+    },
+    {
+      "name": "Let it Be",
+      "artists": "Valy Mo",
+      "album": "Let it Be",
+      "release_date": "2024-05-17",
+      "duration_ms": 184864,
+      "popularity": 36,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739fef80b19b053640708948ca",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3AvY1xeBm6Mck6B7lqAQ86"
+      }
+    },
+    {
+      "name": "Solo",
+      "artists": "AXON, Tima Dee",
+      "album": "Solo",
+      "release_date": "2024-04-26",
+      "duration_ms": 171433,
+      "popularity": 25,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733cd40384880ffc4d6687aa73",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2pyvcl8GFEM3PKzobsBOd9"
+      }
+    },
+    {
+      "name": "Get Back",
+      "artists": "Flakkë",
+      "album": "Get Back",
+      "release_date": "2024-04-12",
+      "duration_ms": 162985,
+      "popularity": 39,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273bedc86f647caaaba8a9406f4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3Dq8eWEmzmfiH68Skj8N0d"
+      }
+    },
+    {
+      "name": "La Musique",
+      "artists": "Brett Allen, HΛNNΛH X",
+      "album": "La Musique",
+      "release_date": "2024-03-22",
+      "duration_ms": 142285,
+      "popularity": 34,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a65611fc7e018d35d00d79be",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0UGiMc3qDemvGKsj0jJAy3"
+      }
+    },
+    {
+      "name": "Know Me",
+      "artists": "Ruben de Ronde, Achilles, Justin J. Moore",
+      "album": "Know Me",
+      "release_date": "2024-03-08",
+      "duration_ms": 151846,
+      "popularity": 37,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27318d990ce1b5df7040f033fb8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5soa629mTOJWaOjIfAT57N"
+      }
+    },
+    {
+      "name": "Dangerous - Radio Version",
+      "artists": "GISHIN, Weaver",
+      "album": "Dangerous",
+      "release_date": "2024-02-23",
+      "duration_ms": 255264,
+      "popularity": 38,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ed950b2fc85b98bb95d2407e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/02QqAvBY3o3SCoMM2u09R2"
+      }
+    },
+    {
+      "name": "Love Is Killing Me",
+      "artists": "NORII, CIGMA",
+      "album": "Love Is Killing Me",
+      "release_date": "2024-02-16",
+      "duration_ms": 140625,
+      "popularity": 25,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b156e80829704c5790cd827c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3xoooqVJ6Mw0vQSKuRmj2r"
+      }
+    },
+    {
+      "name": "Wildfire",
+      "artists": "DJ Sammy, Achilles, Beks",
+      "album": "Wildfire",
+      "release_date": "2024-02-02",
+      "duration_ms": 163913,
+      "popularity": 26,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731b0dcfaf06f63d66a22a6025",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1tX9PAc8rY902IdX8Mh48R"
+      }
+    },
+    {
+      "name": "I Love Rock 'n' Roll",
+      "artists": "Valy Mo",
+      "album": "I Love Rock 'n' Roll",
+      "release_date": "2024-01-26",
+      "duration_ms": 167619,
+      "popularity": 21,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738a0a2fbcb8db94109a4ee409",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5Niu6Obf8IfhIlHJ8oCemy"
+      }
+    },
+    {
+      "name": "Memories",
+      "artists": "Highup, DJ SODA, Justin J. Moore",
+      "album": "Memories",
+      "release_date": "2023-12-08",
+      "duration_ms": 135454,
+      "popularity": 37,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27343dfc6beb13a25ab985b4c13",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4T49o23TlFgm1AEEz4uIhM"
+      }
+    },
+    {
+      "name": "Everyone Nose",
+      "artists": "Brett Allen, Bombs Away",
+      "album": "Everyone Nose",
+      "release_date": "2023-10-20",
+      "duration_ms": 142456,
+      "popularity": 28,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738f2d2f98e6e8747c5fbab3e4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5O3W2bIWn4GmPH6l8Qh7Bi"
+      }
+    },
+    {
+      "name": "Another Life",
+      "artists": "EchoStorms, Yasmin Jane",
+      "album": "Another Life",
+      "release_date": "2023-09-29",
+      "duration_ms": 202378,
+      "popularity": 21,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c61f173c29af37bb381b41cf",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3q2EghgEtxhAkWMV1dqLr7"
+      }
+    },
+    {
+      "name": "Boomerang",
+      "artists": "Diego Miranda, Kom",
+      "album": "Boomerang",
+      "release_date": "2023-09-15",
+      "duration_ms": 134769,
+      "popularity": 26,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736d45544bbe8e69cb40ba5cf0",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1ApF7E8J0oUxL2qIo08TVd"
+      }
+    },
+    {
+      "name": "Over Me",
+      "artists": "Rudeejay, Flakkë, Nino Lucarelli",
+      "album": "Over Me",
+      "release_date": "2023-09-01",
+      "duration_ms": 158540,
+      "popularity": 31,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273926c40b72a7d305fce870155",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5f1umYAaM6U1CoNZnpNA8e"
+      }
+    },
+    {
+      "name": "Easy to Love",
+      "artists": "NORII, CIGMA",
+      "album": "Easy to Love",
+      "release_date": "2023-08-25",
+      "duration_ms": 220800,
+      "popularity": 17,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273be3700f8bfa04100ac6cba76",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5o1Wh7zoAAbTE6E9g4bsKo"
+      }
+    },
+    {
+      "name": "Rakata Rakata",
+      "artists": "CASHEW",
+      "album": "Rakata Rakata EP",
+      "release_date": "2023-07-21",
+      "duration_ms": 218880,
+      "popularity": 38,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a2644dbd6c59f71d00bd129c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2PqNXwl0DmZWUgiYvumEAJ"
+      }
+    },
+    {
+      "name": "I Need Your Love",
+      "artists": "Valy Mo, Brais",
+      "album": "I Need Your Love",
+      "release_date": "2023-07-07",
+      "duration_ms": 169523,
+      "popularity": 25,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273093250e11f4c98c1b233186b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1Yr6vSIDldARd3NGnB6j1A"
+      }
+    },
+    {
+      "name": "Neurose 2.0",
+      "artists": "Flakkë",
+      "album": "Neurose 2.0",
+      "release_date": "2023-06-23",
+      "duration_ms": 146250,
+      "popularity": 46,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273312791e0a1b3a808bf43db7e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6p0w8fIsPUNk6kVHCxNqvn"
+      }
+    },
+    {
+      "name": "Deadfellaz",
+      "artists": "Jéja, Zaug",
+      "album": "Deadfellaz",
+      "release_date": "2023-06-09",
+      "duration_ms": 150501,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734c46e296cf040944269eb60f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/371XpPv4N3cxaFrxelCzW2"
+      }
+    },
+    {
+      "name": "Not Afraid",
+      "artists": "Thom Merlin, Johnny Chicago",
+      "album": "Not Afraid",
+      "release_date": "2023-06-02",
+      "duration_ms": 153139,
+      "popularity": 41,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394c94615c23c4b5b328b8ee4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5AsyzYIBUbyUFkFojBGirZ"
+      }
+    },
+    {
+      "name": "Nord Try",
+      "artists": "Tom Enzy",
+      "album": "Nord Try",
+      "release_date": "2023-05-19",
+      "duration_ms": 188160,
+      "popularity": 37,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732f056533642c7368f8c10b6d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7sgvwMVqZB2QQaOr03K3l4"
+      }
+    },
+    {
+      "name": "Heaven",
+      "artists": "Achilles, DEADLINE, Jordan Grace",
+      "album": "Heaven",
+      "release_date": "2023-05-05",
+      "duration_ms": 174720,
+      "popularity": 25,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273493d59a9e71b6a89225ff80f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4RoS83AH7BDxKxWS1wIFMR"
+      }
+    },
+    {
+      "name": "Creator",
+      "artists": "EchoStorms",
+      "album": "Creator",
+      "release_date": "2023-04-21",
+      "duration_ms": 168000,
+      "popularity": 36,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273addbc71346fdb82581e157b8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/586UQta4cAtG4SGNyHgLsR"
+      }
+    },
+    {
+      "name": "On a Cloud",
+      "artists": "Valy Mo, Alfred Beck",
+      "album": "On a Cloud",
+      "release_date": "2023-04-07",
+      "duration_ms": 165749,
+      "popularity": 14,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732af54f78264cf8bf17640f36",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0NEVDhMyWLTfbqQJVPrvlx"
+      }
+    },
+    {
+      "name": "Dancing Alone",
+      "artists": "Mangoo, EUROBEAT, Rumor",
+      "album": "Dancing Alone",
+      "release_date": "2023-03-24",
+      "duration_ms": 172500,
+      "popularity": 31,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273664fb798c4d02e32f988f761",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/37xIgCCeBjCFahVifaJTf9"
+      }
+    },
+    {
+      "name": "Feeling Inside",
+      "artists": "Vowed, B4N4N4 G4NG",
+      "album": "Feeling Inside",
+      "release_date": "2023-03-10",
+      "duration_ms": 157251,
+      "popularity": 10,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27326baecd07c31d4cc70e856c6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5zAWqMDbeTT4Dska6myBYm"
+      }
+    },
+    {
+      "name": "Guapo",
+      "artists": "Netto, Alexso, Castelani",
+      "album": "Guapo",
+      "release_date": "2023-02-24",
+      "duration_ms": 147401,
+      "popularity": 20,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733b892130c82bb4b0c94e8084",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2LcA0FT1HQNHnbBbeQpKH6"
+      }
+    },
+    {
+      "name": "Borderouge",
+      "artists": "Pokeyz, YYVNG",
+      "album": "Borderouge",
+      "release_date": "2023-02-10",
+      "duration_ms": 121124,
+      "popularity": 16,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e375341d98d9c48dce3d7da9",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5BG79ETrgwHHQkRvgrWFWs"
+      }
+    },
+    {
+      "name": "Good 4 Me",
+      "artists": "Flakkë, Sammy Boyle, JKLN",
+      "album": "Good 4 Me",
+      "release_date": "2023-01-13",
+      "duration_ms": 156142,
+      "popularity": 41,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27376cac77b2c4c33eb81113b53",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2vtXpXdZ0DSZokARFx2uXH"
+      }
+    },
+    {
+      "name": "Without You",
+      "artists": "Kløn",
+      "album": "Without You",
+      "release_date": "2023-01-06",
+      "duration_ms": 163873,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f7c85080dbf1b478e2507e24",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3QAizfOpVL0V6cJIrA6OZ7"
+      }
+    },
+    {
+      "name": "The Underground",
+      "artists": "Raptures., Mad Miguel",
+      "album": "The Underground",
+      "release_date": "2022-12-09",
+      "duration_ms": 135483,
+      "popularity": 9,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273340fdbc6c7e2ff6886897bd3",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/51xboJA4mQ3EfMGcjkZX3o"
+      }
+    },
+    {
+      "name": "Your Time",
+      "artists": "Valy Mo, HouseWerk",
+      "album": "Your Time",
+      "release_date": "2022-11-25",
+      "duration_ms": 139052,
+      "popularity": 17,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735580df8e494be68e302d4268",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/20hEj4A5FF7IIgOQ8hUmKu"
+      }
+    },
+    {
+      "name": "Never Enough",
+      "artists": "DJ Fluke",
+      "album": "Never Enough",
+      "release_date": "2022-11-18",
+      "duration_ms": 161904,
+      "popularity": 37,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733b1ea3825ba756259593e61b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5EVSnz1AT8TZqJnMGE7H0q"
+      }
+    },
+    {
+      "name": "Like That",
+      "artists": "D-Sides, Erick T",
+      "album": "Like That",
+      "release_date": "2022-11-04",
+      "duration_ms": 159999,
+      "popularity": 27,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27314541d6a57d110a3d8847065",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5bKiQkhT5BPNwJ6YiIfhGa"
+      }
+    },
+    {
+      "name": "Busta Hype - 2 Thunders Remix",
+      "artists": "BIG BROTHER 84, Shrimp T, 2 Thunders",
+      "album": "Busta Hype Remixes",
+      "release_date": "2022-10-28",
+      "duration_ms": 158095,
+      "popularity": 1,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273bd3e3d85a259f39e63eddb78",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1OkjY67GyG3KaXuIXzduBt"
+      }
+    },
+    {
+      "name": "Right Here",
+      "artists": "Kage",
+      "album": "Right Here",
+      "release_date": "2022-10-21",
+      "duration_ms": 232500,
+      "popularity": 15,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27319b8fce2f95d7076ec0718a1",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3HbZexT9RAcADhm6jrXZmx"
+      }
+    },
+    {
+      "name": "Tomorrow",
+      "artists": "Achilles, DJ Fluke, Steeper",
+      "album": "Tomorrow",
+      "release_date": "2022-10-14",
+      "duration_ms": 153230,
+      "popularity": 27,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27344ff6f83bb4adca280de0093",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5LCTCjgQUjMLh2jAp2PgEF"
+      }
+    },
+    {
+      "name": "Sugar Baby",
+      "artists": "Plastik Funk, Broz Rodriguez, Tara Mcdonald",
+      "album": "Sugar Baby",
+      "release_date": "2022-09-23",
+      "duration_ms": 159360,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273828cfc461e11db79f1ec96e8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0J2kOteMcPfbhfBMQssigd"
+      }
+    },
+    {
+      "name": "Creep - BYOR Remix",
+      "artists": "Naeleck, Haley Reinhart, BYOR",
+      "album": "Creep (BYOR Remix)",
+      "release_date": "2022-09-16",
+      "duration_ms": 156850,
+      "popularity": 68,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738f33b654d17d67f2fa8800ca",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/41TkFhNYljV7omolLJ6Squ"
+      }
+    },
+    {
+      "name": "Reaching for the Moon",
+      "artists": "Achilles",
+      "album": "Reaching for the Moon",
+      "release_date": "2022-09-14",
+      "duration_ms": 184218,
+      "popularity": 22,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733e6f4193cccc94ab7aa913b7",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4O787OwIJun2YB5ruCCyCb"
+      }
+    },
+    {
+      "name": "Buss It Down",
+      "artists": "Charles B, Milan Tavares, Dread MC",
+      "album": "Buss It Down",
+      "release_date": "2022-09-02",
+      "duration_ms": 133333,
+      "popularity": 22,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736f7c2a8b3b4b40cac9ef070f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0msn0Io77McyJU2lydFZug"
+      }
+    },
+    {
+      "name": "Radiate - Radio Mix",
+      "artists": "Mad Miguel, Uplink",
+      "album": "Radiate",
+      "release_date": "2022-08-12",
+      "duration_ms": 172968,
+      "popularity": 11,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735515fcb71591f495d866e2eb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2XXctn9gq7Fnmry7p0Ue9x"
+      }
+    },
+    {
+      "name": "I've Been On The Way",
+      "artists": "Autodepth, Alva Gracia",
+      "album": "I've Been On The Way",
+      "release_date": "2022-07-22",
+      "duration_ms": 161280,
+      "popularity": 6,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737d48c201c9b3f1f7c0536ea3",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2FUb9WfaInNvW6hq3PqICw"
+      }
+    },
+    {
+      "name": "Another Night",
+      "artists": "Elport, R-Cue",
+      "album": "Another Night",
+      "release_date": "2022-07-01",
+      "duration_ms": 192000,
+      "popularity": 25,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27398b2e3d4cc9aebdeb1489bbe",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1UcBywtNqCCQLOJrtipwoV"
+      }
+    },
+    {
+      "name": "Destiny",
+      "artists": "Milan Tavares, Charles B, Bryonii",
+      "album": "Destiny",
+      "release_date": "2022-06-24",
+      "duration_ms": 146666,
+      "popularity": 22,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e560886073f2692041d8638d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2yy3wycNCplihKqBajlvRe"
+      }
+    },
+    {
+      "name": "IDFC",
+      "artists": "Biometrix, The FifthGuys",
+      "album": "IDFC",
+      "release_date": "2022-06-10",
+      "duration_ms": 201428,
+      "popularity": 38,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ffdf0a6a2d943f39e02f7cc4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4gJH3feBOPM6CJYxPUF8xw"
+      }
+    },
+    {
+      "name": "Heartbeat",
+      "artists": "Flakkë, Sammy Boyle, JKLN",
+      "album": "Heartbeat",
+      "release_date": "2022-06-03",
+      "duration_ms": 149763,
+      "popularity": 30,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273833ed06d18bba2ee0d24e4bb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4dicy3FyUyoLfO1KdRfG9R"
+      }
+    },
+    {
+      "name": "Goosebumps",
+      "artists": "Hartness, Miss Ghyss",
+      "album": "Goosebumps",
+      "release_date": "2022-05-20",
+      "duration_ms": 173225,
+      "popularity": 34,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730c11732ef013e110f525f7c4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5Sty6SVGKSK2EFyiNcPzvz"
+      }
+    },
+    {
+      "name": "You Right (feat Tommy Rage)",
+      "artists": "The FifthGuys, John Kroon, Polina Grace",
+      "album": "You Right (feat Tommy Rage)",
+      "release_date": "2022-05-13",
+      "duration_ms": 179999,
+      "popularity": 28,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732a0aea8e9b408defc845e974",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/13NgfgB3G5JMnXztqZ3Eoh"
+      }
+    },
+    {
+      "name": "Irresistible",
+      "artists": "MORVN, DJ Fluke",
+      "album": "Irresistible",
+      "release_date": "2022-05-06",
+      "duration_ms": 161612,
+      "popularity": 25,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739ca661e61f8360a90227de10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/26ud4cIFGlkrMNisE5jBK9"
+      }
+    },
+    {
+      "name": "Away - NuKey Remix",
+      "artists": "Valy Mo, NuKey",
+      "album": "Away (NuKey Remix)",
+      "release_date": "2022-04-29",
+      "duration_ms": 165714,
+      "popularity": 11,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732d7a796ef21dcc38efbeb896",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4MQdgzvEoza08RB5UHuZJn"
+      }
+    },
+    {
+      "name": "Face Me - BLR Remix",
+      "artists": "Biometrix, Rhi'N'B, BLR",
+      "album": "Face Me (BLR Remix)",
+      "release_date": "2022-04-15",
+      "duration_ms": 212682,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273909e369a5581980763d957d4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3QtGH1bBVIB4cKJZZSy4Bs"
+      }
+    },
+    {
+      "name": "Want Your Attention",
+      "artists": "SOXX, Steji",
+      "album": "Want Your Attention",
+      "release_date": "2022-04-08",
+      "duration_ms": 150461,
+      "popularity": 14,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27331877408a6bf8bfd905ec02c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0Kynw5nAZCdzU79ozdIA0D"
+      }
+    },
+    {
+      "name": "Run",
+      "artists": "Smitech Wesson",
+      "album": "Run",
+      "release_date": "2022-04-01",
+      "duration_ms": 221455,
+      "popularity": 33,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273131afd66a0ee7f806d0cfbc0",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4b2ftaaLtr4F2y66VeUDF8"
+      }
+    },
+    {
+      "name": "On The Ground",
+      "artists": "Pokeyz",
+      "album": "On The Ground",
+      "release_date": "2022-03-18",
+      "duration_ms": 144047,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736c502885180bd0cb2abda4f5",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6YkXbeGuvAzryRIUGwqfw3"
+      }
+    },
+    {
+      "name": "Coming Back",
+      "artists": "Lodgerz",
+      "album": "Coming Back",
+      "release_date": "2022-03-04",
+      "duration_ms": 129657,
+      "popularity": 19,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27324f540364971eaaeee11197b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/62zsWLcoCTeELqPlVgG4HO"
+      }
+    },
+    {
+      "name": "Away - BYOR Remix",
+      "artists": "Valy Mo, BYOR",
+      "album": "Away (BYOR Remix)",
+      "release_date": "2022-02-25",
+      "duration_ms": 156205,
+      "popularity": 26,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273052eb1b31a9be6a27d165f62",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/17A2kFpfeB4Vzk2hwY3CZD"
+      }
+    },
+    {
+      "name": "Aura",
+      "artists": "Vowed, Steampvnk",
+      "album": "Aura",
+      "release_date": "2022-02-11",
+      "duration_ms": 191612,
+      "popularity": 11,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735bf15cc7fda0581bb508432b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5CPaTObc1FXdouU8cbxZnO"
+      }
+    },
+    {
+      "name": "Away",
+      "artists": "Valy Mo",
+      "album": "Away",
+      "release_date": "2022-02-04",
+      "duration_ms": 150957,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ea7c9edf9f4e31b578a611eb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1zutV6LMV87iuD8edWk3Xr"
+      }
+    },
+    {
+      "name": "Arajaka",
+      "artists": "Jay Dunham",
+      "album": "Shedding Layers",
+      "release_date": "2022-01-21",
+      "duration_ms": 175121,
+      "popularity": 6,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735640b124a7b9402a415b3462",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1qcnuKsJzpnoR34NV1SXyi"
+      }
+    },
+    {
+      "name": "Feels Like",
+      "artists": "Cheery-O",
+      "album": "Brussels Mule",
+      "release_date": "2021-12-17",
+      "duration_ms": 232500,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737a13f1db28933af4e9b661b6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3E0Vo0qBhrcxWYUYRZ44I9"
+      }
+    },
+    {
+      "name": "Busta Hype",
+      "artists": "BIG BROTHER 84, Shrimp T",
+      "album": "Busta Hype",
+      "release_date": "2021-12-10",
+      "duration_ms": 210156,
+      "popularity": 9,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738cfebf574d5da5abc86d262c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7wNXQ2mPYHDcmyiKwWN8xH"
+      }
+    },
+    {
+      "name": "Secret",
+      "artists": "Hooders, Futura",
+      "album": "Secret",
+      "release_date": "2021-10-15",
+      "duration_ms": 159677,
+      "popularity": 20,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736af1db77e91f57a720eb55f8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6azZXLKmN59ZmZk72FS7mb"
+      }
+    },
+    {
+      "name": "Azra",
+      "artists": "Smitech Wesson",
+      "album": "Azra & Leyla",
+      "release_date": "2021-09-24",
+      "duration_ms": 227923,
+      "popularity": 6,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f804a555d39681269ed7f113",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6XCDNohCSJISoDt5O78fmU"
+      }
+    },
+    {
+      "name": "Be Right Back",
+      "artists": "Menso, Loadjaxx",
+      "album": "Be Right Back",
+      "release_date": "2021-09-24",
+      "duration_ms": 171642,
+      "popularity": 14,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732a506e2c40e733d52d81eb2d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2vs63crc1h2Q9gQJuSLAqw"
+      }
+    },
+    {
+      "name": "Stormbreaker",
+      "artists": "Yung Diggerz, Don Darrell",
+      "album": "Stormbreaker",
+      "release_date": "2021-09-03",
+      "duration_ms": 230400,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27344a7df51945d446fd69a9fc9",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6YiYiOjgK0WVnTVpduKMVv"
+      }
+    },
+    {
+      "name": "Time",
+      "artists": "Asjockers",
+      "album": "Equinox",
+      "release_date": "2021-09-03",
+      "duration_ms": 279344,
+      "popularity": 5,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273437fe6b5a316e9d2627e6f90",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/14Qae7In6XTorWL09TW9uK"
+      }
+    },
+    {
+      "name": "Chromatic",
+      "artists": "On Point, GAZZ",
+      "album": "ON POINT & Friends",
+      "release_date": "2021-07-02",
+      "duration_ms": 238080,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737756b5f7531028ed6b0f5708",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6nq1Yu9ay3GWJ5gaRPokkt"
+      }
+    },
+    {
+      "name": "John",
+      "artists": "Smitech Wesson",
+      "album": "John",
+      "release_date": "2021-07-02",
+      "duration_ms": 255479,
+      "popularity": 9,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27336a00bb674927df78db3c6ff",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5jv19M4zelKF3EaRARXs03"
+      }
+    },
+    {
+      "name": "Need U",
+      "artists": "Mephi, ZAHIA",
+      "album": "Need U",
+      "release_date": "2021-04-30",
+      "duration_ms": 245760,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a8a0324af1c134631093c1b4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0NqLRuU6dLVJcvGJRmXrHV"
+      }
+    },
+    {
+      "name": "Don't Be Shy",
+      "artists": "Ketafere",
+      "album": "Don't Be Shy",
+      "release_date": "2021-03-26",
+      "duration_ms": 263406,
+      "popularity": 18,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b9e66236e056e660911c900f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/04aIceASBYb7O9qv2kOzxz"
+      }
+    },
+    {
+      "name": "Look Like a Monster",
+      "artists": "KL!P, Menso",
+      "album": "Look Like a Monster",
+      "release_date": "2021-02-19",
+      "duration_ms": 170625,
+      "popularity": 15,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e32db5f6d15a0996826a3f48",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0z48zDwyqe53dEmAMGDc9j"
+      }
+    },
+    {
+      "name": "Timebomb",
+      "artists": "Sesco",
+      "album": "Timebomb",
+      "release_date": "2020-07-31",
+      "duration_ms": 167718,
+      "popularity": 3,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a731f37bd049384ad077664a",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1q89lAFqMKLUsdsTMS6TNI"
+      }
+    },
+    {
+      "name": "Furious Bros",
+      "artists": "RED SHORTS BOY",
+      "album": "Furious Bros",
+      "release_date": "2020-06-12",
+      "duration_ms": 142451,
+      "popularity": 13,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c592be767a6da8f4bc9cac73",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3CRazoHc50S96DSZE5iKab"
+      }
+    },
+    {
+      "name": "Absolute",
+      "artists": "Dubscribe, Rick Flxx",
+      "album": "Absolute",
+      "release_date": "2020-04-24",
+      "duration_ms": 222600,
+      "popularity": 33,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27374ea38b4302239f3a2075aa2",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2MnlE3eX1hG4Cl7mu7Wd2V"
+      }
+    },
+    {
+      "name": "Virtual Gaming",
+      "artists": "Naeleck, Hige Driver",
+      "album": "Gaming Music 2020",
+      "release_date": "2020-04-15",
+      "duration_ms": 228750,
+      "popularity": 34,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27334289a3c93db5fc4036ca9d8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2YfsXXUEbEMq3NoVE63vRT"
+      }
+    },
+    {
+      "name": "Metronome",
+      "artists": "BIG BROTHER 84, Justpim",
+      "album": "Metronome",
+      "release_date": "2020-02-28",
+      "duration_ms": 191881,
+      "popularity": 8,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273946a1a46b9e8514efe03f0fc",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7eKw4YDCDLAQGAuQWF2pTA"
+      }
+    },
+    {
+      "name": "Kenja Taimu",
+      "artists": "Mephi, Fellsius",
+      "album": "Kenja Taimu",
+      "release_date": "2020-02-21",
+      "duration_ms": 245714,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739c888b9c4ece928db036c877",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6Nml5IdMVdj1NYFUf9KGtp"
+      }
+    },
+    {
+      "name": "Virtual Gaming",
+      "artists": "Naeleck, Hige Driver",
+      "album": "Virtual Gaming",
+      "release_date": "2020-01-10",
+      "duration_ms": 228750,
+      "popularity": 38,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27347f387632137353fe8376544",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6SG6Tf9em9kbueirgail0n"
+      }
+    },
+    {
+      "name": "Escape Room",
+      "artists": "RED SHORTS BOY",
+      "album": "Escape Room",
+      "release_date": "2019-10-29",
+      "duration_ms": 215040,
+      "popularity": 16,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273872c06464fe8df3d621f2b98",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0Vf8kKCTuHeimb8HGf92Qw"
+      }
+    },
+    {
+      "name": "Loudness War",
+      "artists": "Fukkk Offf",
+      "album": "Loudness War",
+      "release_date": "2019-07-12",
+      "duration_ms": 285000,
+      "popularity": 27,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c16f349fe759ad817e1c18b6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/17NCISfYJl0GITXs8G75Ae"
+      }
+    },
+    {
+      "name": "Badman",
+      "artists": "Sesco",
+      "album": "Badman",
+      "release_date": "2019-05-17",
+      "duration_ms": 196800,
+      "popularity": 0,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273957520787d1b207a19240dcd",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4F8pxcg136bApCSoZbzAjA"
+      }
+    },
+    {
+      "name": "Sledgehammer",
+      "artists": "Dubscribe, Answerd",
+      "album": "Sledgehammer",
+      "release_date": "2019-05-03",
+      "duration_ms": 217600,
+      "popularity": 34,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737d4f1f427a1137b53c8431f6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0OCU2BuZKK1SfkhFvOcQ3n"
+      }
+    },
+    {
+      "name": "Get Wkd",
+      "artists": "Sesco",
+      "album": "Get Wkd",
+      "release_date": "2019-04-26",
+      "duration_ms": 228923,
+      "popularity": 2,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27385bf99bab2885f943f409c7b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/713tpVMmKAaeJwuRFIZ1KT"
+      }
+    },
+    {
+      "name": "Take A Sip",
+      "artists": "Naeleck, Ferd, n3",
+      "album": "Take A Sip Remixes",
+      "release_date": "2019-03-15",
+      "duration_ms": 270400,
+      "popularity": 9,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/d6c68f46199b1cfb1950c8d7a58d531e2c16a3bc",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/52KqAHWMNR2kk1lZWgyBUr"
+      }
+    },
+    {
+      "name": "Take A Sip",
+      "artists": "Naeleck, Ferd, n3",
+      "album": "Take A Sip",
+      "release_date": "2018-12-07",
+      "duration_ms": 270400,
+      "popularity": 33,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736a37ed490b87c23bb4a7e37c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3cjQnzMmUQrymtcq0QsxlR"
+      }
+    },
+    {
+      "name": "Bang Your Head",
+      "artists": "Fukkk Offf",
+      "album": "Bang Your Head",
+      "release_date": "2018-10-05",
+      "duration_ms": 237837,
+      "popularity": 6,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273209aae138dca9e32310ad9f3",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/59ekUB1k6gvf0TmDZm5TtA"
+      }
+    },
+    {
+      "name": "Ken't Stop",
+      "artists": "KenKode",
+      "album": "Halloween Weapons",
+      "release_date": "2018-10-31",
+      "duration_ms": 248470,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d85b0db705771247b64787f1",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2bPFnKHaO0QOZVyh3zf8qi"
+      }
+    },
+    {
+      "name": "Reactions",
+      "artists": "YOL",
+      "album": "Reactions",
+      "release_date": "2018-09-03",
+      "duration_ms": 211940,
+      "popularity": 10,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735086d6fca312cdedde8e6ce2",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/65tqY845i42qrBuXN3sp9p"
+      }
+    },
+    {
+      "name": "Neverendingstory",
+      "artists": "Nekromongers, Alice Virt",
+      "album": "Gazz",
+      "release_date": "2018-08-06",
+      "duration_ms": 353333,
+      "popularity": 19,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732566cded3d09edc888fc0020",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7kPsgXdeigvxglcGO3lgys"
+      }
+    },
+    {
+      "name": "Scream",
+      "artists": "Smitech Wesson",
+      "album": "Scream",
+      "release_date": "2018-04-23",
+      "duration_ms": 181875,
+      "popularity": 22,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273894b119641ab67fdbe2dba1f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6WR75eg762PESHiP5C6CqJ"
+      }
+    },
+    {
+      "name": "Pacific Coast Highway",
+      "artists": "Fukkk Offf",
+      "album": "Pacific Coast Highway",
+      "release_date": "2018-03-05",
+      "duration_ms": 204631,
+      "popularity": 45,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730687eae73e98d4561ef2dcf5",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/34nixLtq739l1cY1eGCSW0"
+      }
+    },
+    {
+      "name": "The Demon",
+      "artists": "Naeleck, Ferd",
+      "album": "Xmas Weapons",
+      "release_date": "2017-12-25",
+      "duration_ms": 274285,
+      "popularity": 30,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/155cd7a270f2932e948b2fe8b5cc0f785a369bf4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1NJBKa0n6PGbb0V7R7s9Qm"
+      }
+    },
+    {
+      "name": "Rocket Launch",
+      "artists": "BIG BROTHER 84, Ferd",
+      "album": "Rocket Launch",
+      "release_date": "2017-02-27",
+      "duration_ms": 242307,
+      "popularity": 4,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736ecf38a0c5ea5f464bd70a5c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6nKFyL4zPLRLHQMEAdaTFn"
+      }
+    },
+    {
+      "name": "Threnody",
+      "artists": "Naeleck",
+      "album": "Threnody",
+      "release_date": "2016-12-26",
+      "duration_ms": 243808,
+      "popularity": 23,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273924fb5910f77d8d12100716d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0REinjAZvoW0PrhDS2aHAg"
+      }
+    },
+    {
+      "name": "Steppin' Forward - Designer Drugs Remix",
+      "artists": "DJ Mykal, Pilot K",
+      "album": "Steppin' Forward Remixes",
+      "release_date": "2016-01-11",
+      "duration_ms": 229302,
+      "popularity": 3,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732786560dd94278919466cc5e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/61TFqFC2O4WLtFdhkZx8YN"
+      }
+    },
+    {
+      "name": "Game Of Drones - Original Mix",
+      "artists": "Teo Moss, Greg Hoffman",
+      "album": "Game Of Drones",
+      "release_date": "2015-08-03",
+      "duration_ms": 314062,
+      "popularity": 5,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731b738c51cd55fb2e715e4643",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/13wVrpjybO7WsaO20nsYSE"
+      }
+    },
+    {
+      "name": "The Fall - Original Mix",
+      "artists": "French Coq",
+      "album": "The Fall Remixes",
+      "release_date": "2015-07-20",
+      "duration_ms": 276707,
+      "popularity": 2,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fbd89b64f402e4b91b502bbc",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/717BFpGKcYt2qQNecmHruF"
+      }
+    },
+    {
+      "name": "Danse Macabre - Original Mix",
+      "artists": "Naeleck, Oddity",
+      "album": "Danse Macabre",
+      "release_date": "2015-03-30",
+      "duration_ms": 285095,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739726661a59afafc68598c83d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3jUolekd6z6ce6ekKo1Yvs"
+      }
+    },
+    {
+      "name": "Violence - Original Mix",
+      "artists": "Naeleck",
+      "album": "Violence Remixes",
+      "release_date": "2014-12-22",
+      "duration_ms": 289000,
+      "popularity": 14,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b75f99354ccdd8e63e210c70",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6qQVJNUPbgIdoQR4pqtQKv"
+      }
+    },
+    {
+      "name": "Lil' Death - Original Mix",
+      "artists": "Carbon Kevlar",
+      "album": "Ici & Higher",
+      "release_date": "2014-10-13",
+      "duration_ms": 266355,
+      "popularity": 19,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27390f12ce3bf4ede8dead3c12a",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6nP7U6oWICWgh6a1H0xTft"
+      }
+    },
+    {
+      "name": "The Fall - Original Mix",
+      "artists": "French Coq",
+      "album": "Codex Phi",
+      "release_date": "2014-09-22",
+      "duration_ms": 276707,
+      "popularity": 27,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27366208c10f3b8c818c1f149c1",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6iejER6nqeUv2AUlhgcEoI"
+      }
+    },
+    {
+      "name": "Romans - Original Mix",
+      "artists": "Baroque",
+      "album": "Romans",
+      "release_date": "2014-07-21",
+      "duration_ms": 242752,
+      "popularity": 0,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b51ceddb152f9260349dfb10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6gy4LZV9HQKXkEgW2c1uR0"
+      }
+    },
+    {
+      "name": "Prison - Original Mix",
+      "artists": "Janski Beeeats",
+      "album": "The Beeeast",
+      "release_date": "2014-07-07",
+      "duration_ms": 275181,
+      "popularity": 0,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735aff7c0c5cb678b1ddb66669",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7l7AX6FDvTgu6ZPfQlvSnK"
+      }
+    },
+    {
+      "name": "Battleship - Original Mix",
+      "artists": "Teo Moss, Greg Hoffman",
+      "album": "Battleship",
+      "release_date": "2014-06-23",
+      "duration_ms": 363750,
+      "popularity": 5,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739b3a75721c91628988a1db5f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4LbqL11mb75PKwfQvbVVUJ"
+      }
+    },
+    {
+      "name": "Violence - Original Mix",
+      "artists": "Naeleck",
+      "album": "Violence",
+      "release_date": "2014-06-16",
+      "duration_ms": 289000,
+      "popularity": 12,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d05a2b7bda4d949c9812a39a",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5vwHbNuPd6FCBl6uIDhE3c"
+      }
+    },
+    {
+      "name": "Torsion - Original Mix",
+      "artists": "Teo Moss, Greg Hoffman",
+      "album": "Torsion",
+      "release_date": "2014-03-05",
+      "duration_ms": 375000,
+      "popularity": 5,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27374a7822ea02fbe367303505c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4gzL8aBuLfOLzociXmTc0f"
+      }
+    },
+    {
+      "name": "Disease - Original Mix",
+      "artists": "Naeleck, Oddity",
+      "album": "Disease",
+      "release_date": "2013-09-16",
+      "duration_ms": 263085,
+      "popularity": 22,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739fe0f66272e3abc32a35770d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7qDWLHBgORFZFW9nzDyxZk"
+      }
+    },
+    {
+      "name": "Azid - Original Mix",
+      "artists": "Oddity",
+      "album": "Azid",
+      "release_date": "2013-07-08",
+      "duration_ms": 272324,
+      "popularity": 2,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273170b4256fd8acdd2d3700d96",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5GNd4tjfu2BdS07cMxuBJC"
+      }
+    },
+    {
+      "name": "Noisescape - Original Mix",
+      "artists": "Baroque",
+      "album": "Noisescape Remixes",
+      "release_date": "2013-05-31",
+      "duration_ms": 295177,
+      "popularity": 0,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394c484274740e882594ec0f8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0ZtGo2GaXuqdE9JWTRmaRz"
+      }
+    },
+    {
+      "name": "God Phazer - Original Mix",
+      "artists": "Carbon Kevlar",
+      "album": "God Phazer",
+      "release_date": "2013-02-20",
+      "duration_ms": 241920,
+      "popularity": 1,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731b77d43264ed862406f700d8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/505SlDrSNdzSN7LOouh1JD"
+      }
+    },
+    {
+      "name": "Steppin' Forward - Original Mix",
+      "artists": "DJ Mykal, Pilot K",
+      "album": "Steppin' Forward",
+      "release_date": "2012-12-28",
+      "duration_ms": 290421,
+      "popularity": 0,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ea05e6488d4974e137d6d93b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/39oO2txihNXCqvQIAkYCNQ"
+      }
+    },
+    {
+      "name": "Noisescape - Original Mix",
+      "artists": "Baroque",
+      "album": "Noisescape",
+      "release_date": "2012-08-29",
+      "duration_ms": 295177,
+      "popularity": 29,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27355deccecd94f416fa2e5ce3a",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/12V5AgfGpegwEjY5UgvoEU"
+      }
+    },
+    {
+      "name": "Evidence - Original Mix",
+      "artists": "Shun, Hoshina Anniversary",
+      "album": "Evidence",
+      "release_date": "2012-07-18",
+      "duration_ms": 316521,
+      "popularity": 7,
+      "preview_url": null,
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ef98dcaec3ba955d0f829441",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1puujqEpT9pYGNjiroiOJD"
+      }
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "latestReleasesOfPlaylist": [
+    {
+      "name": "Tomorrow Isn't Promised",
+      "artists": "DJ Fluke, Achilles",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731e3f45b210cc3561473ea8eb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2iWouXvIwW9pq0RTjWoguz"
+      }
+    },
+    {
+      "name": "So Cold",
+      "artists": "Mephi",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d8d2d44559d6cbbaf95d988c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4W6Ai6RL3LroGolWHwWpMu"
+      }
+    },
+    {
+      "name": "Don't Give Up",
+      "artists": "Valy Mo, DJ SODA",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733a0fd042822ead562bc74a55",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3hXfHeQJfrDcAyjJEzXghU"
+      }
+    },
+    {
+      "name": "La Di Da",
+      "artists": "DJ TORA",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e68b0eb3a3cf3c842a1a7652",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/56DOx6Wt2TvQTH0R0Ra86W"
+      }
+    },
+    {
+      "name": "Connect",
+      "artists": "Going Deeper, RITN",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732c0cc81262dd93e7b55570cd",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6tFtYwzu7Oo3NTYvneiQcr"
+      }
+    },
+    {
+      "name": "Dynamite - VESK GREEN Remix",
+      "artists": "GISHIN, Blosso, VESK GREEN",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7bab073952e019a947b3a10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1zqdXV2EgExJMkizsku7Qp"
+      }
+    },
+    {
+      "name": "Dynamite - BOTCASH Remix",
+      "artists": "GISHIN, Blosso, BOTCASH",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7bab073952e019a947b3a10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1CIPo0MYvXPcvUlH5BbDZ0"
+      }
+    },
+    {
+      "name": "Dynamite - Haus of Panda Remix",
+      "artists": "GISHIN, Blosso, Haus of Panda",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a7bab073952e019a947b3a10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6h7Ux2CM2MF5VWaGwmiMfl"
+      }
+    },
+    {
+      "name": "What You Got",
+      "artists": "Aurelios",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ef6049f3532ab00178b09040",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2j1DJKfhX5JpSjzNLKJdXd"
+      }
+    },
+    {
+      "name": "La Musique (hbrp & Adnan Veron Remix)",
+      "artists": "Brett Allen, HΛNNΛH X, Adnan Veron, hbrp",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730869d15dd6438be221d14c6b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/77CDn7eFbhfjYkMgn3kdxo"
+      }
+    },
+    {
+      "name": "Tatata",
+      "artists": "NORII",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273111cc626ef4ee386d8ac5311",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4x1fzVsXHlTmRFBJk7dK1n"
+      }
+    },
+    {
+      "name": "Elevate",
+      "artists": "Highup, Stafford Brothers, Veronica Bravo",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273dcb0ecb619cbe104a40c855d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5mevARGhrtGaV6UiRsb4lx"
+      }
+    },
+    {
+      "name": "Bucky Done Gun",
+      "artists": "Brett Allen",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ab674ac42eb50786bf29f323",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3VPfg2ns7HY1fltoyG5FjI"
+      }
+    },
+    {
+      "name": "Rock Like This",
+      "artists": "Valy Mo, Devarra",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e2f0b62bdff63f1d3f1ab2db",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7o0CQBuPwq1t21s5iVriwr"
+      }
+    },
+    {
+      "name": "Thanks a Lot",
+      "artists": "ORLINSKI",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273dfb929bc6aff3119b44d8eb7",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/09IhaclGEFx2tjZRgpf6q3"
+      }
+    },
+    {
+      "name": "All Night",
+      "artists": "KDH, ALAN SHIRAHAMA, SMACK",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735338b7a92fb713a2b485ca56",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/12FexUYxc6mjKKQBpW67E2"
+      }
+    },
+    {
+      "name": "Move ya Body",
+      "artists": "CHRSTPHR",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d0d75281435e2fca4cfd7f4b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/01sagGqCgmhrSTXA1h5Yt6"
+      }
+    },
+    {
+      "name": "R U Ready",
+      "artists": "DJ TORA, Nutter Tut",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ecf8f9e871a9c86eb0ee5365",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6LNof3r9JONMPxIwhX3t4V"
+      }
+    },
+    {
+      "name": "Numb",
+      "artists": "ORLINSKI",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735949873f898a320669036630",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5seqtrVGXPZnzBEn6sMdZy"
+      }
+    },
+    {
+      "name": "Take me Home",
+      "artists": "BYOR",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ab0aaa73c6471ea5f84bd4ed",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6xzgHUMLIHEJTSZRemVN38"
+      }
+    },
+    {
+      "name": "Don't Stop",
+      "artists": "Brett Allen, Noola",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273501576a55c3eb986a95ec6bb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1BOaawwedYM2hvU4yYuyuu"
+      }
+    },
+    {
+      "name": "Before You Go",
+      "artists": "Rudeejay, Blackcode, David Allen",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273fc594c518511c9dbd78023e2",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1eBqXCKEhVkjh4xc0X9Nak"
+      }
+    },
+    {
+      "name": "Lies",
+      "artists": "DJ Fluke, mavzy grx, SBSTN",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27310a55b8b27a92772edcbfc1e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3qtvBIookV0prgu6LUHUEn"
+      }
+    },
+    {
+      "name": "Dynamite",
+      "artists": "GISHIN, Blosso",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273660a8f2464a8d5b2bbb1d9fe",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3NcNKoNicPbINhaBpYyz74"
+      }
+    },
+    {
+      "name": "Let it Be",
+      "artists": "Valy Mo",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739fef80b19b053640708948ca",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3AvY1xeBm6Mck6B7lqAQ86"
+      }
+    },
+    {
+      "name": "Solo",
+      "artists": "AXON, Tima Dee",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733cd40384880ffc4d6687aa73",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2pyvcl8GFEM3PKzobsBOd9"
+      }
+    },
+    {
+      "name": "Get Back",
+      "artists": "Flakkë",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273bedc86f647caaaba8a9406f4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3Dq8eWEmzmfiH68Skj8N0d"
+      }
+    },
+    {
+      "name": "La Musique",
+      "artists": "Brett Allen, HΛNNΛH X",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a65611fc7e018d35d00d79be",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0UGiMc3qDemvGKsj0jJAy3"
+      }
+    },
+    {
+      "name": "Know Me",
+      "artists": "Ruben de Ronde, Achilles, Justin J. Moore",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27318d990ce1b5df7040f033fb8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5soa629mTOJWaOjIfAT57N"
+      }
+    },
+    {
+      "name": "Dangerous - Radio Version",
+      "artists": "GISHIN, Weaver",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ed950b2fc85b98bb95d2407e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/02QqAvBY3o3SCoMM2u09R2"
+      }
+    },
+    {
+      "name": "Love Is Killing Me",
+      "artists": "NORII, CIGMA",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273b156e80829704c5790cd827c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3xoooqVJ6Mw0vQSKuRmj2r"
+      }
+    },
+    {
+      "name": "Wildfire",
+      "artists": "DJ Sammy, Achilles, Beks",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2731b0dcfaf06f63d66a22a6025",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1tX9PAc8rY902IdX8Mh48R"
+      }
+    },
+    {
+      "name": "I Love Rock 'n' Roll",
+      "artists": "Valy Mo",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738a0a2fbcb8db94109a4ee409",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5Niu6Obf8IfhIlHJ8oCemy"
+      }
+    },
+    {
+      "name": "Memories",
+      "artists": "Highup, DJ SODA, Justin J. Moore",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27343dfc6beb13a25ab985b4c13",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4T49o23TlFgm1AEEz4uIhM"
+      }
+    },
+    {
+      "name": "Everyone Nose",
+      "artists": "Brett Allen, Bombs Away",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738f2d2f98e6e8747c5fbab3e4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5O3W2bIWn4GmPH6l8Qh7Bi"
+      }
+    },
+    {
+      "name": "Another Life",
+      "artists": "EchoStorms, Yasmin Jane",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273c61f173c29af37bb381b41cf",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3q2EghgEtxhAkWMV1dqLr7"
+      }
+    },
+    {
+      "name": "Boomerang",
+      "artists": "Diego Miranda, Kom",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736d45544bbe8e69cb40ba5cf0",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1ApF7E8J0oUxL2qIo08TVd"
+      }
+    },
+    {
+      "name": "Over Me",
+      "artists": "Rudeejay, Flakkë, Nino Lucarelli",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273926c40b72a7d305fce870155",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5f1umYAaM6U1CoNZnpNA8e"
+      }
+    },
+    {
+      "name": "Easy to Love",
+      "artists": "NORII, CIGMA",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273be3700f8bfa04100ac6cba76",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5o1Wh7zoAAbTE6E9g4bsKo"
+      }
+    },
+    {
+      "name": "Rakata Rakata",
+      "artists": "CASHEW",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a2644dbd6c59f71d00bd129c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2PqNXwl0DmZWUgiYvumEAJ"
+      }
+    },
+    {
+      "name": "Gotta Do It",
+      "artists": "CASHEW",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273a2644dbd6c59f71d00bd129c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6rfVmFzGplwEQ7jQI4zeSK"
+      }
+    },
+    {
+      "name": "I Need Your Love",
+      "artists": "Valy Mo, Brais",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273093250e11f4c98c1b233186b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1Yr6vSIDldARd3NGnB6j1A"
+      }
+    },
+    {
+      "name": "Neurose 2.0",
+      "artists": "Flakkë",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273312791e0a1b3a808bf43db7e",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6p0w8fIsPUNk6kVHCxNqvn"
+      }
+    },
+    {
+      "name": "Deadfellaz",
+      "artists": "Jéja, Zaug",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2734c46e296cf040944269eb60f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/371XpPv4N3cxaFrxelCzW2"
+      }
+    },
+    {
+      "name": "Not Afraid",
+      "artists": "Thom Merlin, Johnny Chicago",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27394c94615c23c4b5b328b8ee4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5AsyzYIBUbyUFkFojBGirZ"
+      }
+    },
+    {
+      "name": "Nord Try",
+      "artists": "Tom Enzy",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732f056533642c7368f8c10b6d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7sgvwMVqZB2QQaOr03K3l4"
+      }
+    },
+    {
+      "name": "Heaven",
+      "artists": "Achilles, DEADLINE, Jordan Grace",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273493d59a9e71b6a89225ff80f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4RoS83AH7BDxKxWS1wIFMR"
+      }
+    },
+    {
+      "name": "Creator",
+      "artists": "EchoStorms",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273addbc71346fdb82581e157b8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/586UQta4cAtG4SGNyHgLsR"
+      }
+    },
+    {
+      "name": "On a Cloud",
+      "artists": "Valy Mo, Alfred Beck",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732af54f78264cf8bf17640f36",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0NEVDhMyWLTfbqQJVPrvlx"
+      }
+    },
+    {
+      "name": "Dancing Alone",
+      "artists": "Mangoo, EUROBEAT, Rumor",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273664fb798c4d02e32f988f761",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/37xIgCCeBjCFahVifaJTf9"
+      }
+    },
+    {
+      "name": "Feeling Inside",
+      "artists": "Vowed, B4N4N4 G4NG",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27326baecd07c31d4cc70e856c6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5zAWqMDbeTT4Dska6myBYm"
+      }
+    },
+    {
+      "name": "Guapo",
+      "artists": "Netto, Alexso, Castelani",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733b892130c82bb4b0c94e8084",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2LcA0FT1HQNHnbBbeQpKH6"
+      }
+    },
+    {
+      "name": "Borderouge",
+      "artists": "Pokeyz, YYVNG",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e375341d98d9c48dce3d7da9",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5BG79ETrgwHHQkRvgrWFWs"
+      }
+    },
+    {
+      "name": "Good 4 Me",
+      "artists": "Flakkë, Sammy Boyle, JKLN",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27376cac77b2c4c33eb81113b53",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2vtXpXdZ0DSZokARFx2uXH"
+      }
+    },
+    {
+      "name": "Without You",
+      "artists": "Kløn",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f7c85080dbf1b478e2507e24",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3QAizfOpVL0V6cJIrA6OZ7"
+      }
+    },
+    {
+      "name": "The Underground",
+      "artists": "Raptures., Mad Miguel",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273340fdbc6c7e2ff6886897bd3",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/51xboJA4mQ3EfMGcjkZX3o"
+      }
+    },
+    {
+      "name": "Your Time",
+      "artists": "Valy Mo, HouseWerk",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735580df8e494be68e302d4268",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/20hEj4A5FF7IIgOQ8hUmKu"
+      }
+    },
+    {
+      "name": "Never Enough",
+      "artists": "DJ Fluke",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733b1ea3825ba756259593e61b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5EVSnz1AT8TZqJnMGE7H0q"
+      }
+    },
+    {
+      "name": "Like That",
+      "artists": "D-Sides, Erick T",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27314541d6a57d110a3d8847065",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5bKiQkhT5BPNwJ6YiIfhGa"
+      }
+    },
+    {
+      "name": "Busta Hype - 2 Thunders Remix",
+      "artists": "BIG BROTHER 84, Shrimp T, 2 Thunders",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273bd3e3d85a259f39e63eddb78",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1OkjY67GyG3KaXuIXzduBt"
+      }
+    },
+    {
+      "name": "Busta Hype - Matt Garner Remix",
+      "artists": "BIG BROTHER 84, Shrimp T, Matt Garner",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273bd3e3d85a259f39e63eddb78",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1GEVfYthz9wzEl3DlEY36J"
+      }
+    },
+    {
+      "name": "Right Here",
+      "artists": "Kage",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27319b8fce2f95d7076ec0718a1",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3HbZexT9RAcADhm6jrXZmx"
+      }
+    },
+    {
+      "name": "Tomorrow",
+      "artists": "Achilles, DJ Fluke, Steeper",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27344ff6f83bb4adca280de0093",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5LCTCjgQUjMLh2jAp2PgEF"
+      }
+    },
+    {
+      "name": "Sugar Baby",
+      "artists": "Plastik Funk, Broz Rodriguez, Tara Mcdonald",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273828cfc461e11db79f1ec96e8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0J2kOteMcPfbhfBMQssigd"
+      }
+    },
+    {
+      "name": "Creep - BYOR Remix",
+      "artists": "Naeleck, Haley Reinhart, BYOR",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738f33b654d17d67f2fa8800ca",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/41TkFhNYljV7omolLJ6Squ"
+      }
+    },
+    {
+      "name": "Reaching for the Moon",
+      "artists": "Achilles",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2733e6f4193cccc94ab7aa913b7",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4O787OwIJun2YB5ruCCyCb"
+      }
+    },
+    {
+      "name": "Buss It Down",
+      "artists": "Charles B, Milan Tavares, Dread MC",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736f7c2a8b3b4b40cac9ef070f",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0msn0Io77McyJU2lydFZug"
+      }
+    },
+    {
+      "name": "Radiate - Radio Mix",
+      "artists": "Mad Miguel, Uplink",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735515fcb71591f495d866e2eb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2XXctn9gq7Fnmry7p0Ue9x"
+      }
+    },
+    {
+      "name": "I've Been On The Way",
+      "artists": "Autodepth, Alva Gracia",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737d48c201c9b3f1f7c0536ea3",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2FUb9WfaInNvW6hq3PqICw"
+      }
+    },
+    {
+      "name": "Another Night",
+      "artists": "Elport, R-Cue",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27398b2e3d4cc9aebdeb1489bbe",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1UcBywtNqCCQLOJrtipwoV"
+      }
+    },
+    {
+      "name": "Destiny",
+      "artists": "Milan Tavares, Charles B, Bryonii",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273e560886073f2692041d8638d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2yy3wycNCplihKqBajlvRe"
+      }
+    },
+    {
+      "name": "IDFC",
+      "artists": "Biometrix, The FifthGuys",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ffdf0a6a2d943f39e02f7cc4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4gJH3feBOPM6CJYxPUF8xw"
+      }
+    },
+    {
+      "name": "Heartbeat",
+      "artists": "Flakkë, Sammy Boyle, JKLN",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273833ed06d18bba2ee0d24e4bb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4dicy3FyUyoLfO1KdRfG9R"
+      }
+    },
+    {
+      "name": "Goosebumps",
+      "artists": "Hartness, Miss Ghyss",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2730c11732ef013e110f525f7c4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5Sty6SVGKSK2EFyiNcPzvz"
+      }
+    },
+    {
+      "name": "You Right (feat Tommy Rage)",
+      "artists": "The FifthGuys, John Kroon, Polina Grace",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732a0aea8e9b408defc845e974",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/13NgfgB3G5JMnXztqZ3Eoh"
+      }
+    },
+    {
+      "name": "Irresistible",
+      "artists": "MORVN, DJ Fluke",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739ca661e61f8360a90227de10",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/26ud4cIFGlkrMNisE5jBK9"
+      }
+    },
+    {
+      "name": "Away - NuKey Remix",
+      "artists": "Valy Mo, NuKey",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732d7a796ef21dcc38efbeb896",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4MQdgzvEoza08RB5UHuZJn"
+      }
+    },
+    {
+      "name": "Face Me - BLR Remix",
+      "artists": "Biometrix, Rhi'N'B, BLR",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273909e369a5581980763d957d4",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3QtGH1bBVIB4cKJZZSy4Bs"
+      }
+    },
+    {
+      "name": "Want Your Attention",
+      "artists": "SOXX, Steji",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27331877408a6bf8bfd905ec02c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0Kynw5nAZCdzU79ozdIA0D"
+      }
+    },
+    {
+      "name": "Run",
+      "artists": "Smitech Wesson",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273131afd66a0ee7f806d0cfbc0",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/4b2ftaaLtr4F2y66VeUDF8"
+      }
+    },
+    {
+      "name": "On The Ground",
+      "artists": "Pokeyz",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736c502885180bd0cb2abda4f5",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6YkXbeGuvAzryRIUGwqfw3"
+      }
+    },
+    {
+      "name": "Coming Back",
+      "artists": "Lodgerz",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27324f540364971eaaeee11197b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/62zsWLcoCTeELqPlVgG4HO"
+      }
+    },
+    {
+      "name": "Away - BYOR Remix",
+      "artists": "Valy Mo, BYOR",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273052eb1b31a9be6a27d165f62",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/17A2kFpfeB4Vzk2hwY3CZD"
+      }
+    },
+    {
+      "name": "Aura",
+      "artists": "Vowed, Steampvnk",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735bf15cc7fda0581bb508432b",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5CPaTObc1FXdouU8cbxZnO"
+      }
+    },
+    {
+      "name": "Away",
+      "artists": "Valy Mo",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273ea7c9edf9f4e31b578a611eb",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1zutV6LMV87iuD8edWk3Xr"
+      }
+    },
+    {
+      "name": "Arajaka",
+      "artists": "Jay Dunham",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735640b124a7b9402a415b3462",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1qcnuKsJzpnoR34NV1SXyi"
+      }
+    },
+    {
+      "name": "Zalghouta",
+      "artists": "Jay Dunham",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2735640b124a7b9402a415b3462",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7kNcwwbHF5Cn3iSXGW006c"
+      }
+    },
+    {
+      "name": "Feels Like",
+      "artists": "Cheery-O",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737a13f1db28933af4e9b661b6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3E0Vo0qBhrcxWYUYRZ44I9"
+      }
+    },
+    {
+      "name": "You Got Me",
+      "artists": "Cheery-O",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737a13f1db28933af4e9b661b6",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5R8TJTniOJZ5lRtDqzy7GE"
+      }
+    },
+    {
+      "name": "Busta Hype",
+      "artists": "BIG BROTHER 84, Shrimp T",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2738cfebf574d5da5abc86d262c",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7wNXQ2mPYHDcmyiKwWN8xH"
+      }
+    },
+    {
+      "name": "Secret",
+      "artists": "Hooders, Futura",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736af1db77e91f57a720eb55f8",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6azZXLKmN59ZmZk72FS7mb"
+      }
+    },
+    {
+      "name": "Azra",
+      "artists": "Smitech Wesson",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f804a555d39681269ed7f113",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6XCDNohCSJISoDt5O78fmU"
+      }
+    },
+    {
+      "name": "Leyla",
+      "artists": "Smitech Wesson",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273f804a555d39681269ed7f113",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7eYy5k6xFVYw5KWtYrBCq3"
+      }
+    },
+    {
+      "name": "Be Right Back",
+      "artists": "Menso, Loadjaxx",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2732a506e2c40e733d52d81eb2d",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2vs63crc1h2Q9gQJuSLAqw"
+      }
+    },
+    {
+      "name": "Stormbreaker",
+      "artists": "Yung Diggerz, Don Darrell",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b27344a7df51945d446fd69a9fc9",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6YiYiOjgK0WVnTVpduKMVv"
+      }
+    },
+    {
+      "name": "Time",
+      "artists": "Asjockers",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273437fe6b5a316e9d2627e6f90",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/14Qae7In6XTorWL09TW9uK"
+      }
+    },
+    {
+      "name": "Zero Doute",
+      "artists": "Asjockers",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273437fe6b5a316e9d2627e6f90",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0c6TJsDruyICNh0mPyY8Ea"
+      }
+    },
+    {
+      "name": "Chromatic",
+      "artists": "On Point, GAZZ",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737756b5f7531028ed6b0f5708",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6nq1Yu9ay3GWJ5gaRPokkt"
+      }
+    },
+    {
+      "name": "Speedway Squad",
+      "artists": "On Point, Pokeyz",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737756b5f7531028ed6b0f5708",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/60iPLO2kZsThaaBTzb51eY"
+      }
+    },
+    {
+      "name": "Rising Stars",
+      "artists": "On Point, KYLI",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737756b5f7531028ed6b0f5708",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6Pk2ohKi3MFLemjngO8NDv"
+      }
+    }
+  ]
+}
