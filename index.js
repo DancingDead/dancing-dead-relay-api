@@ -7,6 +7,18 @@ const path = require("path");
 const port = process.env.PORT || 3000;
 const helmet = require("helmet");
 
+// Sous-chemin configurable (ex: "/dancing-dead-relay-api")
+// Défini dans cPanel via l'env SUBPATH ou dans .env : SUBPATH=/dancing-dead-relay-api
+let subPath = (process.env.SUBPATH || "").trim();
+if (subPath && !subPath.startsWith("/")) subPath = "/" + subPath;
+if (subPath.endsWith("/")) subPath = subPath.slice(0, -1);
+
+// Utilitaire pour préfixer les routes avec le subPath (gère subPath vide)
+function withBase(route) {
+  if (!route.startsWith("/")) route = "/" + route;
+  return (subPath || "") + route;
+}
+
 const naeleckreleases = require("./naeleckreleases");
 const naeleckshows = require("./naeleckshows");
 const dancingdeadplaylist = require("./dancingdeadplaylist");
@@ -35,36 +47,45 @@ app.use(
     })
 );
 
-// Endpoint de base
-app.get("/", (req, res) => res.json({ success: "Hello World!" }));
+// Endpoint de base (préfixé si nécessaire)
+app.get(withBase('/'), (req, res) => res.json({ success: "Hello World!" }));
 
-// Ajout des routes existantes
-app.use("/naeleckreleases", naeleckreleases);
-app.use("/naeleckshows", naeleckshows);
-app.use("/dancingdeadplaylist", dancingdeadplaylist);
-app.use("/denhakuplaylist", denhakuplaylist);
-app.use("/styxplaylist", styxplaylist);
-app.use("/dancingdeadartists", dancingdeadartists);
-app.use("/denhakuartists", denhakuartists);
-app.use("/generaldownloaddancingdead", generaldownloaddancingdead);
-app.use("/generaldownloaddenhaku", generaldownloaddenhaku);
-app.use("/generaldownloadstyx", generaldownloadstyx);
-app.use("/dancingdeadshows", dancingdeadshows);
+// Si l'utilisateur visite le subPath sans slash final, rediriger vers la bonne route
+if (subPath) {
+  app.get(subPath, (req, res) => res.redirect(301, withBase('/')));
+}
 
-// Nouveau chemin pour récupérer les données de landingpage.json
-app.get("/storage/landingpage.json", (req, res) => {
+// Ajout des routes existantes (préfixées si SUBPATH est défini)
+app.use(withBase('/naeleckreleases'), naeleckreleases);
+app.use(withBase('/naeleckshows'), naeleckshows);
+app.use(withBase('/dancingdeadplaylist'), dancingdeadplaylist);
+app.use(withBase('/denhakuplaylist'), denhakuplaylist);
+app.use(withBase('/styxplaylist'), styxplaylist);
+app.use(withBase('/dancingdeadartists'), dancingdeadartists);
+app.use(withBase('/denhakuartists'), denhakuartists);
+app.use(withBase('/generaldownloaddancingdead'), generaldownloaddancingdead);
+app.use(withBase('/generaldownloaddenhaku'), generaldownloaddenhaku);
+app.use(withBase('/generaldownloadstyx'), generaldownloadstyx);
+app.use(withBase('/dancingdeadshows'), dancingdeadshows);
+
+// Chemin pour récupérer les données de landingpage.json
+app.get(withBase('/storage/landingpage.json'), (req, res) => {
   const filePath = path.join(__dirname, "storage/landingpage.json");
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
       res.status(500).send("Erreur lors de la lecture du fichier.");
     } else {
-      res.json(JSON.parse(data));
+      try {
+        res.json(JSON.parse(data));
+      } catch (e) {
+        res.status(500).send("Fichier JSON invalide.");
+      }
     }
   });
 });
 
-// Nouveau chemin pour sauvegarder les données dans landingpage.json
-app.post("/storage/landingpage.json", (req, res) => {
+// Chemin pour sauvegarder les données dans landingpage.json
+app.post(withBase('/storage/landingpage.json'), (req, res) => {
   const filePath = path.join(__dirname, "storage/landingpage.json");
   fs.writeFile(filePath, JSON.stringify(req.body, null, 2), "utf8", (err) => {
     if (err) {
@@ -76,4 +97,8 @@ app.post("/storage/landingpage.json", (req, res) => {
 });
 
 // Lancement du serveur
-app.listen(port, () => console.log(`Server running on port : ${port}`));
+app.listen(port, () => {
+  const base = subPath || '/';
+  console.log(`Server running on port : ${port}`);
+  console.log(`Base path: ${base}`);
+});
