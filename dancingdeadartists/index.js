@@ -266,4 +266,38 @@ router.post("/update", async (req, res) => {
     }
 });
 
+// Schedule a nightly automatic update at server local midnight
+// Disabled when NODE_ENV === 'test' or when SCHEDULE_NIGHTLY is explicitly set to 'false'
+const SCHEDULE_NIGHTLY = process.env.SCHEDULE_NIGHTLY !== 'false' && process.env.NODE_ENV !== 'test';
+if (SCHEDULE_NIGHTLY) {
+    const MS_PER_DAY = 24 * 60 * 60 * 1000;
+    (function scheduleNextMidnight() {
+        try {
+            const now = new Date();
+            const next = new Date(now);
+            // Set to next midnight (start of next day)
+            next.setHours(24, 0, 0, 0);
+            const delay = next.getTime() - now.getTime();
+            console.log(`[scheduler] Next nightly artists update scheduled in ${Math.round(delay/1000)}s at ${next.toISOString()}`);
+
+            setTimeout(function run() {
+                (async () => {
+                    try {
+                        console.log('[scheduler] Running nightly artists update...');
+                        await fetchAndCacheArtistsImages();
+                        console.log('[scheduler] Nightly artists update finished.');
+                    } catch (err) {
+                        console.error('[scheduler] Nightly update failed:', err);
+                    } finally {
+                        // schedule next run in 24h
+                        setTimeout(run, MS_PER_DAY);
+                    }
+                })();
+            }, delay);
+        } catch (err) {
+            console.error('[scheduler] Failed to schedule nightly update:', err);
+        }
+    })();
+}
+
 module.exports = router;
