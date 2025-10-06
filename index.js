@@ -5,6 +5,7 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 const port = process.env.PORT || 3000;
+const helmet = require("helmet");
 
 const naeleckreleases = require("./naeleckreleases");
 const naeleckshows = require("./naeleckshows");
@@ -20,6 +21,19 @@ const dancingdeadshows = require("./dancingdeadshows");
 
 app.use(express.json({ limit: '50mb' })); // Increased size limit
 app.use(cors());
+
+app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"], // Autorise uniquement ton domaine
+        scriptSrc: ["'self'"],  // Scripts locaux
+        styleSrc: ["'self'", "https://fonts.googleapis.com"], // Styles externes (Google Fonts)
+        fontSrc: ["'self'", "https://fonts.gstatic.com"],     // Fonts externes (Google Fonts)
+        imgSrc: ["'self'", "data:"], // Images locales et base64
+        connectSrc: ["'self'"],      // API / AJAX
+      },
+    })
+);
 
 // Endpoint de base
 app.get("/", (req, res) => res.json({ success: "Hello World!" }));
