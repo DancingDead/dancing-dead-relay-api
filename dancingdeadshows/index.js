@@ -8,27 +8,27 @@ const BOARD_ID = process.env.MONDAY_BOARD_ID_EVENTS; // Remplace par ton ID de b
 async function getEventsFromMonday() {
     const query = `
     query {
-      boards(ids: [8750281084]) {
+  boards(ids: [18116092265]) {
+    id
+    name
+    items_page(limit: 300) {
+      cursor
+      items {
         id
         name
-        items_page(limit: 300) {
-          cursor
-          items {
-            id
-            name
-            column_values(ids: ["color_mkppp5y9", "location_mkpp2cvp", "date_mkpp6jpn", "link_mkpp2ea8", "file_mkppv0tt"]) {
-              id
-              text
-            }
-            assets {
-              id
-              public_url
-              name
-            }
-          }
+        column_values(ids: ["status", "location_mkwft293", "date_mkwf88mb", "link_mkwfpq8y", "file_mkwfyg6n"]) {
+          id
+          text
+        }
+        assets {
+          id
+          public_url
+          name
         }
       }
-    }`;
+    }
+  }
+}`;
 
     console.log("Requête GraphQL envoyée :", query); // Debugging log
 
