@@ -1,0 +1,11 @@
+version: 2
+deployment:
+  tasks:
+    - export DEPLOY_DIR=$HOME/public_html
+    - echo "Deploying to $DEPLOY_DIR"
+    - mkdir -p "$DEPLOY_DIR"
+    - echo "Sync files (exclut .git et node_modules)"
+    - rsync -a --delete --exclude='.git' --exclude='node_modules' --exclude='.cpanel.yml' --exclude='*.log' ./ "$DEPLOY_DIR/"
+    - cd "$DEPLOY_DIR"
+    - if [ -f package.json ]; then echo "Installing production dependencies..."; npm install --production || npm install; fi
+    - echo "Deployment finished"
