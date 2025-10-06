@@ -33,7 +33,30 @@ const generaldownloadstyx = require("./generaldownloadstyx");
 const dancingdeadshows = require("./dancingdeadshows");
 
 app.use(express.json({ limit: '50mb' })); // Increased size limit
-app.use(cors());
+// Configure CORS explicitly to allow requests depuis le domaine avec et sans 'www'
+const allowedOrigins = [
+  'https://dancingdeadrecords.com',
+  'https://www.dancingdeadrecords.com'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow non-browser requests (curl, server-to-server) with no origin
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      return callback(null, true);
+    }
+    return callback(new Error('Not allowed by CORS'));
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'X-Requested-With'],
+  exposedHeaders: ['Content-Length'],
+  optionsSuccessStatus: 204,
+  preflightContinue: false
+}));
+
+// Ensure OPTIONS requests are handled for all routes (preflight)
+app.options('*', cors());
 
 app.use(
     helmet.contentSecurityPolicy({
@@ -43,7 +66,7 @@ app.use(
         styleSrc: ["'self'", "https://fonts.googleapis.com"], // Styles externes (Google Fonts)
         fontSrc: ["'self'", "https://fonts.gstatic.com"],     // Fonts externes (Google Fonts)
         imgSrc: ["'self'", "data:"], // Images locales et base64
-        connectSrc: ["'self'"],      // API / AJAX
+      connectSrc: ["'self'", "https://dancingdeadrecords.com", "https://www.dancingdeadrecords.com"],      // API / AJAX
       },
     })
 );
