@@ -9,7 +9,7 @@ const helmet = require("helmet");
 
 // Sous-chemin configurable (ex: "/dancing-dead-relay-api")
 // Défini dans cPanel via l'env SUBPATH ou dans .env : SUBPATH=/dancing-dead-relay-api
-// NEW EDIT
+// NEW EDI
 let subPath = (process.env.SUBPATH || "").trim();
 if (subPath && !subPath.startsWith("/")) subPath = "/" + subPath;
 if (subPath.endsWith("/")) subPath = subPath.slice(0, -1);
