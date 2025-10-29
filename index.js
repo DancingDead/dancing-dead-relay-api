@@ -6,6 +6,7 @@ const fs = require("fs");
 const path = require("path");
 const port = process.env.PORT || 3000;
 const helmet = require("helmet");
+const cron = require("node-cron");
 
 // Sous-chemin configurable (ex: "/dancing-dead-relay-api")
 // Défini dans cPanel via l'env SUBPATH ou dans .env : SUBPATH=/dancing-dead-relay-api
@@ -31,6 +32,8 @@ const generaldownloaddancingdead = require("./generaldownloaddancingdead");
 const generaldownloaddenhaku = require("./generaldownloaddenhaku");
 const generaldownloadstyx = require("./generaldownloadstyx");
 const dancingdeadshows = require("./dancingdeadshows");
+const ai = require("./ai");
+const apiArtists = require("./api/artists");
 
 app.use(express.json({ limit: '50mb' })); // Increased size limit
 // Configure CORS explicitly to allow requests depuis le domaine avec et sans 'www'
@@ -91,6 +94,8 @@ app.use(withBase('/generaldownloaddancingdead'), generaldownloaddancingdead);
 app.use(withBase('/generaldownloaddenhaku'), generaldownloaddenhaku);
 app.use(withBase('/generaldownloadstyx'), generaldownloadstyx);
 app.use(withBase('/dancingdeadshows'), dancingdeadshows);
+app.use(withBase('/ai'), ai);
+app.use(withBase('/api/artists'), apiArtists);
 
 // Chemin pour récupérer les données de landingpage.json
 app.get(withBase('/storage/landingpage.json'), (req, res) => {
@@ -126,3 +131,43 @@ app.listen(port, () => {
   console.log(`Server running on port : ${port}`);
   console.log(`Base path: ${base}`);
 });
+
+// ============================================
+// CRON JOB - Artist Synchronization
+// ============================================
+
+// Synchronisation automatique des artistes tous les vendredis à 2h du matin
+// Expression cron: "0 2 * * 5" = minute 0, heure 2, tous les jours du mois, tous les mois, vendredi (5)
+// WORKFLOW 2 (Optimisé): Ajoute les artistes manquants à la queue de recherche
+cron.schedule('0 2 * * 5', async () => {
+  console.log('\n⏰ [CRON] Scheduled artist research queue update - Friday 2:00 AM');
+  console.log(`   Timestamp: ${new Date().toISOString()}`);
+
+  try {
+    const ArtistAutomationService = require('./services/ArtistAutomationService');
+    const artistService = new ArtistAutomationService();
+
+    // STEP 1: Populate research queue with missing artists
+    const result = await artistService.populateResearchQueue();
+
+    if (result.added > 0) {
+      console.log(`\n✅ [CRON] Added ${result.added} artists to research queue`);
+      console.log('━'.repeat(60));
+      console.log('📋 NEXT STEPS:');
+      console.log('━'.repeat(60));
+      console.log('1. Run research worker: node research-worker.js');
+      console.log('2. After research completes, run sync:');
+      console.log('   curl -X POST http://localhost:3000/api/artists/sync');
+      console.log('━'.repeat(60) + '\n');
+    } else {
+      console.log('✅ [CRON] No new artists found - queue is up to date\n');
+    }
+
+  } catch (error) {
+    console.error('❌ [CRON] Research queue update failed:', error.message);
+  }
+}, {
+  timezone: "Europe/Paris" // Ajustez selon votre fuseau horaire
+});
+
+console.log('🕐 Cron job configured: Artist sync every Friday at 2:00 AM (Europe/Paris)');

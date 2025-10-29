@@ -1,2 +1,15 @@
 .env
 node_modules
+.DS_Store
+server.log
+*.log
+
+# Test files (keep if needed for development)
+test-*.js
+
+# Documentation files (optional - uncomment to exclude from git)
+# *.md
+# !README.md
+
+# Temporary data
+claude-context.md

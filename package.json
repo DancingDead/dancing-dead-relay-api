@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.67.0",
+    "@modelcontextprotocol/sdk": "^1.20.1",
     "axios": "^1.7.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -20,7 +22,8 @@
     "helmet": "^8.1.0",
     "node-cache": "^5.1.2",
     "node-cron": "^3.0.3",
-    "node-fetch": "^2.6.6"
+    "node-fetch": "^2.6.6",
+    "sharp": "^0.34.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

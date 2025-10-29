@@ -1,4 +1,5 @@
 const express = require("express");
+
 const router = express.Router();
 const fetch = require("node-fetch");
 const fs = require("fs");
@@ -111,7 +112,7 @@ async function getAllTracksFromPlaylist(playlistId, token) {
         allTracks = allTracks.concat(data.items);
         nextUrl = data.next;
 
-        await wait(2000);
+        await wait(3000); // Délai augmenté pour éviter les rate limits
     }
 
     return allTracks;
@@ -181,7 +182,7 @@ async function getArtistsDetails(token, artists) {
         processedArtists += artistBatch.length;
         console.log(`Progress: ${processedArtists}/${totalArtists} artists processed`);
 
-        await wait(2000);
+        await wait(3000); // Délai augmenté pour éviter les rate limits
     }
 
     return artistsWithImages;
@@ -220,10 +221,12 @@ async function fetchAndCacheArtistsImages() {
     const artistsWithImages = [];
 
     for (const release of latestReleasesOfPlaylist) {
-        const artists = release.artists;
-        const artistsDetails = await getArtistsDetails(token, artists);
-        if (artistsDetails) {
-            artistsWithImages.push(...artistsDetails);
+        // Récupérer TOUS les artistes de la track (principal + collaborateurs)
+        for (const artist of release.artists) {
+            const artistDetails = await getArtistsDetails(token, [artist]);
+            if (artistDetails && artistDetails.length > 0) {
+                artistsWithImages.push(...artistDetails);
+            }
         }
     }
 
@@ -266,7 +269,6 @@ router.post("/update", async (req, res) => {
     }
 });
 
-// Schedule a nightly automatic update at server local midnight
 // Disabled when NODE_ENV === 'test' or when SCHEDULE_NIGHTLY is explicitly set to 'false'
 const SCHEDULE_NIGHTLY = process.env.SCHEDULE_NIGHTLY !== 'false' && process.env.NODE_ENV !== 'test';
 if (SCHEDULE_NIGHTLY) {

@@ -1,6 +1,159 @@
 {
   "latestReleasesOfPlaylist": [
     {
+      "name": "Count The Dead",
+      "artists": [
+        {
+          "name": "Bombs Away",
+          "id": "1YlyxjwYNSjBD0NAJGEfWB"
+        }
+      ]
+    },
+    {
+      "name": "Never Thought That I Could Die (Mosimann Remix)",
+      "artists": [
+        {
+          "name": "Naeleck",
+          "id": "2DYDFBqoaBP2i9XrTGpOgF"
+        },
+        {
+          "name": "Mosimann",
+          "id": "7sAqpkrQBaOkddsv1Tz1XK"
+        }
+      ]
+    },
+    {
+      "name": "In Your Face",
+      "artists": [
+        {
+          "name": "Crude Intentions",
+          "id": "5zXPv1332E2IWXvjotBr09"
+        },
+        {
+          "name": "Ricardo Moreno",
+          "id": "3508HjNdwnzSespkyxLOUt"
+        }
+      ]
+    },
+    {
+      "name": "In the Place Tonight",
+      "artists": [
+        {
+          "name": "Tigerlily",
+          "id": "48xCatjXaoohtyOHrHTijG"
+        },
+        {
+          "name": "Luca Testa",
+          "id": "0Dzj2bn9ivDSjvJVSKL4q7"
+        }
+      ]
+    },
+    {
+      "name": "2055",
+      "artists": [
+        {
+          "name": "Damn Low",
+          "id": "5rC8rEWx5G70tXCDW8YFAT"
+        },
+        {
+          "name": "Whitemask",
+          "id": "0ajnVGGNDgOU4i5iAtrpYM"
+        }
+      ]
+    },
+    {
+      "name": "Never Thought That I Could Die - Hard Mix",
+      "artists": [
+        {
+          "name": "Naeleck",
+          "id": "2DYDFBqoaBP2i9XrTGpOgF"
+        }
+      ]
+    },
+    {
+      "name": "Shivers",
+      "artists": [
+        {
+          "name": "Captain Curtis",
+          "id": "3uGJkMEEZ1kGFieLT5KytR"
+        },
+        {
+          "name": "Monk Mafia",
+          "id": "4oLiwEMNDQrI7niwHY9XYr"
+        },
+        {
+          "name": "Nathalie Blue",
+          "id": "2VRgy5skIildisco3sF7Nt"
+        }
+      ]
+    },
+    {
+      "name": "DeLorean",
+      "artists": [
+        {
+          "name": "Cyberpunkers",
+          "id": "0VVOaCyLiCdkAdlC11W4eK"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Zero",
+      "artists": [
+        {
+          "name": "Dubscribe",
+          "id": "2jQWqQ0Z06KiQnysJHn5Mq"
+        }
+      ]
+    },
+    {
+      "name": "Boom",
+      "artists": [
+        {
+          "name": "Dubscribe",
+          "id": "2jQWqQ0Z06KiQnysJHn5Mq"
+        }
+      ]
+    },
+    {
+      "name": "Raver’s Lullaby",
+      "artists": [
+        {
+          "name": "Rudeejay",
+          "id": "2zC8RU0p5FvJeCPPLVBR8K"
+        },
+        {
+          "name": "Da Brozz",
+          "id": "2jrH2DRrZ0NU395R27gal6"
+        },
+        {
+          "name": "EDMMARO",
+          "id": "7B91ODLl2nx4gLzveHjKJA"
+        }
+      ]
+    },
+    {
+      "name": "Battle Scars (feat. Drama B)",
+      "artists": [
+        {
+          "name": "Skan",
+          "id": "7z8fkGpUDt6eb6fyysRTH9"
+        },
+        {
+          "name": "Drama B",
+          "id": "1Ars2RdXFbmt04pZ5g2RNr"
+        }
+      ]
+    },
+    {
+      "name": "Circus Show",
+      "artists": [
+        {
+          "name": "TBR",
+          "id": "5qpNUMXSRYc7FOLIjcYWzv"
+        }
+      ]
+    },
+    {
       "name": "The Opera",
       "artists": [
         {
@@ -1074,8 +1227,8 @@
           "id": "2Zvo5BEkHyaHD1zk180kMz"
         },
         {
-          "name": "OverDrive",
-          "id": "4WGGHN3xUu9mhDObu3Oqhp"
+          "name": "Overdrive",
+          "id": "67ScOzsaQj33lbWUsBp8Xp"
         },
         {
           "name": "Und3rsound",
@@ -2863,66 +3016,15 @@
   ],
   "artistsWithImages": [
     {
-      "id": "3VcAPpkjFtd3Sj5fmqPQd1",
-      "name": "VIVID",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc648a6dbe3d154792229c53f",
-      "external_urls": "https://open.spotify.com/artist/3VcAPpkjFtd3Sj5fmqPQd1",
+      "id": "1YlyxjwYNSjBD0NAJGEfWB",
+      "name": "Bombs Away",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc9bd3cb06fa8b36cfa0f9f92",
+      "external_urls": "https://open.spotify.com/artist/1YlyxjwYNSjBD0NAJGEfWB",
       "genres": [
-        "future house",
-        "big room"
+        "melbourne bounce",
+        "electro house"
       ],
-      "popularity": 42
-    },
-    {
-      "id": "5qAR1WK1Jc7vCodWCIfY9B",
-      "name": "SIDES",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebef513c747af084ef5659494b",
-      "external_urls": "https://open.spotify.com/artist/5qAR1WK1Jc7vCodWCIfY9B",
-      "genres": [],
-      "popularity": 38
-    },
-    {
-      "id": "7n5vSYBZcqMfr8zHl6rdcx",
-      "name": "KDH",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf44dc323aba488f1d8532333",
-      "external_urls": "https://open.spotify.com/artist/7n5vSYBZcqMfr8zHl6rdcx",
-      "genres": [
-        "bass house",
-        "future house"
-      ],
-      "popularity": 44
-    },
-    {
-      "id": "38sMetc66ave6OQSpl1BW3",
-      "name": "ALY$HIA",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2dfacf15c385a5457f477228",
-      "external_urls": "https://open.spotify.com/artist/38sMetc66ave6OQSpl1BW3",
-      "genres": [
-        "big room",
-        "melbourne bounce"
-      ],
-      "popularity": 30
-    },
-    {
-      "id": "2SKM2cAY7fKicoBl8jYpMV",
-      "name": "NOTXERIUS",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b273205763b0739a279b25ee2b13",
-      "external_urls": "https://open.spotify.com/artist/2SKM2cAY7fKicoBl8jYpMV",
-      "genres": [
-        "hypertechno"
-      ],
-      "popularity": 28
-    },
-    {
-      "id": "5uJw4WCX5nYj4FHky9r1Ug",
-      "name": "SMACK",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb335edc6473a5b8db8f9f11f6",
-      "external_urls": "https://open.spotify.com/artist/5uJw4WCX5nYj4FHky9r1Ug",
-      "genres": [
-        "bass house",
-        "future house"
-      ],
-      "popularity": 53
+      "popularity": 52
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -2930,10 +3032,162 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
+        "electro house"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "7sAqpkrQBaOkddsv1Tz1XK",
+      "name": "Mosimann",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb5b2ee216234bf0dc5956c05d",
+      "external_urls": "https://open.spotify.com/artist/7sAqpkrQBaOkddsv1Tz1XK",
+      "genres": [],
+      "popularity": 48
+    },
+    {
+      "id": "5zXPv1332E2IWXvjotBr09",
+      "name": "Crude Intentions",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6b0792a047e7b1e60201c145",
+      "external_urls": "https://open.spotify.com/artist/5zXPv1332E2IWXvjotBr09",
+      "genres": [
+        "hardstyle",
+        "frenchcore",
+        "hardcore"
+      ],
+      "popularity": 36
+    },
+    {
+      "id": "3508HjNdwnzSespkyxLOUt",
+      "name": "Ricardo Moreno",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6fc253adf25d8bd7bcfdcfc4",
+      "external_urls": "https://open.spotify.com/artist/3508HjNdwnzSespkyxLOUt",
+      "genres": [
+        "happy hardcore",
+        "hardstyle",
+        "frenchcore",
+        "hardcore"
+      ],
+      "popularity": 33
+    },
+    {
+      "id": "48xCatjXaoohtyOHrHTijG",
+      "name": "Tigerlily",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb31e0d9f21de10753cb7010f8",
+      "external_urls": "https://open.spotify.com/artist/48xCatjXaoohtyOHrHTijG",
+      "genres": [
+        "melbourne bounce"
+      ],
+      "popularity": 46
+    },
+    {
+      "id": "0Dzj2bn9ivDSjvJVSKL4q7",
+      "name": "Luca Testa",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2c93eb5636e70200580a4174",
+      "external_urls": "https://open.spotify.com/artist/0Dzj2bn9ivDSjvJVSKL4q7",
+      "genres": [
+        "hardstyle",
+        "big room"
+      ],
+      "popularity": 48
+    },
+    {
+      "id": "5rC8rEWx5G70tXCDW8YFAT",
+      "name": "Damn Low",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb78ce8e54c83180f7ece772a5",
+      "external_urls": "https://open.spotify.com/artist/5rC8rEWx5G70tXCDW8YFAT",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 32
+    },
+    {
+      "id": "0ajnVGGNDgOU4i5iAtrpYM",
+      "name": "Whitemask",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb4edfcc61ee30316a8620cf06",
+      "external_urls": "https://open.spotify.com/artist/0ajnVGGNDgOU4i5iAtrpYM",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 23
+    },
+    {
+      "id": "2DYDFBqoaBP2i9XrTGpOgF",
+      "name": "Naeleck",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
+      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "3uGJkMEEZ1kGFieLT5KytR",
+      "name": "Captain Curtis",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf1226ce259aa14ec84cc9e2f",
+      "external_urls": "https://open.spotify.com/artist/3uGJkMEEZ1kGFieLT5KytR",
+      "genres": [
+        "big room",
         "hypertechno"
       ],
-      "popularity": 71
+      "popularity": 50
+    },
+    {
+      "id": "4oLiwEMNDQrI7niwHY9XYr",
+      "name": "Monk Mafia",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfe35a14b5726718eb0820877",
+      "external_urls": "https://open.spotify.com/artist/4oLiwEMNDQrI7niwHY9XYr",
+      "genres": [],
+      "popularity": 35
+    },
+    {
+      "id": "2VRgy5skIildisco3sF7Nt",
+      "name": "Nathalie Blue",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd8d614af978e987256a5f996",
+      "external_urls": "https://open.spotify.com/artist/2VRgy5skIildisco3sF7Nt",
+      "genres": [
+        "hardstyle",
+        "frenchcore"
+      ],
+      "popularity": 41
+    },
+    {
+      "id": "0VVOaCyLiCdkAdlC11W4eK",
+      "name": "Cyberpunkers",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb57a356a805d54697d66ba52a",
+      "external_urls": "https://open.spotify.com/artist/0VVOaCyLiCdkAdlC11W4eK",
+      "genres": [
+        "electro house",
+        "synthwave"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "2jQWqQ0Z06KiQnysJHn5Mq",
+      "name": "Dubscribe",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebde626c0ac69881d6f643027a",
+      "external_urls": "https://open.spotify.com/artist/2jQWqQ0Z06KiQnysJHn5Mq",
+      "genres": [
+        "dubstep",
+        "deathstep",
+        "electro house",
+        "riddim",
+        "bass music"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "2jQWqQ0Z06KiQnysJHn5Mq",
+      "name": "Dubscribe",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebde626c0ac69881d6f643027a",
+      "external_urls": "https://open.spotify.com/artist/2jQWqQ0Z06KiQnysJHn5Mq",
+      "genres": [
+        "dubstep",
+        "deathstep",
+        "electro house",
+        "riddim",
+        "bass music"
+      ],
+      "popularity": 28
     },
     {
       "id": "2zC8RU0p5FvJeCPPLVBR8K",
@@ -2941,7 +3195,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb3571e67a4e0b67d30a6479c7",
       "external_urls": "https://open.spotify.com/artist/2zC8RU0p5FvJeCPPLVBR8K",
       "genres": [],
-      "popularity": 47
+      "popularity": 45
     },
     {
       "id": "2jrH2DRrZ0NU395R27gal6",
@@ -2951,7 +3205,139 @@
       "genres": [
         "melbourne bounce"
       ],
+      "popularity": 46
+    },
+    {
+      "id": "7B91ODLl2nx4gLzveHjKJA",
+      "name": "EDMMARO",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebcdfac4cd6af113ae806c4718",
+      "external_urls": "https://open.spotify.com/artist/7B91ODLl2nx4gLzveHjKJA",
+      "genres": [
+        "hard techno"
+      ],
+      "popularity": 24
+    },
+    {
+      "id": "7z8fkGpUDt6eb6fyysRTH9",
+      "name": "Skan",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb85539dfe15b163d3e5ba562e",
+      "external_urls": "https://open.spotify.com/artist/7z8fkGpUDt6eb6fyysRTH9",
+      "genres": [
+        "edm trap"
+      ],
       "popularity": 45
+    },
+    {
+      "id": "1Ars2RdXFbmt04pZ5g2RNr",
+      "name": "Drama B",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb24522fd2443fcdfb4b324145",
+      "external_urls": "https://open.spotify.com/artist/1Ars2RdXFbmt04pZ5g2RNr",
+      "genres": [
+        "edm trap"
+      ],
+      "popularity": 45
+    },
+    {
+      "id": "5qpNUMXSRYc7FOLIjcYWzv",
+      "name": "TBR",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb879b56bff13b5510707faccc",
+      "external_urls": "https://open.spotify.com/artist/5qpNUMXSRYc7FOLIjcYWzv",
+      "genres": [
+        "big room"
+      ],
+      "popularity": 39
+    },
+    {
+      "id": "3VcAPpkjFtd3Sj5fmqPQd1",
+      "name": "VIVID",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc648a6dbe3d154792229c53f",
+      "external_urls": "https://open.spotify.com/artist/3VcAPpkjFtd3Sj5fmqPQd1",
+      "genres": [
+        "future house",
+        "big room"
+      ],
+      "popularity": 38
+    },
+    {
+      "id": "5qAR1WK1Jc7vCodWCIfY9B",
+      "name": "SIDES",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebef513c747af084ef5659494b",
+      "external_urls": "https://open.spotify.com/artist/5qAR1WK1Jc7vCodWCIfY9B",
+      "genres": [
+        "hard techno"
+      ],
+      "popularity": 33
+    },
+    {
+      "id": "7n5vSYBZcqMfr8zHl6rdcx",
+      "name": "KDH",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb9d96145c4ccd1cb3c984e852",
+      "external_urls": "https://open.spotify.com/artist/7n5vSYBZcqMfr8zHl6rdcx",
+      "genres": [
+        "bass house",
+        "future house",
+        "progressive house"
+      ],
+      "popularity": 40
+    },
+    {
+      "id": "38sMetc66ave6OQSpl1BW3",
+      "name": "ALY$HIA",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2dfacf15c385a5457f477228",
+      "external_urls": "https://open.spotify.com/artist/38sMetc66ave6OQSpl1BW3",
+      "genres": [
+        "hypertechno"
+      ],
+      "popularity": 38
+    },
+    {
+      "id": "2SKM2cAY7fKicoBl8jYpMV",
+      "name": "NOTXERIUS",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb30ace456d08b48f61a0d3c59",
+      "external_urls": "https://open.spotify.com/artist/2SKM2cAY7fKicoBl8jYpMV",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 23
+    },
+    {
+      "id": "5uJw4WCX5nYj4FHky9r1Ug",
+      "name": "SMACK",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6306fac00d45e21b9c6791bc",
+      "external_urls": "https://open.spotify.com/artist/5uJw4WCX5nYj4FHky9r1Ug",
+      "genres": [
+        "bass house",
+        "future house"
+      ],
+      "popularity": 48
+    },
+    {
+      "id": "2DYDFBqoaBP2i9XrTGpOgF",
+      "name": "Naeleck",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
+      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "2zC8RU0p5FvJeCPPLVBR8K",
+      "name": "Rudeejay",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb3571e67a4e0b67d30a6479c7",
+      "external_urls": "https://open.spotify.com/artist/2zC8RU0p5FvJeCPPLVBR8K",
+      "genres": [],
+      "popularity": 45
+    },
+    {
+      "id": "2jrH2DRrZ0NU395R27gal6",
+      "name": "Da Brozz",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eba76e89a58d5d7a8fc974cb88",
+      "external_urls": "https://open.spotify.com/artist/2jrH2DRrZ0NU395R27gal6",
+      "genres": [
+        "melbourne bounce"
+      ],
+      "popularity": 46
     },
     {
       "id": "5nd7jnne7zbsV2J5jBKNOY",
@@ -2963,7 +3349,7 @@
         "hardstyle",
         "hardcore techno"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "18006kpQI473m1ICcpimQ9",
@@ -2974,7 +3360,7 @@
         "slap house",
         "big room"
       ],
-      "popularity": 45
+      "popularity": 38
     },
     {
       "id": "11ESC6KI0jpdML0CijeROt",
@@ -2986,7 +3372,7 @@
         "big room",
         "melbourne bounce"
       ],
-      "popularity": 48
+      "popularity": 47
     },
     {
       "id": "7z8fkGpUDt6eb6fyysRTH9",
@@ -2996,39 +3382,36 @@
       "genres": [
         "edm trap"
       ],
-      "popularity": 49
+      "popularity": 45
     },
     {
       "id": "1Ars2RdXFbmt04pZ5g2RNr",
       "name": "Drama B",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb08b2a09d8ff802665b0bf080",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb24522fd2443fcdfb4b324145",
       "external_urls": "https://open.spotify.com/artist/1Ars2RdXFbmt04pZ5g2RNr",
       "genres": [
         "edm trap"
       ],
-      "popularity": 49
+      "popularity": 45
     },
     {
       "id": "5RqV5Ga5EPI4NlgsiELB4m",
       "name": "DJ Mii",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb096e5975df559582d4504dad",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb399ecb5b035491d5bf19adbe",
       "external_urls": "https://open.spotify.com/artist/5RqV5Ga5EPI4NlgsiELB4m",
-      "genres": [
-        "big room",
-        "happy hardcore"
-      ],
-      "popularity": 31
+      "genres": [],
+      "popularity": 24
     },
     {
       "id": "5uJw4WCX5nYj4FHky9r1Ug",
       "name": "SMACK",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb335edc6473a5b8db8f9f11f6",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6306fac00d45e21b9c6791bc",
       "external_urls": "https://open.spotify.com/artist/5uJw4WCX5nYj4FHky9r1Ug",
       "genres": [
         "bass house",
         "future house"
       ],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "2RibwN2CQvXRHdfxap3KWh",
@@ -3038,7 +3421,7 @@
       "genres": [
         "slap house"
       ],
-      "popularity": 43
+      "popularity": 40
     },
     {
       "id": "0pP0ClsQK7FgtbwuUcVrQV",
@@ -3047,10 +3430,9 @@
       "external_urls": "https://open.spotify.com/artist/0pP0ClsQK7FgtbwuUcVrQV",
       "genres": [
         "big room",
-        "electro house",
-        "bass house"
+        "electro house"
       ],
-      "popularity": 29
+      "popularity": 24
     },
     {
       "id": "0GRYh4b8TJ9LQelJhQuKh6",
@@ -3058,20 +3440,21 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb07828e75b9fc29af7b32f71c",
       "external_urls": "https://open.spotify.com/artist/0GRYh4b8TJ9LQelJhQuKh6",
       "genres": [
-        "happy hardcore"
+        "happy hardcore",
+        "gabber"
       ],
-      "popularity": 33
+      "popularity": 25
     },
     {
       "id": "7LjoOGD9rMWkR8clGUu2Id",
       "name": "Fahjah",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0bd71ba55b712a751fceb251",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2d3f105ec9968e7da086bc04",
       "external_urls": "https://open.spotify.com/artist/7LjoOGD9rMWkR8clGUu2Id",
       "genres": [
-        "rage rap",
-        "bass house"
+        "bass house",
+        "rage rap"
       ],
-      "popularity": 34
+      "popularity": 33
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -3079,10 +3462,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "7bH17jyjkwMPMh9AS8EH0u",
@@ -3094,12 +3476,12 @@
         "big room",
         "slap house"
       ],
-      "popularity": 57
+      "popularity": 53
     },
     {
       "id": "4Dn8TwLoOeWtznIg0LLWFL",
       "name": "Dougal",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b2730948f7184cd1a5b49da262f1",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b27319efe2e4ee19436ca3316ea8",
       "external_urls": "https://open.spotify.com/artist/4Dn8TwLoOeWtznIg0LLWFL",
       "genres": [
         "happy hardcore",
@@ -3107,7 +3489,7 @@
         "hardcore techno",
         "hardcore"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "5nd7jnne7zbsV2J5jBKNOY",
@@ -3119,7 +3501,7 @@
         "hardstyle",
         "hardcore techno"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "4pT84mlmySh9CkiGfJA9xV",
@@ -3127,12 +3509,12 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb52a78f6b37ca5c24b7a52f4a",
       "external_urls": "https://open.spotify.com/artist/4pT84mlmySh9CkiGfJA9xV",
       "genres": [],
-      "popularity": 47
+      "popularity": 50
     },
     {
       "id": "4Dn8TwLoOeWtznIg0LLWFL",
       "name": "Dougal",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b2730948f7184cd1a5b49da262f1",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b27319efe2e4ee19436ca3316ea8",
       "external_urls": "https://open.spotify.com/artist/4Dn8TwLoOeWtznIg0LLWFL",
       "genres": [
         "happy hardcore",
@@ -3140,7 +3522,7 @@
         "hardcore techno",
         "hardcore"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "5nd7jnne7zbsV2J5jBKNOY",
@@ -3152,7 +3534,7 @@
         "hardstyle",
         "hardcore techno"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "11ESC6KI0jpdML0CijeROt",
@@ -3164,17 +3546,17 @@
         "big room",
         "melbourne bounce"
       ],
-      "popularity": 48
+      "popularity": 47
     },
     {
       "id": "3HIgSx8t7957kFVbwGrSRF",
       "name": "Bonka",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6499dd641a0e5b564111c88d",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb01eb9bdfc1e60cac7daebd4f",
       "external_urls": "https://open.spotify.com/artist/3HIgSx8t7957kFVbwGrSRF",
       "genres": [
         "big room"
       ],
-      "popularity": 38
+      "popularity": 35
     },
     {
       "id": "6kK6lCbJfPgDH6plFWQQID",
@@ -3185,7 +3567,7 @@
         "hardstyle",
         "big room"
       ],
-      "popularity": 42
+      "popularity": 37
     },
     {
       "id": "3Y7sK4nACC8R7WwAUUumCL",
@@ -3194,23 +3576,22 @@
       "external_urls": "https://open.spotify.com/artist/3Y7sK4nACC8R7WwAUUumCL",
       "genres": [
         "melbourne bounce",
-        "bounce",
-        "big room"
+        "big room",
+        "bounce"
       ],
-      "popularity": 41
+      "popularity": 36
     },
     {
       "id": "45mQUJrPyctvf2IhkVE0ym",
       "name": "Technikore",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42c9445983738263f1825a22",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd01636839dcb3072b4320610",
       "external_urls": "https://open.spotify.com/artist/45mQUJrPyctvf2IhkVE0ym",
       "genres": [
         "happy hardcore",
         "hardstyle",
-        "hardcore techno",
-        "hardcore"
+        "hardcore techno"
       ],
-      "popularity": 43
+      "popularity": 38
     },
     {
       "id": "4HXsycCTbz7P5TFG8cnawd",
@@ -3220,7 +3601,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 24
+      "popularity": 13
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -3228,26 +3609,27 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2Wzb0u138rgoZQTK3ytknT",
       "name": "BEAUZ",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb5d09560ed78f9e07202a637f",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb165c5bd7df9349f075603777",
       "external_urls": "https://open.spotify.com/artist/2Wzb0u138rgoZQTK3ytknT",
-      "genres": [],
-      "popularity": 63
+      "genres": [
+        "hard techno"
+      ],
+      "popularity": 58
     },
     {
       "id": "7BOIhtXWB8DCWOykIHF2dh",
       "name": "Jéja",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0ca0a6a3a97f1a2874a1f338",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebee0475e1d779638036819882",
       "external_urls": "https://open.spotify.com/artist/7BOIhtXWB8DCWOykIHF2dh",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "72uc6BIn48ZMOwbS4hMlGU",
@@ -3257,7 +3639,7 @@
       "genres": [
         "hypertechno"
       ],
-      "popularity": 34
+      "popularity": 27
     },
     {
       "id": "5rC8rEWx5G70tXCDW8YFAT",
@@ -3267,15 +3649,17 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 37
+      "popularity": 32
     },
     {
       "id": "2V5xArcB3BGAHmwsK46tyU",
       "name": "Vladimir Cauchemar",
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb9f4952e7c51a030f35945be",
       "external_urls": "https://open.spotify.com/artist/2V5xArcB3BGAHmwsK46tyU",
-      "genres": [],
-      "popularity": 54
+      "genres": [
+        "french rap"
+      ],
+      "popularity": 58
     },
     {
       "id": "11ESC6KI0jpdML0CijeROt",
@@ -3287,7 +3671,7 @@
         "big room",
         "melbourne bounce"
       ],
-      "popularity": 48
+      "popularity": 47
     },
     {
       "id": "5nd7jnne7zbsV2J5jBKNOY",
@@ -3299,7 +3683,7 @@
         "hardstyle",
         "hardcore techno"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -3307,10 +3691,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3320,10 +3703,10 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "1nMJGPElEBgfBPnrRV2WgW",
@@ -3334,7 +3717,7 @@
         "electro house",
         "bass house"
       ],
-      "popularity": 30
+      "popularity": 28
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3344,10 +3727,10 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "1nMJGPElEBgfBPnrRV2WgW",
@@ -3358,7 +3741,7 @@
         "electro house",
         "bass house"
       ],
-      "popularity": 30
+      "popularity": 28
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3368,10 +3751,10 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "1nMJGPElEBgfBPnrRV2WgW",
@@ -3382,7 +3765,7 @@
         "electro house",
         "bass house"
       ],
-      "popularity": 30
+      "popularity": 28
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3392,10 +3775,10 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "6DPd6AkhKbj2qYKHULOU77",
@@ -3403,7 +3786,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb70425572b6d9df2af714cf3a",
       "external_urls": "https://open.spotify.com/artist/6DPd6AkhKbj2qYKHULOU77",
       "genres": [],
-      "popularity": 33
+      "popularity": 31
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3413,20 +3796,20 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "3lB8Y5IZQPymYoup7TUOGN",
       "name": "Vacult",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfc0970e45a9ec44951965c9c",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb17af3013912c36445e258cd6",
       "external_urls": "https://open.spotify.com/artist/3lB8Y5IZQPymYoup7TUOGN",
       "genres": [
         "bass house"
       ],
-      "popularity": 14
+      "popularity": 9
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3436,21 +3819,21 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "24BSGDeKaXvWj0eUfa0Dtb",
       "name": "Virzient",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebbe50a986b82fb80518fe2a24",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf0cb70bbe4f3cb600e9be3c4",
       "external_urls": "https://open.spotify.com/artist/24BSGDeKaXvWj0eUfa0Dtb",
       "genres": [
         "bass music",
         "dubstep"
       ],
-      "popularity": 15
+      "popularity": 8
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -3461,7 +3844,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "7z8fkGpUDt6eb6fyysRTH9",
@@ -3471,7 +3854,7 @@
       "genres": [
         "edm trap"
       ],
-      "popularity": 49
+      "popularity": 45
     },
     {
       "id": "35dP7ddpwy7mkanF1WnM2g",
@@ -3479,7 +3862,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb5edc9e362a0e981ac6881efb",
       "external_urls": "https://open.spotify.com/artist/35dP7ddpwy7mkanF1WnM2g",
       "genres": [],
-      "popularity": 46
+      "popularity": 41
     },
     {
       "id": "3xIHOffeC188QWHIiCaLXr",
@@ -3489,17 +3872,17 @@
       "genres": [
         "deep house"
       ],
-      "popularity": 57
+      "popularity": 53
     },
     {
       "id": "1Ars2RdXFbmt04pZ5g2RNr",
       "name": "Drama B",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb08b2a09d8ff802665b0bf080",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb24522fd2443fcdfb4b324145",
       "external_urls": "https://open.spotify.com/artist/1Ars2RdXFbmt04pZ5g2RNr",
       "genres": [
         "edm trap"
       ],
-      "popularity": 49
+      "popularity": 45
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -3507,30 +3890,29 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2cFzYhiHqYS7o8ZIM9WD22",
       "name": "Mariana BO",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebe4e30709274fbb1468c6e622",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0e21e080724c299a3cf5eb12",
       "external_urls": "https://open.spotify.com/artist/2cFzYhiHqYS7o8ZIM9WD22",
       "genres": [
         "big room"
       ],
-      "popularity": 51
+      "popularity": 45
     },
     {
       "id": "1x0ScxgiyFRQDKT4VwcLHa",
       "name": "LNY TNZ",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb43f478feaecb5f7abbc7df20",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eba4ecbc6fe35771ea3cdb5496",
       "external_urls": "https://open.spotify.com/artist/1x0ScxgiyFRQDKT4VwcLHa",
       "genres": [
         "hardstyle"
       ],
-      "popularity": 54
+      "popularity": 50
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -3544,7 +3926,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -3558,7 +3940,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -3572,7 +3954,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -3580,7 +3962,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "5Wpn7BDRJ8oq7CcF1EufWI",
@@ -3588,19 +3970,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb42772d85a3bff0824d4f5a18",
       "external_urls": "https://open.spotify.com/artist/5Wpn7BDRJ8oq7CcF1EufWI",
       "genres": [],
-      "popularity": 56
+      "popularity": 53
     },
     {
       "id": "4FS6bomikvJR2E9JHNwiAM",
       "name": "RayRay",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebaa3a3e7dd58cbdf2a32b8b15",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb409aefccf3b1ab3cd551a92c",
       "external_urls": "https://open.spotify.com/artist/4FS6bomikvJR2E9JHNwiAM",
       "genres": [
-        "bass house",
-        "vinahouse",
-        "g-house"
+        "bass house"
       ],
-      "popularity": 39
+      "popularity": 40
     },
     {
       "id": "0GRYh4b8TJ9LQelJhQuKh6",
@@ -3608,9 +3988,10 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb07828e75b9fc29af7b32f71c",
       "external_urls": "https://open.spotify.com/artist/0GRYh4b8TJ9LQelJhQuKh6",
       "genres": [
-        "happy hardcore"
+        "happy hardcore",
+        "gabber"
       ],
-      "popularity": 33
+      "popularity": 25
     },
     {
       "id": "0kMRaFhSeFoTmOSah343It",
@@ -3621,7 +4002,7 @@
         "electro house",
         "bass house"
       ],
-      "popularity": 25
+      "popularity": 17
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -3635,7 +4016,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -3649,7 +4030,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -3663,7 +4044,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "0Dzj2bn9ivDSjvJVSKL4q7",
@@ -3672,28 +4053,27 @@
       "external_urls": "https://open.spotify.com/artist/0Dzj2bn9ivDSjvJVSKL4q7",
       "genres": [
         "hardstyle",
-        "big room",
-        "hypertechno"
+        "big room"
       ],
-      "popularity": 54
+      "popularity": 48
     },
     {
       "id": "3HIgSx8t7957kFVbwGrSRF",
       "name": "Bonka",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6499dd641a0e5b564111c88d",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb01eb9bdfc1e60cac7daebd4f",
       "external_urls": "https://open.spotify.com/artist/3HIgSx8t7957kFVbwGrSRF",
       "genres": [
         "big room"
       ],
-      "popularity": 38
+      "popularity": 35
     },
     {
       "id": "7KczDuPvlKEo8nQCpa8my8",
       "name": "Kill the Clowns",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb1a827d108ef993b26bdc9d8b",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb94559777c6be06dfa646ef22",
       "external_urls": "https://open.spotify.com/artist/7KczDuPvlKEo8nQCpa8my8",
       "genres": [],
-      "popularity": 26
+      "popularity": 25
     },
     {
       "id": "11ESC6KI0jpdML0CijeROt",
@@ -3705,7 +4085,7 @@
         "big room",
         "melbourne bounce"
       ],
-      "popularity": 48
+      "popularity": 47
     },
     {
       "id": "5guBrcv1BxjlJdKlW8MNyh",
@@ -3716,7 +4096,7 @@
         "hardstyle",
         "big room"
       ],
-      "popularity": 42
+      "popularity": 35
     },
     {
       "id": "6kK6lCbJfPgDH6plFWQQID",
@@ -3727,7 +4107,7 @@
         "hardstyle",
         "big room"
       ],
-      "popularity": 42
+      "popularity": 37
     },
     {
       "id": "0g6PJw04eyN85JxQAGGdF4",
@@ -3737,35 +4117,33 @@
       "genres": [
         "future bass"
       ],
-      "popularity": 35
+      "popularity": 29
     },
     {
       "id": "6CnCjQXjKiV9Ro5GGA8ztB",
       "name": "DJ Fluke",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb88308a5cfb2f2b294ad6c147",
       "external_urls": "https://open.spotify.com/artist/6CnCjQXjKiV9Ro5GGA8ztB",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 55
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "5vGy6auivb3qywR2zZQvU8",
       "name": "Highup",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb59100d73a25bf76f96fa726",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb4d9ed82bc05127be387328ce",
       "external_urls": "https://open.spotify.com/artist/5vGy6auivb3qywR2zZQvU8",
       "genres": [],
-      "popularity": 32
+      "popularity": 36
     },
     {
       "id": "4sUiTGTyvwqW4SVx4urOac",
       "name": "Julia Temos",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb3248369610ce96d6b38a1e13",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb84e9967eb899fcac6379dd6",
       "external_urls": "https://open.spotify.com/artist/4sUiTGTyvwqW4SVx4urOac",
       "genres": [
         "future house"
       ],
-      "popularity": 47
+      "popularity": 39
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -3773,10 +4151,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2Qies5tt1MrS9aziIKigkc",
@@ -3784,7 +4161,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb22d298a68eab6dcfd4bd88f0",
       "external_urls": "https://open.spotify.com/artist/2Qies5tt1MrS9aziIKigkc",
       "genres": [],
-      "popularity": 53
+      "popularity": 46
     },
     {
       "id": "4HXsycCTbz7P5TFG8cnawd",
@@ -3794,7 +4171,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 24
+      "popularity": 13
     },
     {
       "id": "1kcyeJ6CdwVqRsKEmkb9Ul",
@@ -3805,15 +4182,15 @@
         "electro house",
         "hypertechno"
       ],
-      "popularity": 44
+      "popularity": 33
     },
     {
       "id": "5AmxhPl99r1cBm9WqrIuyU",
       "name": "Krimsonn",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc83ab7708d6710ce38f5b38b",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb604c1d9e0e780546fc5afc16",
       "external_urls": "https://open.spotify.com/artist/5AmxhPl99r1cBm9WqrIuyU",
       "genres": [],
-      "popularity": 37
+      "popularity": 32
     },
     {
       "id": "3qnsN7WTgndwqTiBHelp6S",
@@ -3821,7 +4198,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebed8c0d34817fdf25cd5075bb",
       "external_urls": "https://open.spotify.com/artist/3qnsN7WTgndwqTiBHelp6S",
       "genres": [],
-      "popularity": 49
+      "popularity": 46
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3831,20 +4208,20 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "2cFzYhiHqYS7o8ZIM9WD22",
       "name": "Mariana BO",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebe4e30709274fbb1468c6e622",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0e21e080724c299a3cf5eb12",
       "external_urls": "https://open.spotify.com/artist/2cFzYhiHqYS7o8ZIM9WD22",
       "genres": [
         "big room"
       ],
-      "popularity": 51
+      "popularity": 45
     },
     {
       "id": "11ESC6KI0jpdML0CijeROt",
@@ -3856,7 +4233,7 @@
         "big room",
         "melbourne bounce"
       ],
-      "popularity": 48
+      "popularity": 47
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -3867,7 +4244,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "2mEPFCmhmkRBCY6U221AED",
@@ -3875,9 +4252,10 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb367683edc42c81c9a72c866d",
       "external_urls": "https://open.spotify.com/artist/2mEPFCmhmkRBCY6U221AED",
       "genres": [
-        "electro house"
+        "electro house",
+        "melodic bass"
       ],
-      "popularity": 17
+      "popularity": 11
     },
     {
       "id": "2woseRlEX3DBBSFid7vkMV",
@@ -3887,7 +4265,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 23
+      "popularity": 19
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3897,10 +4275,10 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "4i8u1FZVapjZBcCyyrAnU3",
@@ -3909,11 +4287,10 @@
       "external_urls": "https://open.spotify.com/artist/4i8u1FZVapjZBcCyyrAnU3",
       "genres": [
         "melodic bass",
-        "dubstep",
-        "future bass",
-        "hardstyle"
+        "hardstyle",
+        "dubstep"
       ],
-      "popularity": 47
+      "popularity": 46
     },
     {
       "id": "18006kpQI473m1ICcpimQ9",
@@ -3924,7 +4301,7 @@
         "slap house",
         "big room"
       ],
-      "popularity": 45
+      "popularity": 38
     },
     {
       "id": "2ZZE8SPVWBysGWL1pRDHEy",
@@ -3934,10 +4311,10 @@
       "genres": [
         "dubstep",
         "bass house",
-        "deathstep",
-        "electro house"
+        "electro house",
+        "deathstep"
       ],
-      "popularity": 39
+      "popularity": 35
     },
     {
       "id": "2Zvo5BEkHyaHD1zk180kMz",
@@ -3949,32 +4326,31 @@
         "hardstyle",
         "psytrance"
       ],
-      "popularity": 53
+      "popularity": 49
     },
     {
       "id": "45mQUJrPyctvf2IhkVE0ym",
       "name": "Technikore",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42c9445983738263f1825a22",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd01636839dcb3072b4320610",
       "external_urls": "https://open.spotify.com/artist/45mQUJrPyctvf2IhkVE0ym",
       "genres": [
         "happy hardcore",
         "hardstyle",
-        "hardcore techno",
-        "hardcore"
+        "hardcore techno"
       ],
-      "popularity": 43
+      "popularity": 38
     },
     {
       "id": "3gfKSkWsbRm1Iux4u3KhTh",
       "name": "Jay Eskar",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eba022249df3cb0ab3337c7c0d",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd049f7e85d558c600be7d260",
       "external_urls": "https://open.spotify.com/artist/3gfKSkWsbRm1Iux4u3KhTh",
       "genres": [
         "future house",
         "bass house",
         "melbourne bounce"
       ],
-      "popularity": 37
+      "popularity": 33
     },
     {
       "id": "6qbr3M2PZv1k8qPVBTw707",
@@ -3984,7 +4360,7 @@
       "genres": [
         "hypertechno"
       ],
-      "popularity": 40
+      "popularity": 42
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -3995,7 +4371,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "2woseRlEX3DBBSFid7vkMV",
@@ -4005,7 +4381,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 23
+      "popularity": 19
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4016,7 +4392,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "5nd7jnne7zbsV2J5jBKNOY",
@@ -4028,12 +4404,12 @@
         "hardstyle",
         "hardcore techno"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "4Dn8TwLoOeWtznIg0LLWFL",
       "name": "Dougal",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b2730948f7184cd1a5b49da262f1",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b27319efe2e4ee19436ca3316ea8",
       "external_urls": "https://open.spotify.com/artist/4Dn8TwLoOeWtznIg0LLWFL",
       "genres": [
         "happy hardcore",
@@ -4041,7 +4417,7 @@
         "hardcore techno",
         "hardcore"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4052,7 +4428,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4063,7 +4439,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4074,7 +4450,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4085,7 +4461,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4096,7 +4472,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4107,7 +4483,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4118,7 +4494,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4129,7 +4505,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4140,7 +4516,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4151,7 +4527,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4162,7 +4538,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4173,7 +4549,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "2a4vLbRYqB86ISjTyeQv3P",
@@ -4183,15 +4559,15 @@
       "genres": [
         "bass music"
       ],
-      "popularity": 13
+      "popularity": 8
     },
     {
       "id": "7ccA34PvJXskA6BEf8NyJZ",
       "name": "Yung Diggerz",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2315e460b5f6d4f644bc2f18",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd5b7aedcafe814ce0d26f520",
       "external_urls": "https://open.spotify.com/artist/7ccA34PvJXskA6BEf8NyJZ",
       "genres": [],
-      "popularity": 14
+      "popularity": 11
     },
     {
       "id": "6DjZSHY1ANtCvlwvy0A469",
@@ -4207,12 +4583,12 @@
     {
       "id": "5rWBf6NdeYipAYulcM97KE",
       "name": "KOWZ",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc6681bdbb227f5efaa75603c",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb701f455854044d3e2e7c0cf1",
       "external_urls": "https://open.spotify.com/artist/5rWBf6NdeYipAYulcM97KE",
       "genres": [
         "electro house"
       ],
-      "popularity": 26
+      "popularity": 21
     },
     {
       "id": "60v1WXUYLa0WGarCGy7hF4",
@@ -4222,17 +4598,15 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 25
     },
     {
       "id": "6CnCjQXjKiV9Ro5GGA8ztB",
       "name": "DJ Fluke",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb88308a5cfb2f2b294ad6c147",
       "external_urls": "https://open.spotify.com/artist/6CnCjQXjKiV9Ro5GGA8ztB",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 55
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "7bHOH21hB9kmvR4M9koKAh",
@@ -4242,7 +4616,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 33
+      "popularity": 26
     },
     {
       "id": "2sf28o6euxEDpYkG9dMtuM",
@@ -4250,15 +4624,15 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebedae9400f938bd85f5c08cb7",
       "external_urls": "https://open.spotify.com/artist/2sf28o6euxEDpYkG9dMtuM",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "7BOIhtXWB8DCWOykIHF2dh",
       "name": "Jéja",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0ca0a6a3a97f1a2874a1f338",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebee0475e1d779638036819882",
       "external_urls": "https://open.spotify.com/artist/7BOIhtXWB8DCWOykIHF2dh",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "70ANZII0p7JCQ4ArAesCbA",
@@ -4266,7 +4640,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb4ddad27fc8a82a0738879ee",
       "external_urls": "https://open.spotify.com/artist/70ANZII0p7JCQ4ArAesCbA",
       "genres": [],
-      "popularity": 43
+      "popularity": 36
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4277,7 +4651,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "7g9IIZVavPOJdU9eNwTNLr",
@@ -4288,7 +4662,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 39
+      "popularity": 34
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4299,7 +4673,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "7g9IIZVavPOJdU9eNwTNLr",
@@ -4310,7 +4684,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 39
+      "popularity": 34
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4321,7 +4695,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "7g9IIZVavPOJdU9eNwTNLr",
@@ -4332,7 +4706,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 39
+      "popularity": 34
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4343,7 +4717,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4354,7 +4728,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "7g9IIZVavPOJdU9eNwTNLr",
@@ -4365,7 +4739,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 39
+      "popularity": 34
     },
     {
       "id": "1OsqAzBh0YCmsISYLgIOqa",
@@ -4373,7 +4747,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebc87d9488bf519ac9eb6e8603",
       "external_urls": "https://open.spotify.com/artist/1OsqAzBh0YCmsISYLgIOqa",
       "genres": [],
-      "popularity": 32
+      "popularity": 31
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4384,7 +4758,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "7g9IIZVavPOJdU9eNwTNLr",
@@ -4395,7 +4769,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 39
+      "popularity": 34
     },
     {
       "id": "7CXc7Ia5Mjd3ySx3RtrIWR",
@@ -4405,7 +4779,7 @@
       "genres": [
         "bass house"
       ],
-      "popularity": 16
+      "popularity": 12
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -4416,7 +4790,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4427,7 +4801,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -4438,7 +4812,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -4449,17 +4823,17 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "1Ylv9zH9EjyMQvIAah6nOh",
       "name": "Bellorum",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42235ff35e7915a2f33fbc1b",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb5f8f2cb851094f9a7888c3a",
       "external_urls": "https://open.spotify.com/artist/1Ylv9zH9EjyMQvIAah6nOh",
       "genres": [
         "edm trap"
       ],
-      "popularity": 29
+      "popularity": 23
     },
     {
       "id": "1caUhCACokl92g5gZpS2ei",
@@ -4470,7 +4844,7 @@
         "electro house",
         "dubstep"
       ],
-      "popularity": 22
+      "popularity": 19
     },
     {
       "id": "3YLkA6vzX3YvFV8qP2olwP",
@@ -4481,18 +4855,18 @@
         "dubstep",
         "electro house"
       ],
-      "popularity": 35
+      "popularity": 31
     },
     {
       "id": "3A4v0S7QQHqeqSQ2dBoEOQ",
       "name": "Ögenix",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b273fe2cfdc1cd3c38452c5ca021",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b273f7383b6172b31851ec1e16d0",
       "external_urls": "https://open.spotify.com/artist/3A4v0S7QQHqeqSQ2dBoEOQ",
       "genres": [
         "electro house",
         "dubstep"
       ],
-      "popularity": 21
+      "popularity": 17
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -4503,7 +4877,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "4WztwGxVcf0AyTGv86xXgc",
@@ -4511,20 +4885,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebe5e893e58d5abfa16c973b90",
       "external_urls": "https://open.spotify.com/artist/4WztwGxVcf0AyTGv86xXgc",
       "genres": [
-        "phonk",
         "drift phonk"
       ],
-      "popularity": 36
+      "popularity": 32
     },
     {
       "id": "6Vu1oZl4ozrU6zqdidyCMU",
       "name": "Becko",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb4e92d3629a3558c73b615877",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb367845b9cea8c3f6e575d0e3",
       "external_urls": "https://open.spotify.com/artist/6Vu1oZl4ozrU6zqdidyCMU",
-      "genres": [
-        "electronic rock"
-      ],
-      "popularity": 33
+      "genres": [],
+      "popularity": 28
     },
     {
       "id": "2Zvo5BEkHyaHD1zk180kMz",
@@ -4536,17 +4907,18 @@
         "hardstyle",
         "psytrance"
       ],
-      "popularity": 53
+      "popularity": 49
     },
     {
-      "id": "4WGGHN3xUu9mhDObu3Oqhp",
-      "name": "OverDrive",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb3286eb91e22b2d79214fc3a1",
-      "external_urls": "https://open.spotify.com/artist/4WGGHN3xUu9mhDObu3Oqhp",
+      "id": "67ScOzsaQj33lbWUsBp8Xp",
+      "name": "Overdrive",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b27329e42772602fdd6a6033536e",
+      "external_urls": "https://open.spotify.com/artist/67ScOzsaQj33lbWUsBp8Xp",
       "genres": [
-        "hardstyle"
+        "hardstyle",
+        "hard techno"
       ],
-      "popularity": 30
+      "popularity": 16
     },
     {
       "id": "6Mu4CynRtQyYX8al5IJO47",
@@ -4555,109 +4927,6 @@
       "external_urls": "https://open.spotify.com/artist/6Mu4CynRtQyYX8al5IJO47",
       "genres": [
         "hardstyle"
-      ],
-      "popularity": 36
-    },
-    {
-      "id": "11ESC6KI0jpdML0CijeROt",
-      "name": "Lockdown",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb5e1ede1f588e6b8a71710584",
-      "external_urls": "https://open.spotify.com/artist/11ESC6KI0jpdML0CijeROt",
-      "genres": [
-        "hardstyle",
-        "big room",
-        "melbourne bounce"
-      ],
-      "popularity": 48
-    },
-    {
-      "id": "7gm7vtdfHnBTRxpzwMecbG",
-      "name": "MahyaaR",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb77e0b5e009c8a3bc7d1c9d39",
-      "external_urls": "https://open.spotify.com/artist/7gm7vtdfHnBTRxpzwMecbG",
-      "genres": [
-        "electro house",
-        "bass house"
-      ],
-      "popularity": 32
-    },
-    {
-      "id": "1Ylv9zH9EjyMQvIAah6nOh",
-      "name": "Bellorum",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42235ff35e7915a2f33fbc1b",
-      "external_urls": "https://open.spotify.com/artist/1Ylv9zH9EjyMQvIAah6nOh",
-      "genres": [
-        "edm trap"
-      ],
-      "popularity": 29
-    },
-    {
-      "id": "1YlyxjwYNSjBD0NAJGEfWB",
-      "name": "Bombs Away",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc9bd3cb06fa8b36cfa0f9f92",
-      "external_urls": "https://open.spotify.com/artist/1YlyxjwYNSjBD0NAJGEfWB",
-      "genres": [
-        "melbourne bounce",
-        "electro house"
-      ],
-      "popularity": 49
-    },
-    {
-      "id": "1LLc1LysYwIKPmcDVfrdMn",
-      "name": "Reigan",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc08b486dfa1f93586ecf82d9",
-      "external_urls": "https://open.spotify.com/artist/1LLc1LysYwIKPmcDVfrdMn",
-      "genres": [
-        "organic house"
-      ],
-      "popularity": 44
-    },
-    {
-      "id": "1P4pmBbuQwsKKV39MfzGVd",
-      "name": "G4BBA",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb524a70d7ca6f7a2cee89d94d",
-      "external_urls": "https://open.spotify.com/artist/1P4pmBbuQwsKKV39MfzGVd",
-      "genres": [
-        "hardstyle"
-      ],
-      "popularity": 30
-    },
-    {
-      "id": "2jQWqQ0Z06KiQnysJHn5Mq",
-      "name": "Dubscribe",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebde626c0ac69881d6f643027a",
-      "external_urls": "https://open.spotify.com/artist/2jQWqQ0Z06KiQnysJHn5Mq",
-      "genres": [
-        "dubstep",
-        "deathstep",
-        "electro house",
-        "riddim",
-        "bass music"
-      ],
-      "popularity": 31
-    },
-    {
-      "id": "2jQWqQ0Z06KiQnysJHn5Mq",
-      "name": "Dubscribe",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebde626c0ac69881d6f643027a",
-      "external_urls": "https://open.spotify.com/artist/2jQWqQ0Z06KiQnysJHn5Mq",
-      "genres": [
-        "dubstep",
-        "deathstep",
-        "electro house",
-        "riddim",
-        "bass music"
-      ],
-      "popularity": 31
-    },
-    {
-      "id": "1jvJRtVJWSgaLtDyqa3m4i",
-      "name": "Smitech Wesson",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb1b32b67f11c374022939b341",
-      "external_urls": "https://open.spotify.com/artist/1jvJRtVJWSgaLtDyqa3m4i",
-      "genres": [
-        "electro house",
-        "synthwave"
       ],
       "popularity": 28
     },
@@ -4671,7 +4940,58 @@
         "big room",
         "melbourne bounce"
       ],
-      "popularity": 48
+      "popularity": 47
+    },
+    {
+      "id": "7gm7vtdfHnBTRxpzwMecbG",
+      "name": "MahyaaR",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb77e0b5e009c8a3bc7d1c9d39",
+      "external_urls": "https://open.spotify.com/artist/7gm7vtdfHnBTRxpzwMecbG",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 26
+    },
+    {
+      "id": "1Ylv9zH9EjyMQvIAah6nOh",
+      "name": "Bellorum",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb5f8f2cb851094f9a7888c3a",
+      "external_urls": "https://open.spotify.com/artist/1Ylv9zH9EjyMQvIAah6nOh",
+      "genres": [
+        "edm trap"
+      ],
+      "popularity": 23
+    },
+    {
+      "id": "1YlyxjwYNSjBD0NAJGEfWB",
+      "name": "Bombs Away",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc9bd3cb06fa8b36cfa0f9f92",
+      "external_urls": "https://open.spotify.com/artist/1YlyxjwYNSjBD0NAJGEfWB",
+      "genres": [
+        "melbourne bounce",
+        "electro house"
+      ],
+      "popularity": 52
+    },
+    {
+      "id": "1LLc1LysYwIKPmcDVfrdMn",
+      "name": "Reigan",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc08b486dfa1f93586ecf82d9",
+      "external_urls": "https://open.spotify.com/artist/1LLc1LysYwIKPmcDVfrdMn",
+      "genres": [
+        "organic house"
+      ],
+      "popularity": 42
+    },
+    {
+      "id": "1P4pmBbuQwsKKV39MfzGVd",
+      "name": "G4BBA",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb524a70d7ca6f7a2cee89d94d",
+      "external_urls": "https://open.spotify.com/artist/1P4pmBbuQwsKKV39MfzGVd",
+      "genres": [
+        "hardstyle"
+      ],
+      "popularity": 27
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -4685,7 +5005,58 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
+    },
+    {
+      "id": "2jQWqQ0Z06KiQnysJHn5Mq",
+      "name": "Dubscribe",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebde626c0ac69881d6f643027a",
+      "external_urls": "https://open.spotify.com/artist/2jQWqQ0Z06KiQnysJHn5Mq",
+      "genres": [
+        "dubstep",
+        "deathstep",
+        "electro house",
+        "riddim",
+        "bass music"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "1jvJRtVJWSgaLtDyqa3m4i",
+      "name": "Smitech Wesson",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb1b32b67f11c374022939b341",
+      "external_urls": "https://open.spotify.com/artist/1jvJRtVJWSgaLtDyqa3m4i",
+      "genres": [
+        "electro house",
+        "synthwave"
+      ],
+      "popularity": 24
+    },
+    {
+      "id": "11ESC6KI0jpdML0CijeROt",
+      "name": "Lockdown",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb5e1ede1f588e6b8a71710584",
+      "external_urls": "https://open.spotify.com/artist/11ESC6KI0jpdML0CijeROt",
+      "genres": [
+        "hardstyle",
+        "big room",
+        "melbourne bounce"
+      ],
+      "popularity": 47
+    },
+    {
+      "id": "2jQWqQ0Z06KiQnysJHn5Mq",
+      "name": "Dubscribe",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebde626c0ac69881d6f643027a",
+      "external_urls": "https://open.spotify.com/artist/2jQWqQ0Z06KiQnysJHn5Mq",
+      "genres": [
+        "dubstep",
+        "deathstep",
+        "electro house",
+        "riddim",
+        "bass music"
+      ],
+      "popularity": 28
     },
     {
       "id": "2woseRlEX3DBBSFid7vkMV",
@@ -4695,7 +5066,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 23
+      "popularity": 19
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -4706,7 +5077,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "38u5tDrWqAZsGySZL5OB3b",
@@ -4716,7 +5087,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 36
+      "popularity": 32
     },
     {
       "id": "5DyZEhZu0XTYIt1FrQQjcO",
@@ -4727,7 +5098,7 @@
         "electro house",
         "bass house"
       ],
-      "popularity": 26
+      "popularity": 17
     },
     {
       "id": "4HXsycCTbz7P5TFG8cnawd",
@@ -4737,7 +5108,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 24
+      "popularity": 13
     },
     {
       "id": "2woseRlEX3DBBSFid7vkMV",
@@ -4747,7 +5118,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 23
+      "popularity": 19
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -4758,12 +5129,12 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "40DTKU4yhPMnqclRANzwy6",
       "name": "Menso",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb71c6a5c9000172af8abc24b9",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eba5c14d7d9e5a8a451506e337",
       "external_urls": "https://open.spotify.com/artist/40DTKU4yhPMnqclRANzwy6",
       "genres": [
         "electro house",
@@ -4774,7 +5145,7 @@
     {
       "id": "5amgsg8Ub9IoOelXkBkUrv",
       "name": "Molly Johnston",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b273b8ba467fb57e3fcffb33231b",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b273b17de0a989f27aa7e5a85def",
       "external_urls": "https://open.spotify.com/artist/5amgsg8Ub9IoOelXkBkUrv",
       "genres": [],
       "popularity": 0
@@ -4788,7 +5159,7 @@
         "future bass",
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 20
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -4799,17 +5170,15 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "24CzPFC4y3bM4AkUnZfuAU",
       "name": "Karra",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb79279db9cd217eae522844e1",
       "external_urls": "https://open.spotify.com/artist/24CzPFC4y3bM4AkUnZfuAU",
-      "genres": [
-        "melodic bass"
-      ],
-      "popularity": 53
+      "genres": [],
+      "popularity": 49
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -4817,10 +5186,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "5U1eJDpMKZiQustw16e0g2",
@@ -4828,7 +5196,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebf31787d4edcd623863d0c0d3",
       "external_urls": "https://open.spotify.com/artist/5U1eJDpMKZiQustw16e0g2",
       "genres": [],
-      "popularity": 51
+      "popularity": 50
     },
     {
       "id": "1Wt63OMKtv6v2ivHuQLm2C",
@@ -4840,7 +5208,7 @@
         "frenchcore",
         "hardcore"
       ],
-      "popularity": 57
+      "popularity": 54
     },
     {
       "id": "6jZl6risV5vg6O83zKSHHs",
@@ -4850,7 +5218,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 44
+      "popularity": 37
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -4858,10 +5226,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "5U1eJDpMKZiQustw16e0g2",
@@ -4869,7 +5236,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebf31787d4edcd623863d0c0d3",
       "external_urls": "https://open.spotify.com/artist/5U1eJDpMKZiQustw16e0g2",
       "genres": [],
-      "popularity": 51
+      "popularity": 50
     },
     {
       "id": "7gm7vtdfHnBTRxpzwMecbG",
@@ -4877,10 +5244,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb77e0b5e009c8a3bc7d1c9d39",
       "external_urls": "https://open.spotify.com/artist/7gm7vtdfHnBTRxpzwMecbG",
       "genres": [
-        "electro house",
-        "bass house"
+        "electro house"
       ],
-      "popularity": 32
+      "popularity": 26
     },
     {
       "id": "6jZl6risV5vg6O83zKSHHs",
@@ -4890,7 +5256,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 44
+      "popularity": 37
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -4898,7 +5264,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "2HVE2wrkIHJF8af1iWqEV1",
@@ -4908,28 +5274,28 @@
       "genres": [
         "slap house"
       ],
-      "popularity": 35
+      "popularity": 31
     },
     {
       "id": "7GLn5nvKzr1Z4l3v46OIlP",
       "name": "ladycryface",
-      "image_url": "https://i.scdn.co/image/ab67616d0000b27396fe84769596ac6a0fdb3bc8",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b273826a32fb25201f02b1f974c5",
       "external_urls": "https://open.spotify.com/artist/7GLn5nvKzr1Z4l3v46OIlP",
       "genres": [
-        "electro house",
-        "chillstep"
+        "chillstep",
+        "electro house"
       ],
-      "popularity": 17
+      "popularity": 15
     },
     {
       "id": "6cufQ6PHPBiFjDQtqCzcID",
       "name": "WOLFHOWL",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfb6a6b992b06082d7198ce93",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb8beba2b49c562c2c932d633e",
       "external_urls": "https://open.spotify.com/artist/6cufQ6PHPBiFjDQtqCzcID",
       "genres": [
         "electro house"
       ],
-      "popularity": 25
+      "popularity": 21
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -4940,7 +5306,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "5vG7sNDSCANSuZ71jkHxCL",
@@ -4950,7 +5316,7 @@
       "genres": [
         "hardstyle"
       ],
-      "popularity": 48
+      "popularity": 44
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -4958,10 +5324,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2sf28o6euxEDpYkG9dMtuM",
@@ -4969,7 +5334,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebedae9400f938bd85f5c08cb7",
       "external_urls": "https://open.spotify.com/artist/2sf28o6euxEDpYkG9dMtuM",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "5vG7sNDSCANSuZ71jkHxCL",
@@ -4979,7 +5344,7 @@
       "genres": [
         "hardstyle"
       ],
-      "popularity": 48
+      "popularity": 44
     },
     {
       "id": "2Zvo5BEkHyaHD1zk180kMz",
@@ -4991,15 +5356,15 @@
         "hardstyle",
         "psytrance"
       ],
-      "popularity": 53
+      "popularity": 49
     },
     {
       "id": "7BOIhtXWB8DCWOykIHF2dh",
       "name": "Jéja",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0ca0a6a3a97f1a2874a1f338",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebee0475e1d779638036819882",
       "external_urls": "https://open.spotify.com/artist/7BOIhtXWB8DCWOykIHF2dh",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "6b0am8pgRC1zqN3iyC7pKO",
@@ -5007,7 +5372,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb56329e82fe9f2c543ba5ca28",
       "external_urls": "https://open.spotify.com/artist/6b0am8pgRC1zqN3iyC7pKO",
       "genres": [],
-      "popularity": 36
+      "popularity": 28
     },
     {
       "id": "60v1WXUYLa0WGarCGy7hF4",
@@ -5017,7 +5382,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 25
     },
     {
       "id": "60v1WXUYLa0WGarCGy7hF4",
@@ -5027,7 +5392,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 25
     },
     {
       "id": "60v1WXUYLa0WGarCGy7hF4",
@@ -5037,17 +5402,17 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 25
     },
     {
       "id": "2ECb9wVfWlrUdjGlpk1P2H",
       "name": "Raddix",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2ce50b0eab70f2e308dbdcf2",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd3481b07b5c9a28bb9072014",
       "external_urls": "https://open.spotify.com/artist/2ECb9wVfWlrUdjGlpk1P2H",
       "genres": [
         "electro house"
       ],
-      "popularity": 26
+      "popularity": 25
     },
     {
       "id": "60v1WXUYLa0WGarCGy7hF4",
@@ -5057,18 +5422,17 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 25
     },
     {
       "id": "6X2WTkuWTwWtu7AAUB7KRt",
       "name": "Diana Inez",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb440654dd027a7a53f1d5ef66",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb65e77e2cb39b055308c464ff",
       "external_urls": "https://open.spotify.com/artist/6X2WTkuWTwWtu7AAUB7KRt",
       "genres": [
-        "electro house",
-        "melodic bass"
+        "electro house"
       ],
-      "popularity": 38
+      "popularity": 33
     },
     {
       "id": "4HXsycCTbz7P5TFG8cnawd",
@@ -5078,7 +5442,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 24
+      "popularity": 13
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -5086,7 +5450,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "5xAqa5xaSxHC1L3EP8g9KL",
@@ -5094,7 +5458,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb61c281c0ea77beb0358fed3c",
       "external_urls": "https://open.spotify.com/artist/5xAqa5xaSxHC1L3EP8g9KL",
       "genres": [],
-      "popularity": 38
+      "popularity": 25
     },
     {
       "id": "6GRKwhGojrzpj0486YlBA9",
@@ -5104,17 +5468,15 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 35
+      "popularity": 28
     },
     {
       "id": "54Dren7MU8rhloIAUbV4Yg",
       "name": "Spektrum",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb4cd1801aa06ccac523546955",
       "external_urls": "https://open.spotify.com/artist/54Dren7MU8rhloIAUbV4Yg",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 31
+      "genres": [],
+      "popularity": 28
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -5122,10 +5484,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "5cKlE8f6b26h61Ml7m052Q",
@@ -5133,27 +5494,27 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebe194a295555b6aa53e4cbc04",
       "external_urls": "https://open.spotify.com/artist/5cKlE8f6b26h61Ml7m052Q",
       "genres": [],
-      "popularity": 62
+      "popularity": 58
     },
     {
       "id": "1x0ScxgiyFRQDKT4VwcLHa",
       "name": "LNY TNZ",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb43f478feaecb5f7abbc7df20",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eba4ecbc6fe35771ea3cdb5496",
       "external_urls": "https://open.spotify.com/artist/1x0ScxgiyFRQDKT4VwcLHa",
       "genres": [
         "hardstyle"
       ],
-      "popularity": 54
+      "popularity": 50
     },
     {
       "id": "5rWBf6NdeYipAYulcM97KE",
       "name": "KOWZ",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc6681bdbb227f5efaa75603c",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb701f455854044d3e2e7c0cf1",
       "external_urls": "https://open.spotify.com/artist/5rWBf6NdeYipAYulcM97KE",
       "genres": [
         "electro house"
       ],
-      "popularity": 26
+      "popularity": 21
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5164,7 +5525,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5174,7 +5535,7 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "1eo6NkM0jmEBj8VViTCiYi",
@@ -5182,7 +5543,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb0d2b6e4a185204397f635d03",
       "external_urls": "https://open.spotify.com/artist/1eo6NkM0jmEBj8VViTCiYi",
       "genres": [],
-      "popularity": 3
+      "popularity": 1
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5193,7 +5554,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5203,15 +5564,15 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "5vGy6auivb3qywR2zZQvU8",
       "name": "Highup",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb59100d73a25bf76f96fa726",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb4d9ed82bc05127be387328ce",
       "external_urls": "https://open.spotify.com/artist/5vGy6auivb3qywR2zZQvU8",
       "genres": [],
-      "popularity": 32
+      "popularity": 36
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5222,7 +5583,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "6iLBBp88stAFjZdnn0HsdD",
@@ -5230,7 +5591,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb5c9284532219a7cbad246a35",
       "external_urls": "https://open.spotify.com/artist/6iLBBp88stAFjZdnn0HsdD",
       "genres": [],
-      "popularity": 37
+      "popularity": 31
     },
     {
       "id": "4kH9eosSaSUo0DNcmAMlFA",
@@ -5240,7 +5601,7 @@
       "genres": [
         "brazilian bass"
       ],
-      "popularity": 32
+      "popularity": 31
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5250,7 +5611,7 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5261,7 +5622,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5271,17 +5632,17 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "55pTuQ8SbRVaZ2sFhPFX1x",
       "name": "Thoby",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb19f5d453f5ee3d56a73c3468",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6d5c88f5aead0c3f1638a07a",
       "external_urls": "https://open.spotify.com/artist/55pTuQ8SbRVaZ2sFhPFX1x",
       "genres": [
         "big room"
       ],
-      "popularity": 32
+      "popularity": 30
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5292,7 +5653,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "57JW1usfadyCzhhGkmCW8a",
@@ -5302,7 +5663,7 @@
       "genres": [
         "melbourne bounce"
       ],
-      "popularity": 30
+      "popularity": 29
     },
     {
       "id": "02Tmujiq3jJPB3IPX54Lmz",
@@ -5310,10 +5671,9 @@
       "image_url": "https://i.scdn.co/image/ab67616d0000b2733524a5e479cc6e15f1dc1afd",
       "external_urls": "https://open.spotify.com/artist/02Tmujiq3jJPB3IPX54Lmz",
       "genres": [
-        "vocal jazz",
-        "swedish ballads"
+        "vocal jazz"
       ],
-      "popularity": 3
+      "popularity": 1
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5323,7 +5683,7 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "4HXsycCTbz7P5TFG8cnawd",
@@ -5333,17 +5693,17 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 24
+      "popularity": 13
     },
     {
       "id": "4rAzjYhl5HrtuWeaRX36ts",
       "name": "WCKiD",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc40cad3156c9abd5ecccd933",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb883fd0be5b930b1001a1b54e",
       "external_urls": "https://open.spotify.com/artist/4rAzjYhl5HrtuWeaRX36ts",
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 24
     },
     {
       "id": "37chdzil2IRjbOt0NTznTN",
@@ -5355,7 +5715,7 @@
         "future bass",
         "chillstep"
       ],
-      "popularity": 21
+      "popularity": 16
     },
     {
       "id": "1VBrfuhsPESGkf4TX0ply6",
@@ -5365,7 +5725,7 @@
       "genres": [
         "chillstep"
       ],
-      "popularity": 21
+      "popularity": 15
     },
     {
       "id": "3BPU5TJlc07JyLUQIUjx28",
@@ -5373,7 +5733,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebecb30e135ead92192f7c7dfb",
       "external_urls": "https://open.spotify.com/artist/3BPU5TJlc07JyLUQIUjx28",
       "genres": [],
-      "popularity": 2
+      "popularity": 1
     },
     {
       "id": "1P4pmBbuQwsKKV39MfzGVd",
@@ -5383,7 +5743,7 @@
       "genres": [
         "hardstyle"
       ],
-      "popularity": 30
+      "popularity": 27
     },
     {
       "id": "1P4pmBbuQwsKKV39MfzGVd",
@@ -5393,7 +5753,7 @@
       "genres": [
         "hardstyle"
       ],
-      "popularity": 30
+      "popularity": 27
     },
     {
       "id": "38HqxBtUpMunEP3kKLjEby",
@@ -5405,18 +5765,18 @@
         "electro house",
         "future bass"
       ],
-      "popularity": 44
+      "popularity": 40
     },
     {
       "id": "6C0GDQqkaIX35GF3rTV1U1",
       "name": "Britt",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb51ce411359fea2a6ea3f2f80",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb81a74208e5361b4fc1a3b220",
       "external_urls": "https://open.spotify.com/artist/6C0GDQqkaIX35GF3rTV1U1",
       "genres": [
         "slap house",
         "deep house"
       ],
-      "popularity": 50
+      "popularity": 47
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5427,7 +5787,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "1yeoIDaYbHKxl4BRZSy2zJ",
@@ -5437,7 +5797,7 @@
       "genres": [
         "melbourne bounce"
       ],
-      "popularity": 19
+      "popularity": 14
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -5445,10 +5805,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -5458,12 +5817,12 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "5zYJziKktyqWwmoAWXrShP",
       "name": "Modestep",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd143f6ffab11f580103932c3",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eba6b5acff1a8c84f2255b2670",
       "external_urls": "https://open.spotify.com/artist/5zYJziKktyqWwmoAWXrShP",
       "genres": [
         "dubstep",
@@ -5478,12 +5837,12 @@
     {
       "id": "1Ylv9zH9EjyMQvIAah6nOh",
       "name": "Bellorum",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42235ff35e7915a2f33fbc1b",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb5f8f2cb851094f9a7888c3a",
       "external_urls": "https://open.spotify.com/artist/1Ylv9zH9EjyMQvIAah6nOh",
       "genres": [
         "edm trap"
       ],
-      "popularity": 29
+      "popularity": 23
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5494,7 +5853,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5504,7 +5863,7 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "38HqxBtUpMunEP3kKLjEby",
@@ -5516,7 +5875,7 @@
         "electro house",
         "future bass"
       ],
-      "popularity": 44
+      "popularity": 40
     },
     {
       "id": "6TTZGloO0o4IMy4eIaj8gU",
@@ -5524,17 +5883,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebe866429fcfeb105951b801e2",
       "external_urls": "https://open.spotify.com/artist/6TTZGloO0o4IMy4eIaj8gU",
       "genres": [],
-      "popularity": 32
+      "popularity": 27
     },
     {
       "id": "2ECb9wVfWlrUdjGlpk1P2H",
       "name": "Raddix",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2ce50b0eab70f2e308dbdcf2",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd3481b07b5c9a28bb9072014",
       "external_urls": "https://open.spotify.com/artist/2ECb9wVfWlrUdjGlpk1P2H",
       "genres": [
         "electro house"
       ],
-      "popularity": 26
+      "popularity": 25
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -5542,25 +5901,23 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "2qZwOcOK5pr8WaNJWvuZd2",
       "name": "Biometrix",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb9a1271eead9003592ea5ee3f",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebabdccefdbd9801869f6d7beb",
       "external_urls": "https://open.spotify.com/artist/2qZwOcOK5pr8WaNJWvuZd2",
       "genres": [],
-      "popularity": 41
+      "popularity": 38
     },
     {
       "id": "3OyUmeS7InBZFjCduVVhGa",
       "name": "Nat James",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb79c3960564ef974876030331",
       "external_urls": "https://open.spotify.com/artist/3OyUmeS7InBZFjCduVVhGa",
-      "genres": [
-        "riddim"
-      ],
-      "popularity": 40
+      "genres": [],
+      "popularity": 37
     },
     {
       "id": "2sf28o6euxEDpYkG9dMtuM",
@@ -5568,15 +5925,15 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebedae9400f938bd85f5c08cb7",
       "external_urls": "https://open.spotify.com/artist/2sf28o6euxEDpYkG9dMtuM",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "7BOIhtXWB8DCWOykIHF2dh",
       "name": "Jéja",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0ca0a6a3a97f1a2874a1f338",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebee0475e1d779638036819882",
       "external_urls": "https://open.spotify.com/artist/7BOIhtXWB8DCWOykIHF2dh",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "6b0am8pgRC1zqN3iyC7pKO",
@@ -5584,7 +5941,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb56329e82fe9f2c543ba5ca28",
       "external_urls": "https://open.spotify.com/artist/6b0am8pgRC1zqN3iyC7pKO",
       "genres": [],
-      "popularity": 36
+      "popularity": 28
     },
     {
       "id": "2sf28o6euxEDpYkG9dMtuM",
@@ -5592,15 +5949,15 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebedae9400f938bd85f5c08cb7",
       "external_urls": "https://open.spotify.com/artist/2sf28o6euxEDpYkG9dMtuM",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "7BOIhtXWB8DCWOykIHF2dh",
       "name": "Jéja",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb0ca0a6a3a97f1a2874a1f338",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebee0475e1d779638036819882",
       "external_urls": "https://open.spotify.com/artist/7BOIhtXWB8DCWOykIHF2dh",
       "genres": [],
-      "popularity": 62
+      "popularity": 59
     },
     {
       "id": "6b0am8pgRC1zqN3iyC7pKO",
@@ -5608,7 +5965,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb56329e82fe9f2c543ba5ca28",
       "external_urls": "https://open.spotify.com/artist/6b0am8pgRC1zqN3iyC7pKO",
       "genres": [],
-      "popularity": 36
+      "popularity": 28
     },
     {
       "id": "1BgLi10FdtjQtMigV9Ddka",
@@ -5620,38 +5977,36 @@
         "electro house",
         "trance"
       ],
-      "popularity": 39
+      "popularity": 32
     },
     {
       "id": "01BNEFdzawMyAXoHVdtyPx",
       "name": "Andrew A",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebe7cd7cb2c4a9549e1e2621d3",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb666ba53bbf230dcc6bebb029",
       "external_urls": "https://open.spotify.com/artist/01BNEFdzawMyAXoHVdtyPx",
       "genres": [
         "future house",
         "bass house"
       ],
-      "popularity": 29
+      "popularity": 27
     },
     {
       "id": "7vmMpy0sV8E6kyruaJrgF9",
       "name": "The Late Night Project",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb197a5d82745c8fa0d0dcafe2",
       "external_urls": "https://open.spotify.com/artist/7vmMpy0sV8E6kyruaJrgF9",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 48
+      "genres": [],
+      "popularity": 42
     },
     {
       "id": "4rAzjYhl5HrtuWeaRX36ts",
       "name": "WCKiD",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc40cad3156c9abd5ecccd933",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb883fd0be5b930b1001a1b54e",
       "external_urls": "https://open.spotify.com/artist/4rAzjYhl5HrtuWeaRX36ts",
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 24
     },
     {
       "id": "0xIkiN6ruvEtYA13pkLExe",
@@ -5661,7 +6016,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 17
+      "popularity": 9
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -5672,7 +6027,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "6MFUIHpyexohP1yXcYbE2G",
@@ -5683,7 +6038,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 17
+      "popularity": 16
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -5694,7 +6049,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "6MFUIHpyexohP1yXcYbE2G",
@@ -5705,7 +6060,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 17
+      "popularity": 16
     },
     {
       "id": "37XvkSeuwC5KLM6Tlcf6vw",
@@ -5713,7 +6068,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb937dea2f3bf623739f82419e",
       "external_urls": "https://open.spotify.com/artist/37XvkSeuwC5KLM6Tlcf6vw",
       "genres": [],
-      "popularity": 7
+      "popularity": 3
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -5724,7 +6079,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "6MFUIHpyexohP1yXcYbE2G",
@@ -5735,7 +6090,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 17
+      "popularity": 16
     },
     {
       "id": "7g9IIZVavPOJdU9eNwTNLr",
@@ -5746,7 +6101,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 39
+      "popularity": 34
     },
     {
       "id": "1jvJRtVJWSgaLtDyqa3m4i",
@@ -5757,7 +6112,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 28
+      "popularity": 24
     },
     {
       "id": "6MFUIHpyexohP1yXcYbE2G",
@@ -5768,7 +6123,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 17
+      "popularity": 16
     },
     {
       "id": "6ypOIfYEUYZKeC4AhklsVk",
@@ -5776,7 +6131,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8f41fced475bf2f34fc8ae24",
       "external_urls": "https://open.spotify.com/artist/6ypOIfYEUYZKeC4AhklsVk",
       "genres": [],
-      "popularity": 5
+      "popularity": 3
     },
     {
       "id": "1YlyxjwYNSjBD0NAJGEfWB",
@@ -5787,7 +6142,7 @@
         "melbourne bounce",
         "electro house"
       ],
-      "popularity": 49
+      "popularity": 52
     },
     {
       "id": "1LLc1LysYwIKPmcDVfrdMn",
@@ -5797,7 +6152,7 @@
       "genres": [
         "organic house"
       ],
-      "popularity": 44
+      "popularity": 42
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -5811,7 +6166,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "28kj1oCzoeVRIM3k7h2vmD",
@@ -5824,7 +6179,7 @@
         "chillstep",
         "melodic bass"
       ],
-      "popularity": 19
+      "popularity": 15
     },
     {
       "id": "0uP3vTPTOvba1ywQtgU9Xf",
@@ -5835,7 +6190,7 @@
         "electro house",
         "chillstep"
       ],
-      "popularity": 14
+      "popularity": 9
     },
     {
       "id": "4fPtMuPhGVwUEPW9g4dJlC",
@@ -5855,7 +6210,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 6
+      "popularity": 4
     },
     {
       "id": "1a35bs8Zs05TNQ1tnfeHFV",
@@ -5865,7 +6220,7 @@
       "genres": [
         "deep house"
       ],
-      "popularity": 43
+      "popularity": 42
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -5873,15 +6228,15 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "51ZYyNbFsBlD1EHGHaSFz0",
       "name": "Mandrazo",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebafedee212edbfdaa9b23e774",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2b25071714198c82df162086",
       "external_urls": "https://open.spotify.com/artist/51ZYyNbFsBlD1EHGHaSFz0",
       "genres": [],
-      "popularity": 48
+      "popularity": 47
     },
     {
       "id": "3XIfUQhOkgdfKXzL6bUX07",
@@ -5891,7 +6246,7 @@
       "genres": [
         "future house"
       ],
-      "popularity": 23
+      "popularity": 19
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -5899,36 +6254,33 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "7wGFrLo9v8FKS2iWyYx75t",
       "name": "Shiah Maisel",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf5fed3427cb94c66322c8574",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eba13d61c1cbe767a9b098bd01",
       "external_urls": "https://open.spotify.com/artist/7wGFrLo9v8FKS2iWyYx75t",
       "genres": [],
-      "popularity": 52
+      "popularity": 49
     },
     {
       "id": "7vmMpy0sV8E6kyruaJrgF9",
       "name": "The Late Night Project",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb197a5d82745c8fa0d0dcafe2",
       "external_urls": "https://open.spotify.com/artist/7vmMpy0sV8E6kyruaJrgF9",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 48
+      "genres": [],
+      "popularity": 42
     },
     {
       "id": "5SHDLpahWqSLc0qhuGpS3f",
       "name": "PHARAØH",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebaa7a4de5fb196470e632be90",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb6fa31ed8b7d7ba8209ea74a7",
       "external_urls": "https://open.spotify.com/artist/5SHDLpahWqSLc0qhuGpS3f",
       "genres": [
-        "drift phonk",
-        "phonk"
+        "drift phonk"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "2KLn6Uc0PfrLETzhNWWSDw",
@@ -5939,41 +6291,21 @@
         "future bass",
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 20
     },
     {
       "id": "53b5NwFZLCZySuNmbRvR0l",
       "name": "GISHIN",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb7e066c8e1ab8dd05a93a6b34",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb98a64a64e179f5a41cc2932d",
       "external_urls": "https://open.spotify.com/artist/53b5NwFZLCZySuNmbRvR0l",
       "genres": [],
-      "popularity": 35
+      "popularity": 28
     },
     {
       "id": "173GfQx5bEtd47VPltulZ0",
       "name": "AmanderSings",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb766a11cf8f1313f3eb36b444",
       "external_urls": "https://open.spotify.com/artist/173GfQx5bEtd47VPltulZ0",
-      "genres": [
-        "future bass"
-      ],
-      "popularity": 24
-    },
-    {
-      "id": "1FzBO5erQh8xC6qT6tY3tO",
-      "name": "Tomatow",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd56afe20e76be2ea5a9b0d33",
-      "external_urls": "https://open.spotify.com/artist/1FzBO5erQh8xC6qT6tY3tO",
-      "genres": [
-        "future bass"
-      ],
-      "popularity": 29
-    },
-    {
-      "id": "3k4v579xEIi4ZI3XgPUieC",
-      "name": "Nadya Sumarsono",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb9ee2abf88c4aff0a7a793632",
-      "external_urls": "https://open.spotify.com/artist/3k4v579xEIi4ZI3XgPUieC",
       "genres": [
         "future bass"
       ],
@@ -5987,17 +6319,17 @@
       "genres": [
         "future bass"
       ],
-      "popularity": 29
+      "popularity": 23
     },
     {
-      "id": "1DJfFPSZxhIXKgvLygOE0Z",
-      "name": "Cosmowave",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf3ab7c2872b08434074de789",
-      "external_urls": "https://open.spotify.com/artist/1DJfFPSZxhIXKgvLygOE0Z",
+      "id": "3k4v579xEIi4ZI3XgPUieC",
+      "name": "Nadya Sumarsono",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb9ee2abf88c4aff0a7a793632",
+      "external_urls": "https://open.spotify.com/artist/3k4v579xEIi4ZI3XgPUieC",
       "genres": [
         "future bass"
       ],
-      "popularity": 19
+      "popularity": 13
     },
     {
       "id": "1FzBO5erQh8xC6qT6tY3tO",
@@ -6007,7 +6339,27 @@
       "genres": [
         "future bass"
       ],
-      "popularity": 29
+      "popularity": 23
+    },
+    {
+      "id": "1DJfFPSZxhIXKgvLygOE0Z",
+      "name": "Cosmowave",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf3ab7c2872b08434074de789",
+      "external_urls": "https://open.spotify.com/artist/1DJfFPSZxhIXKgvLygOE0Z",
+      "genres": [
+        "future bass"
+      ],
+      "popularity": 14
+    },
+    {
+      "id": "1FzBO5erQh8xC6qT6tY3tO",
+      "name": "Tomatow",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd56afe20e76be2ea5a9b0d33",
+      "external_urls": "https://open.spotify.com/artist/1FzBO5erQh8xC6qT6tY3tO",
+      "genres": [
+        "future bass"
+      ],
+      "popularity": 23
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6015,7 +6367,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "6GRKwhGojrzpj0486YlBA9",
@@ -6025,27 +6377,25 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 35
+      "popularity": 28
     },
     {
       "id": "7vmMpy0sV8E6kyruaJrgF9",
       "name": "The Late Night Project",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb197a5d82745c8fa0d0dcafe2",
       "external_urls": "https://open.spotify.com/artist/7vmMpy0sV8E6kyruaJrgF9",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 48
+      "genres": [],
+      "popularity": 42
     },
     {
       "id": "1Ylv9zH9EjyMQvIAah6nOh",
       "name": "Bellorum",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42235ff35e7915a2f33fbc1b",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb5f8f2cb851094f9a7888c3a",
       "external_urls": "https://open.spotify.com/artist/1Ylv9zH9EjyMQvIAah6nOh",
       "genres": [
         "edm trap"
       ],
-      "popularity": 29
+      "popularity": 23
     },
     {
       "id": "7gm7vtdfHnBTRxpzwMecbG",
@@ -6053,18 +6403,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb77e0b5e009c8a3bc7d1c9d39",
       "external_urls": "https://open.spotify.com/artist/7gm7vtdfHnBTRxpzwMecbG",
       "genres": [
-        "electro house",
-        "bass house"
+        "electro house"
       ],
-      "popularity": 32
+      "popularity": 26
     },
     {
       "id": "2qZwOcOK5pr8WaNJWvuZd2",
       "name": "Biometrix",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb9a1271eead9003592ea5ee3f",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebabdccefdbd9801869f6d7beb",
       "external_urls": "https://open.spotify.com/artist/2qZwOcOK5pr8WaNJWvuZd2",
       "genres": [],
-      "popularity": 41
+      "popularity": 38
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6072,7 +6421,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "6GRKwhGojrzpj0486YlBA9",
@@ -6082,17 +6431,15 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 35
+      "popularity": 28
     },
     {
       "id": "7vmMpy0sV8E6kyruaJrgF9",
       "name": "The Late Night Project",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb197a5d82745c8fa0d0dcafe2",
       "external_urls": "https://open.spotify.com/artist/7vmMpy0sV8E6kyruaJrgF9",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 48
+      "genres": [],
+      "popularity": 42
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6100,10 +6447,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "58obmxGKVKCenZAkACSMgJ",
@@ -6111,7 +6457,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb9b41f4eaa0eb1768d0bc7e0c",
       "external_urls": "https://open.spotify.com/artist/58obmxGKVKCenZAkACSMgJ",
       "genres": [],
-      "popularity": 53
+      "popularity": 52
     },
     {
       "id": "5zExRf0VQCl3GO4Jrj8r0s",
@@ -6121,7 +6467,7 @@
       "genres": [
         "synthwave"
       ],
-      "popularity": 46
+      "popularity": 44
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6129,10 +6475,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "58obmxGKVKCenZAkACSMgJ",
@@ -6140,7 +6485,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb9b41f4eaa0eb1768d0bc7e0c",
       "external_urls": "https://open.spotify.com/artist/58obmxGKVKCenZAkACSMgJ",
       "genres": [],
-      "popularity": 53
+      "popularity": 52
     },
     {
       "id": "2XiiUuK68XNdHaHOAF5hnT",
@@ -6151,7 +6496,7 @@
         "future house",
         "bass house"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "5SHDLpahWqSLc0qhuGpS3f",
@@ -6159,10 +6504,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb6fa31ed8b7d7ba8209ea74a7",
       "external_urls": "https://open.spotify.com/artist/5SHDLpahWqSLc0qhuGpS3f",
       "genres": [
-        "drift phonk",
-        "phonk"
+        "drift phonk"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "1Yj7SsIEP9k7SsE1HcMBrq",
@@ -6172,27 +6516,25 @@
       "genres": [
         "slap house"
       ],
-      "popularity": 51
+      "popularity": 47
     },
     {
       "id": "3lZ4X8KKj301sS1T85Ay84",
       "name": "Clayton Jones",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb5623eb81cc810ce2de421c13",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb67238696cc90aff7e65c9abb",
       "external_urls": "https://open.spotify.com/artist/3lZ4X8KKj301sS1T85Ay84",
       "genres": [
         "electro house"
       ],
-      "popularity": 40
+      "popularity": 34
     },
     {
       "id": "4FidvjA9dxE6bhpHGC6ns9",
       "name": "CryJaxx",
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebbebb087d4f42adbbfb64f84e",
       "external_urls": "https://open.spotify.com/artist/4FidvjA9dxE6bhpHGC6ns9",
-      "genres": [
-        "brazilian phonk"
-      ],
-      "popularity": 52
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6200,25 +6542,25 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "4AsEwe2pYHpTM6xB5KAa2y",
       "name": "Justtjokay",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb3c6ebc207555409325dc89a7",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf8ad1d40d9e907d985ce2147",
       "external_urls": "https://open.spotify.com/artist/4AsEwe2pYHpTM6xB5KAa2y",
       "genres": [
         "slap house"
       ],
-      "popularity": 40
+      "popularity": 37
     },
     {
       "id": "2qZwOcOK5pr8WaNJWvuZd2",
       "name": "Biometrix",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb9a1271eead9003592ea5ee3f",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebabdccefdbd9801869f6d7beb",
       "external_urls": "https://open.spotify.com/artist/2qZwOcOK5pr8WaNJWvuZd2",
       "genres": [],
-      "popularity": 41
+      "popularity": 38
     },
     {
       "id": "3lmnnomU294PX91GpYswMn",
@@ -6226,7 +6568,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb0ef2c6af153f68f519d1f9df",
       "external_urls": "https://open.spotify.com/artist/3lmnnomU294PX91GpYswMn",
       "genres": [],
-      "popularity": 21
+      "popularity": 18
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6234,15 +6576,15 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "7zDtXPaUt31v22tT6HeL4G",
       "name": "BTWRKS",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebf0f1c2480bac4bfd52866472",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc220b6ab5eb5355bd4896af2",
       "external_urls": "https://open.spotify.com/artist/7zDtXPaUt31v22tT6HeL4G",
       "genres": [],
-      "popularity": 36
+      "popularity": 33
     },
     {
       "id": "3R4VCoPt7V1poOWpdU43X8",
@@ -6250,6 +6592,82 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb6b08de394da91505052b4a07",
       "external_urls": "https://open.spotify.com/artist/3R4VCoPt7V1poOWpdU43X8",
       "genres": [],
+      "popularity": 43
+    },
+    {
+      "id": "0g6PJw04eyN85JxQAGGdF4",
+      "name": "Kozah",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
+      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
+      "genres": [
+        "future bass"
+      ],
+      "popularity": 29
+    },
+    {
+      "id": "0g6PJw04eyN85JxQAGGdF4",
+      "name": "Kozah",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
+      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
+      "genres": [
+        "future bass"
+      ],
+      "popularity": 29
+    },
+    {
+      "id": "0g6PJw04eyN85JxQAGGdF4",
+      "name": "Kozah",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
+      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
+      "genres": [
+        "future bass"
+      ],
+      "popularity": 29
+    },
+    {
+      "id": "0g6PJw04eyN85JxQAGGdF4",
+      "name": "Kozah",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
+      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
+      "genres": [
+        "future bass"
+      ],
+      "popularity": 29
+    },
+    {
+      "id": "0Jk0TeNXrhhwOMmR2nNyZR",
+      "name": "The FifthGuys",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
+      "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
+      "genres": [],
+      "popularity": 48
+    },
+    {
+      "id": "51ZYyNbFsBlD1EHGHaSFz0",
+      "name": "Mandrazo",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2b25071714198c82df162086",
+      "external_urls": "https://open.spotify.com/artist/51ZYyNbFsBlD1EHGHaSFz0",
+      "genres": [],
+      "popularity": 47
+    },
+    {
+      "id": "3xIHOffeC188QWHIiCaLXr",
+      "name": "Veronica Bravo",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc475fc535c0dbb121bcdafb6",
+      "external_urls": "https://open.spotify.com/artist/3xIHOffeC188QWHIiCaLXr",
+      "genres": [
+        "deep house"
+      ],
+      "popularity": 53
+    },
+    {
+      "id": "1RdQK73ZgvXjkaBJkibE6X",
+      "name": "M.I.M.E",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebcb36cdf762619c0c44990617",
+      "external_urls": "https://open.spotify.com/artist/1RdQK73ZgvXjkaBJkibE6X",
+      "genres": [
+        "edm trap"
+      ],
       "popularity": 47
     },
     {
@@ -6260,93 +6678,15 @@
       "genres": [
         "future bass"
       ],
-      "popularity": 35
-    },
-    {
-      "id": "0g6PJw04eyN85JxQAGGdF4",
-      "name": "Kozah",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
-      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
-      "genres": [
-        "future bass"
-      ],
-      "popularity": 35
-    },
-    {
-      "id": "0g6PJw04eyN85JxQAGGdF4",
-      "name": "Kozah",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
-      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
-      "genres": [
-        "future bass"
-      ],
-      "popularity": 35
-    },
-    {
-      "id": "0g6PJw04eyN85JxQAGGdF4",
-      "name": "Kozah",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
-      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
-      "genres": [
-        "future bass"
-      ],
-      "popularity": 35
-    },
-    {
-      "id": "0Jk0TeNXrhhwOMmR2nNyZR",
-      "name": "The FifthGuys",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
-      "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
-      "genres": [],
-      "popularity": 53
-    },
-    {
-      "id": "51ZYyNbFsBlD1EHGHaSFz0",
-      "name": "Mandrazo",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb2b25071714198c82df162086",
-      "external_urls": "https://open.spotify.com/artist/51ZYyNbFsBlD1EHGHaSFz0",
-      "genres": [],
-      "popularity": 48
-    },
-    {
-      "id": "3xIHOffeC188QWHIiCaLXr",
-      "name": "Veronica Bravo",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc475fc535c0dbb121bcdafb6",
-      "external_urls": "https://open.spotify.com/artist/3xIHOffeC188QWHIiCaLXr",
-      "genres": [
-        "deep house"
-      ],
-      "popularity": 57
-    },
-    {
-      "id": "1RdQK73ZgvXjkaBJkibE6X",
-      "name": "M.I.M.E",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebcb36cdf762619c0c44990617",
-      "external_urls": "https://open.spotify.com/artist/1RdQK73ZgvXjkaBJkibE6X",
-      "genres": [
-        "edm trap"
-      ],
-      "popularity": 51
-    },
-    {
-      "id": "0g6PJw04eyN85JxQAGGdF4",
-      "name": "Kozah",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebfed4b86f4a5db12d46bd9fd7",
-      "external_urls": "https://open.spotify.com/artist/0g6PJw04eyN85JxQAGGdF4",
-      "genres": [
-        "future bass"
-      ],
-      "popularity": 35
+      "popularity": 29
     },
     {
       "id": "6CnCjQXjKiV9Ro5GGA8ztB",
       "name": "DJ Fluke",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb88308a5cfb2f2b294ad6c147",
       "external_urls": "https://open.spotify.com/artist/6CnCjQXjKiV9Ro5GGA8ztB",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 55
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6354,17 +6694,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "1nA147Ac1cZAO8Y69517cV",
       "name": "Xulcha",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb74ccaf2b0f8535c0f34a8fa6",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebda5269c5e7c8e67ad173fce2",
       "external_urls": "https://open.spotify.com/artist/1nA147Ac1cZAO8Y69517cV",
       "genres": [
         "moombahton"
       ],
-      "popularity": 13
+      "popularity": 9
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6372,7 +6712,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "4fPtMuPhGVwUEPW9g4dJlC",
@@ -6390,7 +6730,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8ff8a8ca9fb8a9c1384434c8",
       "external_urls": "https://open.spotify.com/artist/70hTQzJxZt0JLvFzQVITHe",
       "genres": [],
-      "popularity": 34
+      "popularity": 30
     },
     {
       "id": "5q8i6VAHzs0FbjCjFUmmMy",
@@ -6400,7 +6740,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 14
+      "popularity": 11
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -6411,7 +6751,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "1pRMILWpvF1dCXtTzxH8hG",
@@ -6421,7 +6761,7 @@
       "genres": [
         "groove metal"
       ],
-      "popularity": 9
+      "popularity": 7
     },
     {
       "id": "1cJMjmgzVFy3Yqd8jJfBuC",
@@ -6432,7 +6772,7 @@
         "melodic bass",
         "future bass"
       ],
-      "popularity": 27
+      "popularity": 22
     },
     {
       "id": "0Jk0TeNXrhhwOMmR2nNyZR",
@@ -6440,17 +6780,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
       "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
       "genres": [],
-      "popularity": 53
+      "popularity": 48
     },
     {
       "id": "4rAzjYhl5HrtuWeaRX36ts",
       "name": "WCKiD",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebc40cad3156c9abd5ecccd933",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb883fd0be5b930b1001a1b54e",
       "external_urls": "https://open.spotify.com/artist/4rAzjYhl5HrtuWeaRX36ts",
       "genres": [
         "electro house"
       ],
-      "popularity": 30
+      "popularity": 24
     },
     {
       "id": "38u5tDrWqAZsGySZL5OB3b",
@@ -6460,7 +6800,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 36
+      "popularity": 32
     },
     {
       "id": "4rjQWq7EYFvbZacPNhUPr3",
@@ -6468,7 +6808,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebcec8c83b654dc5734855415e",
       "external_urls": "https://open.spotify.com/artist/4rjQWq7EYFvbZacPNhUPr3",
       "genres": [],
-      "popularity": 34
+      "popularity": 30
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6476,10 +6816,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "6jZl6risV5vg6O83zKSHHs",
@@ -6489,7 +6828,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 44
+      "popularity": 37
     },
     {
       "id": "5U1eJDpMKZiQustw16e0g2",
@@ -6497,7 +6836,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebf31787d4edcd623863d0c0d3",
       "external_urls": "https://open.spotify.com/artist/5U1eJDpMKZiQustw16e0g2",
       "genres": [],
-      "popularity": 51
+      "popularity": 50
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6505,10 +6844,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "6jZl6risV5vg6O83zKSHHs",
@@ -6518,7 +6856,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 44
+      "popularity": 37
     },
     {
       "id": "15ouNMI0IA7d45Tez6JbRw",
@@ -6528,20 +6866,18 @@
       "genres": [
         "bass house",
         "electro house",
-        "g-house",
-        "tech house"
+        "tech house",
+        "g-house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "6CnCjQXjKiV9Ro5GGA8ztB",
       "name": "DJ Fluke",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb88308a5cfb2f2b294ad6c147",
       "external_urls": "https://open.spotify.com/artist/6CnCjQXjKiV9Ro5GGA8ztB",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 55
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "2C8TRvpR3834esUbCEHkqe",
@@ -6549,17 +6885,17 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebd8caa2cf8df0eef4a78c18f2",
       "external_urls": "https://open.spotify.com/artist/2C8TRvpR3834esUbCEHkqe",
       "genres": [],
-      "popularity": 32
+      "popularity": 30
     },
     {
       "id": "48EUMg2SS1VgOyLRzOhwjQ",
       "name": "Polar Youth",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb4a5da7180184c6b300d89878",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebe335f12144667c39302a6bd5",
       "external_urls": "https://open.spotify.com/artist/48EUMg2SS1VgOyLRzOhwjQ",
       "genres": [
         "drum and bass"
       ],
-      "popularity": 27
+      "popularity": 23
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6567,10 +6903,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2bStSSSAYNLCBApc6Qrirf",
@@ -6581,7 +6916,7 @@
         "budots",
         "electro house"
       ],
-      "popularity": 42
+      "popularity": 36
     },
     {
       "id": "38HqxBtUpMunEP3kKLjEby",
@@ -6593,13 +6928,77 @@
         "electro house",
         "future bass"
       ],
-      "popularity": 44
+      "popularity": 40
     },
     {
       "id": "7bS3jWzjnj8T5AmwdKUR5f",
       "name": "R-Cue",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb6c99d5ae66d12b13a480fd2f",
       "external_urls": "https://open.spotify.com/artist/7bS3jWzjnj8T5AmwdKUR5f",
+      "genres": [],
+      "popularity": 22
+    },
+    {
+      "id": "2DYDFBqoaBP2i9XrTGpOgF",
+      "name": "Naeleck",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
+      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "2OxrEwDhVZodk9XEVBkA6E",
+      "name": "Hige Driver",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb154ced13c9380199625a6711",
+      "external_urls": "https://open.spotify.com/artist/2OxrEwDhVZodk9XEVBkA6E",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 33
+    },
+    {
+      "id": "0Jk0TeNXrhhwOMmR2nNyZR",
+      "name": "The FifthGuys",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
+      "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
+      "genres": [],
+      "popularity": 48
+    },
+    {
+      "id": "3y03cacOqPS9hc4UN2U9rc",
+      "name": "NBLM",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb04b3e5786975b8cb28d86686",
+      "external_urls": "https://open.spotify.com/artist/3y03cacOqPS9hc4UN2U9rc",
+      "genres": [],
+      "popularity": 32
+    },
+    {
+      "id": "2DYDFBqoaBP2i9XrTGpOgF",
+      "name": "Naeleck",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
+      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 66
+    },
+    {
+      "id": "2OxrEwDhVZodk9XEVBkA6E",
+      "name": "Hige Driver",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb154ced13c9380199625a6711",
+      "external_urls": "https://open.spotify.com/artist/2OxrEwDhVZodk9XEVBkA6E",
+      "genres": [
+        "electro house"
+      ],
+      "popularity": 33
+    },
+    {
+      "id": "7gm7vtdfHnBTRxpzwMecbG",
+      "name": "MahyaaR",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb77e0b5e009c8a3bc7d1c9d39",
+      "external_urls": "https://open.spotify.com/artist/7gm7vtdfHnBTRxpzwMecbG",
       "genres": [
         "electro house"
       ],
@@ -6611,10 +7010,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6624,76 +7022,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
-    },
-    {
-      "id": "0Jk0TeNXrhhwOMmR2nNyZR",
-      "name": "The FifthGuys",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb8d356bb7928080aa872894f5",
-      "external_urls": "https://open.spotify.com/artist/0Jk0TeNXrhhwOMmR2nNyZR",
-      "genres": [],
-      "popularity": 53
-    },
-    {
-      "id": "3y03cacOqPS9hc4UN2U9rc",
-      "name": "NBLM",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb04b3e5786975b8cb28d86686",
-      "external_urls": "https://open.spotify.com/artist/3y03cacOqPS9hc4UN2U9rc",
-      "genres": [],
-      "popularity": 34
-    },
-    {
-      "id": "2DYDFBqoaBP2i9XrTGpOgF",
-      "name": "Naeleck",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
-      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
-      "genres": [
-        "electro house",
-        "hypertechno"
-      ],
-      "popularity": 71
-    },
-    {
-      "id": "2OxrEwDhVZodk9XEVBkA6E",
-      "name": "Hige Driver",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb154ced13c9380199625a6711",
-      "external_urls": "https://open.spotify.com/artist/2OxrEwDhVZodk9XEVBkA6E",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 39
-    },
-    {
-      "id": "7gm7vtdfHnBTRxpzwMecbG",
-      "name": "MahyaaR",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb77e0b5e009c8a3bc7d1c9d39",
-      "external_urls": "https://open.spotify.com/artist/7gm7vtdfHnBTRxpzwMecbG",
-      "genres": [
-        "electro house",
-        "bass house"
-      ],
-      "popularity": 32
-    },
-    {
-      "id": "2DYDFBqoaBP2i9XrTGpOgF",
-      "name": "Naeleck",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
-      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
-      "genres": [
-        "electro house",
-        "hypertechno"
-      ],
-      "popularity": 71
-    },
-    {
-      "id": "2OxrEwDhVZodk9XEVBkA6E",
-      "name": "Hige Driver",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb154ced13c9380199625a6711",
-      "external_urls": "https://open.spotify.com/artist/2OxrEwDhVZodk9XEVBkA6E",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "3Qq4056RMPoY5ehQrpNeVi",
@@ -6703,7 +7032,7 @@
       "genres": [
         "dubstep"
       ],
-      "popularity": 35
+      "popularity": 36
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6711,10 +7040,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6724,7 +7052,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "4qqtDYEq0zywabPZZa2uFH",
@@ -6733,10 +7061,10 @@
       "external_urls": "https://open.spotify.com/artist/4qqtDYEq0zywabPZZa2uFH",
       "genres": [
         "deathstep",
-        "phonk",
-        "drift phonk"
+        "drift phonk",
+        "phonk"
       ],
-      "popularity": 30
+      "popularity": 26
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6744,10 +7072,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6757,15 +7084,18 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "3A9UTh2pnpIgZUP74g8V9Z",
       "name": "Deekrai",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb89a6e438d9dfc299a2d8678e",
       "external_urls": "https://open.spotify.com/artist/3A9UTh2pnpIgZUP74g8V9Z",
-      "genres": [],
-      "popularity": 10
+      "genres": [
+        "bass house",
+        "electro house"
+      ],
+      "popularity": 8
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6773,10 +7103,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6786,15 +7115,17 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "1erqsFTFiGTJqt2Uq4Swa5",
       "name": "Lawbass",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eba556eb22bf7e563a85364057",
       "external_urls": "https://open.spotify.com/artist/1erqsFTFiGTJqt2Uq4Swa5",
-      "genres": [],
-      "popularity": 5
+      "genres": [
+        "bass house"
+      ],
+      "popularity": 4
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6802,10 +7133,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6815,14 +7145,16 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "5xbD31LiuWF63jFojg9j1f",
       "name": "Silvery",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb3de780bdb417fbf1d39d3b3b",
       "external_urls": "https://open.spotify.com/artist/5xbD31LiuWF63jFojg9j1f",
-      "genres": [],
+      "genres": [
+        "electro house"
+      ],
       "popularity": 9
     },
     {
@@ -6831,10 +7163,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6844,7 +7175,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "780ScNzZq2AelDL7HNJDl6",
@@ -6855,7 +7186,7 @@
         "dubstep",
         "bass music"
       ],
-      "popularity": 7
+      "popularity": 3
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6863,10 +7194,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6876,7 +7206,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "11HbXAUaPyevfyRYnmHpX6",
@@ -6886,7 +7216,7 @@
       "genres": [
         "psytrance"
       ],
-      "popularity": 4
+      "popularity": 3
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6894,10 +7224,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6907,17 +7236,15 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "0nOGQONPFysCvHKDPwGSOW",
       "name": "Eric Jadi",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb724754bc822e0442bddc1b14",
       "external_urls": "https://open.spotify.com/artist/0nOGQONPFysCvHKDPwGSOW",
-      "genres": [
-        "funky house"
-      ],
-      "popularity": 2
+      "genres": [],
+      "popularity": 1
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -6925,10 +7252,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -6938,7 +7264,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "55agPZ4N0WAIowLMLMdzeZ",
@@ -6946,7 +7272,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb0c0c3a175d97e72b424e9934",
       "external_urls": "https://open.spotify.com/artist/55agPZ4N0WAIowLMLMdzeZ",
       "genres": [],
-      "popularity": 9
+      "popularity": 7
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -6960,7 +7286,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -6974,7 +7300,7 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "2jQWqQ0Z06KiQnysJHn5Mq",
@@ -6988,17 +7314,17 @@
         "riddim",
         "bass music"
       ],
-      "popularity": 31
+      "popularity": 28
     },
     {
       "id": "1Ylv9zH9EjyMQvIAah6nOh",
       "name": "Bellorum",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb42235ff35e7915a2f33fbc1b",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb5f8f2cb851094f9a7888c3a",
       "external_urls": "https://open.spotify.com/artist/1Ylv9zH9EjyMQvIAah6nOh",
       "genres": [
         "edm trap"
       ],
-      "popularity": 29
+      "popularity": 23
     },
     {
       "id": "3Y7sK4nACC8R7WwAUUumCL",
@@ -7007,10 +7333,10 @@
       "external_urls": "https://open.spotify.com/artist/3Y7sK4nACC8R7WwAUUumCL",
       "genres": [
         "melbourne bounce",
-        "bounce",
-        "big room"
+        "big room",
+        "bounce"
       ],
-      "popularity": 41
+      "popularity": 36
     },
     {
       "id": "4ys7vyfayHAxy9B8qHq8Vy",
@@ -7021,7 +7347,7 @@
         "bass house",
         "g-house"
       ],
-      "popularity": 16
+      "popularity": 11
     },
     {
       "id": "1v6MeV1kAPbXmFeF60LtZE",
@@ -7029,12 +7355,13 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb0c577124a9693301210776d0",
       "external_urls": "https://open.spotify.com/artist/1v6MeV1kAPbXmFeF60LtZE",
       "genres": [
-        "bass house",
         "latin house",
+        "bass house",
         "afro house",
-        "electro house"
+        "electro house",
+        "techengue"
       ],
-      "popularity": 45
+      "popularity": 34
     },
     {
       "id": "5nd7jnne7zbsV2J5jBKNOY",
@@ -7046,7 +7373,7 @@
         "hardstyle",
         "hardcore techno"
       ],
-      "popularity": 52
+      "popularity": 47
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -7054,10 +7381,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -7067,29 +7393,27 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "59CIKqVd0hUE3gZx3pvubw",
       "name": "SOXX",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebd89c778bd4a5499ad33b3c2c",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebdfadf2f3fa0649d5b79048b6",
       "external_urls": "https://open.spotify.com/artist/59CIKqVd0hUE3gZx3pvubw",
       "genres": [
         "bass house",
         "electro house",
         "uk garage"
       ],
-      "popularity": 33
+      "popularity": 31
     },
     {
       "id": "6CnCjQXjKiV9Ro5GGA8ztB",
       "name": "DJ Fluke",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb88308a5cfb2f2b294ad6c147",
       "external_urls": "https://open.spotify.com/artist/6CnCjQXjKiV9Ro5GGA8ztB",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 55
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -7100,7 +7424,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     },
     {
       "id": "66I79LmRFRIjinKoyLkzdU",
@@ -7116,10 +7440,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2OxrEwDhVZodk9XEVBkA6E",
@@ -7129,7 +7452,7 @@
       "genres": [
         "electro house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "3bwENxqj9nhaAI3fsAwmv9",
@@ -7139,7 +7462,7 @@
       "genres": [
         "dubstep"
       ],
-      "popularity": 50
+      "popularity": 47
     },
     {
       "id": "15ouNMI0IA7d45Tez6JbRw",
@@ -7149,20 +7472,18 @@
       "genres": [
         "bass house",
         "electro house",
-        "g-house",
-        "tech house"
+        "tech house",
+        "g-house"
       ],
-      "popularity": 39
+      "popularity": 33
     },
     {
       "id": "6CnCjQXjKiV9Ro5GGA8ztB",
       "name": "DJ Fluke",
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb88308a5cfb2f2b294ad6c147",
       "external_urls": "https://open.spotify.com/artist/6CnCjQXjKiV9Ro5GGA8ztB",
-      "genres": [
-        "electro house"
-      ],
-      "popularity": 55
+      "genres": [],
+      "popularity": 50
     },
     {
       "id": "7oz4dlYyj9jadcbGJq1jwx",
@@ -7170,7 +7491,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebdca68ce8ad6cecd50f2709c9",
       "external_urls": "https://open.spotify.com/artist/7oz4dlYyj9jadcbGJq1jwx",
       "genres": [],
-      "popularity": 54
+      "popularity": 50
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -7178,10 +7499,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "2eOPTQxZPGde8cZPJv80SX",
@@ -7191,7 +7511,7 @@
       "genres": [
         "hardstyle"
       ],
-      "popularity": 26
+      "popularity": 17
     },
     {
       "id": "75xXmkKj5zuv8qNlqP2VIY",
@@ -7202,58 +7522,55 @@
         "tropical house",
         "deep house"
       ],
-      "popularity": 40
+      "popularity": 36
     },
     {
       "id": "2vBQwwxI3LHuhqo1kGm1v6",
       "name": "Henry Dell",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebefde8b248968158766048359",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebe014003d291d6919c11c32b3",
       "external_urls": "https://open.spotify.com/artist/2vBQwwxI3LHuhqo1kGm1v6",
       "genres": [],
-      "popularity": 21
+      "popularity": 17
     },
     {
       "id": "0V7r1YRXw2dSzBk2isScka",
       "name": "Pepperjuice",
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebf42c54cc5b7ed2db6b84eece",
       "external_urls": "https://open.spotify.com/artist/0V7r1YRXw2dSzBk2isScka",
+      "genres": [],
+      "popularity": 12
+    },
+    {
+      "id": "0VVOaCyLiCdkAdlC11W4eK",
+      "name": "Cyberpunkers",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb57a356a805d54697d66ba52a",
+      "external_urls": "https://open.spotify.com/artist/0VVOaCyLiCdkAdlC11W4eK",
+      "genres": [
+        "electro house",
+        "synthwave"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "0VVOaCyLiCdkAdlC11W4eK",
+      "name": "Cyberpunkers",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5eb57a356a805d54697d66ba52a",
+      "external_urls": "https://open.spotify.com/artist/0VVOaCyLiCdkAdlC11W4eK",
+      "genres": [
+        "electro house",
+        "synthwave"
+      ],
+      "popularity": 28
+    },
+    {
+      "id": "2DYDFBqoaBP2i9XrTGpOgF",
+      "name": "Naeleck",
+      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
+      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
         "electro house"
       ],
-      "popularity": 18
-    },
-    {
-      "id": "0VVOaCyLiCdkAdlC11W4eK",
-      "name": "Cyberpunkers",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb57a356a805d54697d66ba52a",
-      "external_urls": "https://open.spotify.com/artist/0VVOaCyLiCdkAdlC11W4eK",
-      "genres": [
-        "electro house",
-        "synthwave"
-      ],
-      "popularity": 33
-    },
-    {
-      "id": "0VVOaCyLiCdkAdlC11W4eK",
-      "name": "Cyberpunkers",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5eb57a356a805d54697d66ba52a",
-      "external_urls": "https://open.spotify.com/artist/0VVOaCyLiCdkAdlC11W4eK",
-      "genres": [
-        "electro house",
-        "synthwave"
-      ],
-      "popularity": 33
-    },
-    {
-      "id": "2DYDFBqoaBP2i9XrTGpOgF",
-      "name": "Naeleck",
-      "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
-      "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
-      "genres": [
-        "electro house",
-        "hypertechno"
-      ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "58obmxGKVKCenZAkACSMgJ",
@@ -7261,7 +7578,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb9b41f4eaa0eb1768d0bc7e0c",
       "external_urls": "https://open.spotify.com/artist/58obmxGKVKCenZAkACSMgJ",
       "genres": [],
-      "popularity": 53
+      "popularity": 52
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -7269,10 +7586,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "58obmxGKVKCenZAkACSMgJ",
@@ -7280,7 +7596,7 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5eb9b41f4eaa0eb1768d0bc7e0c",
       "external_urls": "https://open.spotify.com/artist/58obmxGKVKCenZAkACSMgJ",
       "genres": [],
-      "popularity": 53
+      "popularity": 52
     },
     {
       "id": "2DYDFBqoaBP2i9XrTGpOgF",
@@ -7288,10 +7604,9 @@
       "image_url": "https://i.scdn.co/image/ab6761610000e5ebb6b8aff1c533e9873b17e312",
       "external_urls": "https://open.spotify.com/artist/2DYDFBqoaBP2i9XrTGpOgF",
       "genres": [
-        "electro house",
-        "hypertechno"
+        "electro house"
       ],
-      "popularity": 71
+      "popularity": 66
     },
     {
       "id": "0VVOaCyLiCdkAdlC11W4eK",
@@ -7302,7 +7617,7 @@
         "electro house",
         "synthwave"
       ],
-      "popularity": 33
+      "popularity": 28
     }
   ]
 }
