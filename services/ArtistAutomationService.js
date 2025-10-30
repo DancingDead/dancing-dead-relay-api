@@ -570,6 +570,21 @@ Return in this exact JSON format:
         console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
 
         try {
+          // PROTECTION ANTI-DOUBLON: Re-vérifier si l'artiste existe déjà
+          console.log('  🔍 Step 3.0: Checking if artist already exists in WordPress...');
+          const currentWordPressArtists = await this.getWordPressArtists();
+          const normalizedArtistName = this.normalizeArtistName(artist.name);
+          const artistExists = currentWordPressArtists.some(
+            wpArtist => this.normalizeArtistName(wpArtist.name) === normalizedArtistName
+          );
+
+          if (artistExists) {
+            console.log(`  ⚠️  Artist "${artist.name}" already exists - SKIPPING to prevent duplicate`);
+            results.skipped.push(artist.name);
+            continue; // Passer au prochain artiste
+          }
+          console.log(`  ✅ Artist does not exist yet - proceeding with creation`);
+
           // Recherche d'informations
           console.log('  🔍 Step 3.1: Researching artist information...');
           const research = await this.researchArtist(artist);

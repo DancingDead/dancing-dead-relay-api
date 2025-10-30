@@ -12,6 +12,9 @@ let lastSyncStatus = {
   results: null
 };
 
+// Lock pour éviter les synchronisations concurrentes
+let syncInProgress = false;
+
 /**
  * POST /api/artists/sync
  * Déclenche manuellement la synchronisation des artistes
@@ -21,6 +24,20 @@ let lastSyncStatus = {
  */
 router.post('/sync', async (req, res) => {
   try {
+    // PROTECTION ANTI-DOUBLON: Vérifier si une sync est déjà en cours
+    if (syncInProgress) {
+      console.log('\n⚠️  Sync request BLOCKED - another sync is already in progress');
+      return res.status(409).json({
+        success: false,
+        error: 'Synchronization already in progress. Please wait for the current sync to complete.',
+        status: 'conflict'
+      });
+    }
+
+    // Verrouiller pour empêcher les syncs concurrentes
+    syncInProgress = true;
+    console.log('🔒 Sync lock acquired');
+
     const limit = req.body?.limit || null;
     const skipSpotifyUpdate = req.body?.skipSpotifyUpdate || false;
 
@@ -36,6 +53,7 @@ router.post('/sync', async (req, res) => {
 
     // Vérifier si ANTHROPIC_API_KEY est configurée
     if (!process.env.ANTHROPIC_API_KEY) {
+      syncInProgress = false; // Libérer le lock
       return res.status(500).json({
         success: false,
         error: 'ANTHROPIC_API_KEY not configured in environment variables'
@@ -52,6 +70,10 @@ router.post('/sync', async (req, res) => {
       results: result.results
     };
 
+    // Libérer le lock
+    syncInProgress = false;
+    console.log('🔓 Sync lock released');
+
     res.json({
       success: true,
       message: 'Artist synchronization completed',
@@ -66,6 +88,10 @@ router.post('/sync', async (req, res) => {
       status: 'error',
       error: error.message
     };
+
+    // Libérer le lock en cas d'erreur
+    syncInProgress = false;
+    console.log('🔓 Sync lock released (error)');
 
     res.status(500).json({
       success: false,
@@ -182,6 +208,57 @@ router.get('/research-status', async (req, res) => {
     res.status(500).json({
       success: false,
       error: error.message
+    });
+  }
+});
+
+/**
+ * GET /api/artists/test-search?artist=ArtistName
+ * Test endpoint pour vérifier que Brave Search fonctionne
+ */
+router.get('/test-search', async (req, res) => {
+  try {
+    const artistName = req.query.artist || 'LNY TNZ';
+    const WebSearchService = require('../../services/WebSearchService');
+    const webSearch = new WebSearchService();
+
+    console.log(`\n🧪 Testing web search for: ${artistName}`);
+
+    const results = await webSearch.searchArtist(artistName, ['hardstyle']);
+
+    const totalResults = results.biography.length + results.labels.length + results.performances.length;
+
+    res.json({
+      success: true,
+      artist: artistName,
+      braveApiConfigured: !!process.env.BRAVE_SEARCH_API_KEY,
+      searchEngine: webSearch.useBrave ? 'Brave Search API' : 'DuckDuckGo',
+      totalResults,
+      breakdown: {
+        biography: results.biography.length,
+        labels: results.labels.length,
+        performances: results.performances.length
+      },
+      sampleResults: {
+        biography: results.biography.slice(0, 2).map(r => ({
+          title: r.title,
+          description: r.description.substring(0, 150) + '...',
+          source: r.source
+        })),
+        labels: results.labels.slice(0, 2).map(r => ({
+          title: r.title,
+          description: r.description.substring(0, 150) + '...',
+          source: r.source
+        }))
+      }
+    });
+
+  } catch (error) {
+    console.error('Test search error:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message,
+      braveApiConfigured: !!process.env.BRAVE_SEARCH_API_KEY
     });
   }
 });
