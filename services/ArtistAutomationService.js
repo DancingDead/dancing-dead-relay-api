@@ -429,16 +429,21 @@ Return in this exact JSON format:
     } catch (error) {
       console.error(`Error generating description for ${artist.name}:`, error);
 
-      // Fallback avec description générique
+      // Fallback avec description basée sur les genres
+      const genres = artist.genres?.join(', ') || 'Electronic';
+      const primaryGenres = artist.genres?.slice(0, 2).join(' and ') || 'electronic music';
+      const popularity = artist.popularity || 50;
+      const recognition = popularity > 60 ? 'growing recognition' : 'underground following';
+
       return {
         en: {
-          description: `<strong>${artist.genres?.join(', ') || 'Electronic'}</strong> artist ${artist.name} brings a unique sound to the underground music scene.<br><br>Known for innovative productions and dynamic performances, this artist continues to push boundaries in electronic music.<br><br>Featured on Dancing Dead Records.`,
-          meta_description: `${artist.name}, electronic music artist known for ${artist.genres?.slice(0, 2).join(' and ') || 'innovative sound'}.`,
+          description: `Specializing in <strong>${genres}</strong>, ${artist.name} represents the cutting edge of modern electronic music production.<br><br>With a focus on ${primaryGenres}, this artist crafts distinctive sounds characterized by heavy basslines, intricate sound design, and innovative production techniques. Active in the underground scene with a ${recognition} on digital platforms and streaming services.<br><br>As part of the Dancing Dead Records roster, ${artist.name} contributes to the label's commitment to showcasing forward-thinking electronic artists pushing genre boundaries.<br><br>Listen on Spotify`,
+          meta_description: `${artist.name} - ${genres} producer and DJ bringing innovative sounds to the electronic music underground scene.`,
           role: 'DJ & Producer'
         },
         fr: {
-          description: `Artiste <strong>${artist.genres?.join(', ') || 'Electronic'}</strong>, ${artist.name} apporte un son unique à la scène musicale underground.<br><br>Connu pour ses productions innovantes et ses performances dynamiques, cet artiste continue de repousser les limites de la musique électronique.<br><br>En vedette sur Dancing Dead Records.`,
-          meta_description: `${artist.name}, artiste de musique électronique connu pour ${artist.genres?.slice(0, 2).join(' et ') || 'son innovant'}.`,
+          description: `Spécialisé dans le <strong>${genres}</strong>, ${artist.name} représente l'avant-garde de la production musicale électronique moderne.<br><br>Avec un focus sur le ${primaryGenres}, cet artiste crée des sons distinctifs caractérisés par des basses lourdes, un sound design complexe et des techniques de production innovantes. Actif dans la scène underground avec une ${recognition === 'growing recognition' ? 'reconnaissance croissante' : 'base de fans underground'} sur les plateformes digitales et services de streaming.<br><br>En tant que membre du roster Dancing Dead Records, ${artist.name} contribue à l'engagement du label à présenter des artistes électroniques avant-gardistes repoussant les frontières des genres.<br><br>Écouter sur Spotify`,
+          meta_description: `${artist.name} - Producteur et DJ ${genres} apportant des sons innovants à la scène underground de musique électronique.`,
           role: 'DJ & Producteur'
         }
       };
