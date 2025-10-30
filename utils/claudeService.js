@@ -2,11 +2,16 @@ const Anthropic = require('@anthropic-ai/sdk');
 const fs = require('fs');
 const path = require('path');
 
-// Load the context file once at startup
-const CONTEXT = fs.readFileSync(
-  path.join(__dirname, '../claude-context.md'),
-  'utf-8'
-);
+// Load the context file once at startup (optional)
+let CONTEXT;
+try {
+  CONTEXT = fs.readFileSync(
+    path.join(__dirname, '../claude-context.md'),
+    'utf-8'
+  );
+} catch (error) {
+  CONTEXT = 'Dancing Dead Records - Music Label Context';
+}
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
