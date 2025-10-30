@@ -28,11 +28,15 @@ class ArtistAutomationService {
     // Service de recherche de liens sociaux (recherches ciblées par plateforme)
     this.socialLinks = new SocialLinksService();
 
-    // Charger le contexte du projet
-    this.projectContext = fs.readFileSync(
-      path.join(__dirname, '../claude-context.md'),
-      'utf-8'
-    );
+    // Charger le contexte du projet (optionnel)
+    try {
+      this.projectContext = fs.readFileSync(
+        path.join(__dirname, '../claude-context.md'),
+        'utf-8'
+      );
+    } catch (error) {
+      this.projectContext = 'Dancing Dead Records - Artist Automation System';
+    }
 
     // Configuration Polylang
     this.polylangConfig = {
