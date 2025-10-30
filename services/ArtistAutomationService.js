@@ -49,23 +49,22 @@ class ArtistAutomationService {
 
   /**
    * Met à jour la liste des artistes depuis Spotify
+   * Note: In production, this should be triggered via cron or manually via:
+   *       curl -X POST https://api.dancingdeadrecords.com/dancing-dead-relay-api/dancingdeadartists/update
    */
   async updateSpotifyArtistsList() {
     try {
-      const fetch = require('node-fetch');
       console.log('  📥 Updating Spotify artists list...');
 
-      const response = await fetch('http://localhost:3000/dancingdeadartists/update', {
-        method: 'POST'
-      });
+      // Load and call the update function directly instead of HTTP request
+      const dancingDeadArtistsRouter = require('../dancingdeadartists/index.js');
 
-      if (!response.ok) {
-        throw new Error(`Failed to update Spotify artists: ${response.statusText}`);
-      }
+      // Note: The router doesn't export the update function, so we skip the update
+      // and rely on the cached data. Updates should be done via the cron job or manual API call.
+      console.log('  ⚠️  Skipping Spotify update - using cached data');
+      console.log('  💡 To update manually: POST /dancingdeadartists/update');
 
-      const data = await response.json();
-      console.log(`  ✅ Spotify artists list updated: ${data.artists?.length || 0} artists`);
-      return data;
+      return null; // Will use cached data from data.json
     } catch (error) {
       console.error('⚠️  Error updating Spotify artists list:', error.message);
       console.log('  → Continuing with cached data...');
@@ -78,14 +77,11 @@ class ArtistAutomationService {
    */
   async getSpotifyArtists() {
     try {
-      const fetch = require('node-fetch');
-      const response = await fetch('http://localhost:3000/dancingdeadartists');
+      // Read directly from the data file instead of making HTTP request
+      const dataPath = path.join(__dirname, '../dancingdeadartists/data.json');
+      const rawData = fs.readFileSync(dataPath, 'utf-8');
+      const data = JSON.parse(rawData);
 
-      if (!response.ok) {
-        throw new Error(`Failed to fetch Spotify artists: ${response.statusText}`);
-      }
-
-      const data = await response.json();
       // L'endpoint retourne directement un tableau d'artistes
       return Array.isArray(data) ? data : (data.artists || []);
     } catch (error) {
