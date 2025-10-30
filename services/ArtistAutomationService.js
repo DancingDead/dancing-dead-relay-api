@@ -380,21 +380,31 @@ Popularity: ${artist.popularity}/100
 Research findings:
 ${researchText}
 
-Generate TWO descriptions:
+IMPORTANT: Create RICH, DETAILED, NARRATIVE descriptions similar to this example style:
 
-1. ENGLISH description (3-4 paragraphs):
-   - Paragraph 1: Introduction with genres in <strong> tags
-   - Paragraph 2: Labels, collaborations, notable support
-   - Paragraph 3: Live performances, festivals
-   - Paragraph 4: Mention connection to Dancing Dead Records
+"Artiste polyvalent et visionnaire de la scène électronique, [Artist] fusionne les énergies de [genres] pour créer des compositions puissantes et émotionnelles. [Mention past projects, groups, or significant achievements]. Ces morceaux ont accumulé des millions d'écoutes sur des plateformes comme Spotify et YouTube, consolidant sa réputation internationale.
+
+[Career evolution, label signings]. Il a signé plusieurs productions sur des labels prestigieux tels que Dancing Dead Records, [other labels], explorant des sonorités allant de [genre] à [genre]. Ses collaborations avec des artistes comme [names] témoignent de sa capacité à repousser les frontières du genre.
+
+Passionné par [artistic vision], [Artist] s'adresse à un public international de créateurs, de DJs et de mélomanes. Ses performances en festivals et clubs, ainsi que ses remixes et productions originales, font de lui une figure incontournable de la scène électronique contemporaine.
+
+Avec une vision artistique audacieuse et une maîtrise technique impressionnante, [Artist] continue d'influencer et d'inspirer la scène électronique mondiale."
+
+Generate TWO descriptions (4 FULL paragraphs each):
+
+1. ENGLISH description (4 detailed paragraphs, ~300-400 words):
+   - Para 1: Artist introduction, genre fusion, artistic vision, use <strong> for main genres
+   - Para 2: Career highlights, past projects/groups, hit tracks, streaming success, label signings
+   - Para 3: Collaborations, artistic evolution, genre exploration, mention Dancing Dead Records
+   - Para 4: Impact on scene, performances, target audience, artistic philosophy
    - Use <br><br> between paragraphs
-   - Use <strong> only for genres and labels
-   - Energetic, modern tone for electronic music fans
+   - Rich, narrative style with specific details
+   - If research data is limited, create plausible narrative based on genres and Spotify popularity
 
-2. FRENCH description (3-4 paragraphs):
-   - Same structure as English
-   - Natural French translation (not literal)
-   - Maintain artistic tone
+2. FRENCH description (4 detailed paragraphs, natural French):
+   - Same rich structure as English
+   - NOT a literal translation - adapt for French music journalism style
+   - Maintain passionate, artistic tone
 
 Return in this exact JSON format:
 {
@@ -413,7 +423,7 @@ Return in this exact JSON format:
     try {
       const message = await this.anthropic.messages.create({
         model: 'claude-sonnet-4-20250514',
-        max_tokens: 2000,
+        max_tokens: 3500,
         messages: [{ role: 'user', content: prompt }]
       });
 
@@ -429,21 +439,25 @@ Return in this exact JSON format:
     } catch (error) {
       console.error(`Error generating description for ${artist.name}:`, error);
 
-      // Fallback avec description basée sur les genres
+      // Fallback avec description RICHE basée sur les genres
       const genres = artist.genres?.join(', ') || 'Electronic';
-      const primaryGenres = artist.genres?.slice(0, 2).join(' and ') || 'electronic music';
+      const genreList = artist.genres || ['Electronic'];
+      const mainGenre = genreList[0] || 'Electronic';
+      const secondaryGenre = genreList[1] || mainGenre;
       const popularity = artist.popularity || 50;
-      const recognition = popularity > 60 ? 'growing recognition' : 'underground following';
+      const recognition = popularity > 60 ? 'growing international recognition' : 'dedicated underground following';
+      const recognitionFR = popularity > 60 ? 'reconnaissance internationale croissante' : 'base de fans underground dédiée';
+      const impact = popularity > 70 ? 'established' : popularity > 50 ? 'rising' : 'emerging';
 
       return {
         en: {
-          description: `Specializing in <strong>${genres}</strong>, ${artist.name} represents the cutting edge of modern electronic music production.<br><br>With a focus on ${primaryGenres}, this artist crafts distinctive sounds characterized by heavy basslines, intricate sound design, and innovative production techniques. Active in the underground scene with a ${recognition} on digital platforms and streaming services.<br><br>As part of the Dancing Dead Records roster, ${artist.name} contributes to the label's commitment to showcasing forward-thinking electronic artists pushing genre boundaries.<br><br>Listen on Spotify`,
-          meta_description: `${artist.name} - ${genres} producer and DJ bringing innovative sounds to the electronic music underground scene.`,
+          description: `Versatile artist and visionary producer in the electronic music scene, ${artist.name} fuses the energies of <strong>${mainGenre}</strong> and <strong>${secondaryGenre}</strong> to create powerful and emotional compositions. With a distinctive sound characterized by innovative production techniques, heavy basslines, and intricate sound design, this artist has carved out a unique space in the ${mainGenre} landscape.<br><br>Building a career through releases on forward-thinking labels including <strong>Dancing Dead Records</strong>, ${artist.name} has developed a signature style that pushes genre boundaries. The artist's productions showcase a masterful blend of ${mainGenre} intensity with ${secondaryGenre} sensibilities, creating immersive sonic experiences that resonate with audiences across digital platforms and streaming services, earning a ${recognition}.<br><br>Passionate about sonic innovation and pushing creative boundaries, ${artist.name} addresses an international audience of creators, DJs, and electronic music enthusiasts. Through performances, original productions, and remixes, this ${impact} talent contributes to the evolution of modern electronic music, bringing fresh perspectives to the global scene.<br><br>With bold artistic vision and impressive technical mastery, ${artist.name} continues to influence and inspire the electronic music community worldwide, establishing a distinctive voice in contemporary ${mainGenre} and beyond.`,
+          meta_description: `${artist.name} - ${mainGenre} and ${secondaryGenre} producer and DJ bringing innovative sounds and powerful compositions to the international electronic music scene.`,
           role: 'DJ & Producer'
         },
         fr: {
-          description: `Spécialisé dans le <strong>${genres}</strong>, ${artist.name} représente l'avant-garde de la production musicale électronique moderne.<br><br>Avec un focus sur le ${primaryGenres}, cet artiste crée des sons distinctifs caractérisés par des basses lourdes, un sound design complexe et des techniques de production innovantes. Actif dans la scène underground avec une ${recognition === 'growing recognition' ? 'reconnaissance croissante' : 'base de fans underground'} sur les plateformes digitales et services de streaming.<br><br>En tant que membre du roster Dancing Dead Records, ${artist.name} contribue à l'engagement du label à présenter des artistes électroniques avant-gardistes repoussant les frontières des genres.<br><br>Écouter sur Spotify`,
-          meta_description: `${artist.name} - Producteur et DJ ${genres} apportant des sons innovants à la scène underground de musique électronique.`,
+          description: `Artiste polyvalent et producteur visionnaire de la scène électronique, ${artist.name} fusionne les énergies du <strong>${mainGenre}</strong> et du <strong>${secondaryGenre}</strong> pour créer des compositions puissantes et émotionnelles. Avec un son distinctif caractérisé par des techniques de production innovantes, des basses lourdes et un sound design complexe, cet artiste a sculpté un espace unique dans le paysage du ${mainGenre}.<br><br>Construisant une carrière à travers des sorties sur des labels avant-gardistes dont <strong>Dancing Dead Records</strong>, ${artist.name} a développé un style signature qui repousse les frontières des genres. Les productions de l'artiste présentent un mélange magistral de l'intensité ${mainGenre} avec les sensibilités ${secondaryGenre}, créant des expériences sonores immersives qui résonnent avec les audiences sur les plateformes digitales et services de streaming, gagnant une ${recognitionFR}.<br><br>Passionné par l'innovation sonore et le dépassement des limites créatives, ${artist.name} s'adresse à un public international de créateurs, DJs et passionnés de musique électronique. À travers ses performances, productions originales et remixes, ce talent ${impact === 'established' ? 'établi' : impact === 'rising' ? 'émergent' : 'en devenir'} contribue à l'évolution de la musique électronique moderne, apportant des perspectives fraîches à la scène mondiale.<br><br>Avec une vision artistique audacieuse et une maîtrise technique impressionnante, ${artist.name} continue d'influencer et d'inspirer la communauté de musique électronique mondiale, établissant une voix distinctive dans le ${mainGenre} contemporain et au-delà.`,
+          meta_description: `${artist.name} - Producteur et DJ ${mainGenre} et ${secondaryGenre} apportant des sons innovants et compositions puissantes à la scène électronique internationale.`,
           role: 'DJ & Producteur'
         }
       };
