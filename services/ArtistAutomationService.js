@@ -82,8 +82,8 @@ class ArtistAutomationService {
       const rawData = fs.readFileSync(dataPath, 'utf-8');
       const data = JSON.parse(rawData);
 
-      // L'endpoint retourne directement un tableau d'artistes
-      return Array.isArray(data) ? data : (data.artists || []);
+      // The file structure is { artistsWithImages: [...], latestReleasesOfPlaylist: [...] }
+      return data.artistsWithImages || [];
     } catch (error) {
       console.error('Error fetching Spotify artists:', error);
       throw error;
