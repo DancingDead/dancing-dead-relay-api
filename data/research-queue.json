@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Crude Intentions",
+    "spotifyId": "5zXPv1332E2IWXvjotBr09",
+    "genres": [
+      "hardstyle",
+      "frenchcore",
+      "hardcore"
+    ],
+    "popularity": 36,
+    "spotifyUrl": "https://open.spotify.com/artist/5zXPv1332E2IWXvjotBr09",
+    "addedAt": "2025-10-29T15:13:06.684Z",
+    "status": "completed",
+    "completedAt": "2025-10-29T18:24:08.862Z"
+  },
+  {
+    "name": "Tigerlily",
+    "spotifyId": "48xCatjXaoohtyOHrHTijG",
+    "genres": [
+      "melbourne bounce"
+    ],
+    "popularity": 46,
+    "spotifyUrl": "https://open.spotify.com/artist/48xCatjXaoohtyOHrHTijG",
+    "addedAt": "2025-10-29T15:13:52.534Z",
+    "status": "completed",
+    "completedAt": "2025-10-29T18:25:32.211Z"
+  },
+  {
+    "name": "Damn Low",
+    "spotifyId": "5rC8rEWx5G70tXCDW8YFAT",
+    "genres": [
+      "electro house"
+    ],
+    "popularity": 32,
+    "spotifyUrl": "https://open.spotify.com/artist/5rC8rEWx5G70tXCDW8YFAT",
+    "addedAt": "2025-10-29T15:15:55.421Z",
+    "status": "completed",
+    "completedAt": "2025-10-29T18:26:11.473Z"
+  }
+]
