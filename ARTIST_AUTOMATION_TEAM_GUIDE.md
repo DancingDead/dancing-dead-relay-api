@@ -173,6 +173,61 @@ Le système ne fait que remplir les CPT (Custom Post Types) et les champs ACF. T
 
 Les modifications manuelles ne seront **jamais écrasées** par le système d'automatisation.
 
+## Configuration Requise
+
+### Variables d'Environnement
+
+Le fichier `.env` doit contenir ces clés pour que le système fonctionne :
+
+```bash
+# WordPress MCP (Model Context Protocol)
+WORDPRESS_MCP_ENDPOINT=https://votre-site.com/wp-json/mcp/v1/stream
+WORDPRESS_MCP_KEY=votre_cle_mcp
+
+# Claude AI (génération de contenu)
+ANTHROPIC_API_KEY=sk-ant-xxxxx
+
+# Brave Search API (recherche web)
+BRAVE_SEARCH_API_KEY=BSAxxxxx
+
+# Spotify API (récupération des artistes)
+SPOTIFY_CLIENT_ID=xxxxx
+SPOTIFY_CLIENT_SECRET=xxxxx
+```
+
+**Note** : Sans ces variables, certaines fonctionnalités ne fonctionneront pas. Le système détectera automatiquement les clés manquantes et utilisera des fallbacks si possible.
+
+## Champs WordPress Automatiquement Remplis
+
+### Custom Post Type : `artist`
+
+Le système crée des posts de type `artist` avec :
+
+**Métadonnées de base** :
+- `post_title` : Nom de l'artiste
+- `post_content` : Description complète (4 paragraphes)
+- `post_status` : published
+- `post_type` : artist
+- Featured image (image Spotify)
+
+**Champs ACF** :
+- `spotify_link` : URL Spotify de l'artiste
+- `instagram` / `instagram_link` : Lien Instagram
+- `facebook` / `facebook_link` : Lien Facebook
+- `twitter` / `twitter_link` : Lien Twitter/X
+- `role` : "DJ & Producer" (EN) ou "DJ & Producteur" (FR)
+
+**Yoast SEO** :
+- `_yoast_wpseo_metadesc` : Meta description optimisée
+- `_yoast_wpseo_title` : Titre SEO
+
+**Taxonomies** :
+- `genre` : Genres musicaux Spotify (Hard Techno, Hardstyle, etc.)
+
+**Polylang** :
+- Pages EN/FR liées automatiquement
+- `pll_translations_link` : ID de traduction
+
 ## Endpoints API Disponibles
 
 ### Synchronisation
@@ -182,7 +237,22 @@ POST /api/artists/sync
 Body: { "limit": 3, "skipSpotifyUpdate": true }
 ```
 
-Déclenche la synchronisation des artistes manquants.
+**Paramètres** :
+- `limit` (optionnel) : Nombre d'artistes à synchroniser (test)
+- `skipSpotifyUpdate` (optionnel) : Utiliser le cache Spotify au lieu de refetch
+
+**Réponse** :
+```json
+{
+  "success": true,
+  "status": "completed",
+  "results": {
+    "created": ["Artist 1", "Artist 2"],
+    "skipped": [],
+    "failed": []
+  }
+}
+```
 
 ### Statut
 
@@ -192,6 +262,20 @@ GET /api/artists/status
 
 Retourne le statut de la dernière synchronisation et le nombre d'artistes en attente.
 
+**Réponse** :
+```json
+{
+  "lastSync": {
+    "lastRun": "2025-10-30T02:00:00.000Z",
+    "status": "completed",
+    "results": { "created": 15, "skipped": 0, "failed": 0 }
+  },
+  "nextScheduledSync": "2025-11-06T02:00:00.000Z",
+  "pendingArtists": 5,
+  "apiKeyConfigured": true
+}
+```
+
 ### Artistes Manquants
 
 ```bash
@@ -200,6 +284,22 @@ GET /api/artists/missing
 
 Liste tous les artistes Spotify qui n'ont pas encore de page WordPress.
 
+**Réponse** :
+```json
+{
+  "success": true,
+  "count": 5,
+  "artists": [
+    {
+      "name": "LNY TNZ",
+      "genres": ["hardstyle", "hard techno"],
+      "popularity": 65,
+      "spotifyUrl": "https://open.spotify.com/artist/..."
+    }
+  ]
+}
+```
+
 ### Test Brave Search
 
 ```bash
@@ -207,6 +307,22 @@ GET /api/artists/test-search?artist=LNY%20TNZ
 ```
 
 Teste la recherche web pour un artiste spécifique.
+
+**Réponse** :
+```json
+{
+  "success": true,
+  "artist": "LNY TNZ",
+  "braveApiConfigured": true,
+  "searchEngine": "Brave Search API",
+  "totalResults": 15,
+  "breakdown": {
+    "biography": 8,
+    "labels": 4,
+    "performances": 3
+  }
+}
+```
 
 ## Qualité des Descriptions
 
@@ -268,6 +384,250 @@ node cleanup-duplicates.js --dry-run  # Test
 node cleanup-duplicates.js            # Suppression réelle
 ```
 
+## Interprétation des Logs
+
+Les logs sont disponibles dans `server.log`. Voici comment les interpréter :
+
+### Logs de Synchronisation
+
+```
+🚀 Manual artist sync triggered via API
+🔍 Step 1: Fetching Spotify artists...
+✅ Found 189 unique artists from Spotify
+
+🔍 Step 2: Checking WordPress for existing artists...
+✅ Found 170 artists in WordPress
+
+📊 Artists to create: 19
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎵 Artist [1/19]: LNY TNZ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🔍 Step 3.0: Checking if artist already exists in WordPress...
+  ✅ Artist does not exist yet - proceeding with creation
+  🔎 Step 3.1: Performing web research via Brave Search...
+     • Biography search: 8 results
+     • Labels search: 4 results
+     • Performances search: 3 results
+  ✅ Found 15 web results for research context
+
+  🤖 Step 3.2: Generating bilingual descriptions with Claude AI...
+  ✅ Descriptions generated successfully
+
+  🌐 Step 3.3: Creating WordPress pages (EN + FR)...
+  ✅ Artist pages created: EN (ID: 1234), FR (ID: 1235)
+
+Progress: 1/19 artists processed (5.26%)
+```
+
+### Signification des Emojis
+
+- 🚀 Démarrage d'une synchronisation
+- 🔍 Étape de recherche/vérification
+- ✅ Succès d'une opération
+- ⚠️ Avertissement (ex: artiste déjà existant, skippé)
+- ❌ Erreur
+- 🔒 Lock acquis (protection anti-doublons)
+- 🔓 Lock libéré
+- 🔎 Recherche web en cours
+- 🤖 Génération Claude AI
+- 🌐 Création WordPress
+- 💾 Sauvegarde de données
+- 📊 Statistiques/résumé
+
+## Troubleshooting
+
+### Problème : "Sync already in progress"
+
+**Symptôme** : L'API retourne une erreur 409 "Synchronization already in progress"
+
+**Cause** : Une synchronisation est déjà en cours (protection anti-doublons)
+
+**Solution** : Attendre la fin de la sync en cours, ou vérifier les logs pour voir si un processus est bloqué. Si bloqué, redémarrer le serveur :
+```bash
+ssh dancideadwp@api.dancingdeadrecords.com
+cd dancing-dead-relay-api
+mkdir -p tmp && touch tmp/restart.txt
+```
+
+### Problème : Descriptions génériques pour tous les artistes
+
+**Symptôme** : Toutes les descriptions ressemblent à des templates
+
+**Causes possibles** :
+1. Brave Search API ne retourne pas de résultats (quota dépassé ou API down)
+2. Les recherches ne trouvent pas d'informations (artistes très obscurs)
+
+**Solutions** :
+- Vérifier le quota Brave : https://api.search.brave.com/app/dashboard
+- Tester la recherche : `GET /api/artists/test-search?artist=NomArtiste`
+- Le système basculera automatiquement sur le template fallback enrichi
+
+### Problème : Images manquantes
+
+**Symptôme** : Les pages d'artistes n'ont pas d'image à la une
+
+**Causes possibles** :
+1. L'artiste n'a pas d'image sur Spotify
+2. Erreur d'upload vers WordPress
+
+**Solutions** :
+- Vérifier les logs pour des erreurs d'upload
+- Uploader manuellement l'image dans WordPress (elle ne sera pas écrasée)
+
+### Problème : Liens sociaux manquants
+
+**Symptôme** : Certains artistes n'ont pas leurs liens Instagram/Facebook
+
+**Causes** :
+- Le système effectue 3 recherches séparées avec délai de 1.5s (rate limit Brave)
+- Si l'artiste a peu de présence web, les liens peuvent ne pas être trouvés
+
+**Solution** : Ajouter manuellement les liens dans les champs ACF WordPress
+
+### Problème : Pages dupliquées
+
+**Symptôme** : Un artiste apparaît 2-4 fois dans WordPress
+
+**Cause** : Bug ancien (corrigé depuis le 30/10/2025)
+
+**Solution** : Utiliser le script de nettoyage :
+```bash
+node cleanup-duplicates.js --dry-run  # Voir ce qui sera supprimé
+node cleanup-duplicates.js            # Supprimer les doublons
+```
+
+## Exemples de Pages Créées
+
+### Exemple 1 : Gros Artiste (Jéja)
+
+**URL** : dancingdeadrecords.com/artist/jeja
+
+**Description (extrait)** :
+> Artiste polyvalent et visionnaire de la scène électronique, Jéja fusionne les énergies de la Hard Techno et du Hardstyle pour créer des compositions puissantes et émotionnelles. Passionné par les festivals, Jéja donne régulièrement des performances explosives lors d'événements majeurs...
+
+**Caractéristiques** :
+- 4 paragraphes riches (~350 mots)
+- Informations spécifiques sur la carrière
+- Mentions de collaborations et labels
+- Liens sociaux complets
+
+### Exemple 2 : Artiste Émergent
+
+**Description (extrait)** :
+> Versatile artist and visionary producer in the electronic music scene, [Artist] fuses the energies of Hard Techno and Techno to create powerful and emotional compositions. With a distinctive sound characterized by innovative production techniques...
+
+**Caractéristiques** :
+- 4 paragraphes professionnels (~300 mots)
+- Style template enrichi mais cohérent
+- Focus sur les genres Spotify
+- Optimisé SEO
+
+## Limites Connues du Système
+
+### Ce que le système NE FAIT PAS
+
+1. **Mise à jour de pages existantes** : Le système crée uniquement les pages manquantes, ne met jamais à jour
+2. **Suppression automatique** : Ne supprime jamais de pages (même si l'artiste disparaît de Spotify)
+3. **Gestion des releases/tracks** : Ne crée pas de pages pour les morceaux individuels
+4. **Multi-labels** : Si un artiste est sur plusieurs labels, seul Dancing Dead Records est mentionné
+5. **Biographies multi-langues avancées** : EN/FR uniquement (pas d'autres langues)
+6. **Détection de changement de nom** : Si un artiste change de nom sur Spotify, une nouvelle page sera créée
+
+### Précautions à Prendre
+
+- **Ne pas supprimer manuellement** les artistes WordPress sans raison (ils ne seront pas recréés si encore sur Spotify)
+- **Backup WordPress régulier** recommandé avant les grosses syncs
+- **Vérifier les doublons** après une sync importante (via cleanup script)
+- **Surveiller le quota Brave** si vous faites beaucoup de tests manuels
+
+## Roadmap et Améliorations Futures
+
+### Court Terme (Prochaines Semaines)
+
+- ✅ Descriptions riches style Jéja (FAIT)
+- ✅ Protection anti-doublons (FAIT)
+- ⏳ Amélioration de la détection des liens sociaux
+- ⏳ Optimisation du taux de succès des recherches web
+- ⏳ Notifications par email après chaque sync hebdomadaire
+
+### Moyen Terme
+
+- 📋 Dashboard web pour monitorer les syncs
+- 📋 Re-génération manuelle de descriptions existantes
+- 📋 Support d'autres plateformes (SoundCloud, Beatport)
+- 📋 Détection des changements d'image Spotify
+- 📋 Cache intelligent pour réduire les coûts Claude AI
+
+### Long Terme
+
+- 📋 Synchronisation des releases/EPs/albums
+- 📋 Génération automatique de setlists
+- 📋 Intégration avec calendrier d'événements
+- 📋 Analytics sur la popularité des artistes
+
+## Test en Local (Pour Développeurs)
+
+### Prérequis
+
+- Node.js 18+
+- Accès aux variables d'environnement (.env)
+- MAMP ou serveur local avec WordPress
+
+### Installation
+
+```bash
+cd "/Applications/MAMP/htdocs/Dancing Dead/dancing-dead-relay-api"
+npm install
+```
+
+### Lancer le Serveur
+
+```bash
+# Développement avec auto-restart
+npm run dev
+
+# Production
+npm start
+```
+
+### Test Rapide
+
+```bash
+# Tester avec 1 artiste
+curl -X POST "http://localhost:3000/api/artists/sync" \
+  -H "Content-Type: application/json" \
+  -d '{"limit": 1, "skipSpotifyUpdate": true}'
+
+# Voir les artistes manquants
+curl http://localhost:3000/api/artists/missing
+
+# Tester Brave Search
+curl "http://localhost:3000/api/artists/test-search?artist=LNY%20TNZ"
+```
+
+## Sécurité et Backup
+
+### Protection des Données
+
+- **Variables d'environnement** : Jamais committées sur Git (`.env` dans `.gitignore`)
+- **Clés API** : Stockées uniquement sur le serveur de production
+- **Logs** : Ne contiennent jamais de clés sensibles
+
+### Backup Recommandé
+
+Avant une grosse synchronisation :
+
+```bash
+# Backup WordPress (via plugin)
+# UpdraftPlus ou WP Migrate DB Pro recommandé
+
+# Backup de la base d'artistes Spotify
+cd dancing-dead-relay-api
+cp dancingdeadartists/data.json dancingdeadartists/data.backup.json
+```
+
 ## Questions Fréquentes
 
 ### Est-ce que le système met à jour les pages existantes ?
@@ -289,6 +649,10 @@ Environ 2-3 minutes par artiste (recherches web + génération IA + création Wo
 ### Les images sont-elles optimisées ?
 
 Oui, les images sont téléchargées depuis Spotify (haute qualité) et uploadées dans la médiathèque WordPress comme images à la une.
+
+### Puis-je lancer plusieurs syncs en parallèle ?
+
+Non, le système bloque automatiquement les syncs concurrentes pour éviter les doublons. Une erreur 409 sera retournée si vous essayez.
 
 ## Contact et Support Technique
 
