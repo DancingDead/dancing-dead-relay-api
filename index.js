@@ -39,7 +39,9 @@ app.use(express.json({ limit: '50mb' })); // Increased size limit
 // Configure CORS explicitly to allow requests depuis le domaine avec et sans 'www'
 const allowedOrigins = [
   'https://dancingdeadrecords.com',
-  'https://www.dancingdeadrecords.com'
+  'https://www.dancingdeadrecords.com',
+  'https://denhakurecords.com',
+  'https://www.denhakurecords.com'
 ];
 
 app.use(cors({
