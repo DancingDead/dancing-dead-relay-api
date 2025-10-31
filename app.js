@@ -41,7 +41,9 @@ app.use(express.json({ limit: '50mb' }));
 // CORS configuration
 const allowedOrigins = [
   'https://dancingdeadrecords.com',
-  'https://www.dancingdeadrecords.com'
+  'https://www.dancingdeadrecords.com',
+  'https://denhakurecords.com',
+  'https://www.denhakurecords.com'
 ];
 
 app.use(cors({
