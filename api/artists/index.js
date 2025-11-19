@@ -24,6 +24,19 @@ let syncInProgress = false;
  */
 router.post('/sync', async (req, res) => {
   try {
+    // PROTECTION MÉMOIRE: Bloquer les syncs sur les environnements avec peu de RAM (O2Switch)
+    const allowHeavySync = process.env.ALLOW_HEAVY_SYNC !== 'false';
+    if (!allowHeavySync) {
+      console.log('\n⚠️  Sync request BLOCKED - Heavy sync disabled on this environment (low RAM)');
+      console.log('   Set ALLOW_HEAVY_SYNC=true in .env to enable (only on environments with sufficient RAM)');
+      console.log('   Use /api/artists/populate-queue instead to prepare artists for sync on another machine');
+      return res.status(403).json({
+        success: false,
+        error: 'Heavy sync operations are disabled on this environment due to memory constraints. Use /api/artists/populate-queue instead.',
+        suggestion: 'Run sync from local development machine with more RAM'
+      });
+    }
+
     // PROTECTION ANTI-DOUBLON: Vérifier si une sync est déjà en cours
     if (syncInProgress) {
       console.log('\n⚠️  Sync request BLOCKED - another sync is already in progress');
@@ -264,25 +277,25 @@ router.get('/test-search', async (req, res) => {
 });
 
 /**
- * Calcule la date du prochain vendredi à 2h du matin
+ * Calcule la date du prochain dimanche à 20h (8 PM)
  */
 function getNextFriday() {
   const now = new Date();
-  const nextFriday = new Date(now);
+  const nextSunday = new Date(now);
 
-  // Trouver le prochain vendredi (5 = vendredi)
-  const daysUntilFriday = (5 - now.getDay() + 7) % 7 || 7;
-  nextFriday.setDate(now.getDate() + daysUntilFriday);
+  // Trouver le prochain dimanche (0 = dimanche)
+  const daysUntilSunday = (7 - now.getDay()) % 7 || 7;
+  nextSunday.setDate(now.getDate() + daysUntilSunday);
 
-  // Définir l'heure à 2h00
-  nextFriday.setHours(2, 0, 0, 0);
+  // Définir l'heure à 20h00
+  nextSunday.setHours(20, 0, 0, 0);
 
-  // Si on est vendredi après 2h, aller au vendredi suivant
-  if (now.getDay() === 5 && now.getHours() >= 2) {
-    nextFriday.setDate(nextFriday.getDate() + 7);
+  // Si on est dimanche après 20h, aller au dimanche suivant
+  if (now.getDay() === 0 && now.getHours() >= 20) {
+    nextSunday.setDate(nextSunday.getDate() + 7);
   }
 
-  return nextFriday.toISOString();
+  return nextSunday.toISOString();
 }
 
 module.exports = router;
