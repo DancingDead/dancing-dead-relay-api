@@ -602,14 +602,20 @@ Return in this exact JSON format:
           // Recherche d'informations
           console.log('  🔍 Step 3.1: Researching artist information...');
           const research = await this.researchArtist(artist);
+          await this.wait(2000); // Délai pour libérer la RAM après recherche web
+          console.log('      ⏸️  Memory cleanup delay (2s)...');
 
           // Recherche des liens sociaux (recherches ciblées par plateforme)
           console.log('  🔗 Step 3.2: Searching for social media links...');
           const socialLinks = await this.socialLinks.findSocialLinks(artist.name);
+          await this.wait(1500); // Délai pour libérer la RAM après recherche sociale
+          console.log('      ⏸️  Memory cleanup delay (1.5s)...');
 
           // Génération du contenu bilingue
           console.log('  ✍️  Step 3.3: Generating bilingual content (EN/FR)...');
           const content = await this.generateBilingualDescription(artist, research.formatted);
+          await this.wait(2000); // Délai pour libérer la RAM après Claude AI
+          console.log('      ⏸️  Memory cleanup delay (2s)...');
 
           // Upload de l'image depuis Spotify
           console.log('  🖼️  Step 3.4: Processing artist image from Spotify...');
@@ -627,6 +633,8 @@ Return in this exact JSON format:
               console.log(`      → Found existing image ID: ${imageId}`);
             }
           }
+          await this.wait(1500); // Délai pour libérer la RAM après upload image
+          console.log('      ⏸️  Memory cleanup delay (1.5s)...');
 
           // Création de la page WordPress
           console.log('  📄 Step 3.5: Creating bilingual WordPress pages...');
@@ -644,10 +652,10 @@ Return in this exact JSON format:
             console.log(`  ❌ Failed: ${result.message}`);
           }
 
-          // Pause entre les artistes pour éviter les rate limits
+          // Pause entre les artistes pour éviter les rate limits et libérer la RAM
           if (i < missingArtists.length - 1) {
-            console.log(`\n  ⏸️  Waiting 2s before next artist...\n`);
-            await this.wait(2000);
+            console.log(`\n  ⏸️  Waiting 10s before next artist (memory cleanup)...\n`);
+            await this.wait(10000); // Augmenté de 2s à 10s pour libérer plus de RAM
           }
 
         } catch (error) {
