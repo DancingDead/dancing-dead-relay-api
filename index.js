@@ -138,11 +138,11 @@ app.listen(port, () => {
 // CRON JOB - Artist Synchronization
 // ============================================
 
-// Synchronisation automatique des artistes tous les vendredis à 2h du matin
-// Expression cron: "0 2 * * 5" = minute 0, heure 2, tous les jours du mois, tous les mois, vendredi (5)
+// Synchronisation automatique des artistes tous les dimanches à 20h (8 PM)
+// Expression cron: "0 20 * * 0" = minute 0, heure 20, tous les jours du mois, tous les mois, dimanche (0)
 // WORKFLOW 2 (Optimisé): Ajoute les artistes manquants à la queue de recherche
-cron.schedule('0 2 * * 5', async () => {
-  console.log('\n⏰ [CRON] Scheduled artist research queue update - Friday 2:00 AM');
+cron.schedule('0 20 * * 0', async () => {
+  console.log('\n⏰ [CRON] Scheduled artist research queue update - Sunday 8:00 PM');
   console.log(`   Timestamp: ${new Date().toISOString()}`);
 
   try {
@@ -172,4 +172,4 @@ cron.schedule('0 2 * * 5', async () => {
   timezone: "Europe/Paris" // Ajustez selon votre fuseau horaire
 });
 
-console.log('🕐 Cron job configured: Artist sync every Friday at 2:00 AM (Europe/Paris)');
+console.log('🕐 Cron job configured: Artist sync every Sunday at 8:00 PM (Europe/Paris)');
