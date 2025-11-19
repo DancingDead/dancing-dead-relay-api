@@ -138,38 +138,39 @@ app.listen(port, () => {
 // CRON JOB - Artist Synchronization
 // ============================================
 
-// Synchronisation automatique des artistes tous les dimanches à 20h (8 PM)
-// Expression cron: "0 20 * * 0" = minute 0, heure 20, tous les jours du mois, tous les mois, dimanche (0)
-// WORKFLOW 2 (Optimisé): Ajoute les artistes manquants à la queue de recherche
-cron.schedule('0 20 * * 0', async () => {
-  console.log('\n⏰ [CRON] Scheduled artist research queue update - Sunday 8:00 PM');
+// Synchronisation automatique des artistes : 1 artiste toutes les 2 heures
+// Expression cron: "0 */2 * * *" = minute 0, toutes les 2 heures, tous les jours
+// WORKFLOW: Sync progressif pour éviter les crashs mémoire sur O2Switch
+cron.schedule('0 */2 * * *', async () => {
+  console.log('\n⏰ [CRON] Scheduled artist sync - Every 2 hours');
   console.log(`   Timestamp: ${new Date().toISOString()}`);
 
   try {
     const ArtistAutomationService = require('./services/ArtistAutomationService');
     const artistService = new ArtistAutomationService();
 
-    // STEP 1: Populate research queue with missing artists
-    const result = await artistService.populateResearchQueue();
+    // Sync 1 seul artiste à la fois pour éviter les crashs mémoire
+    console.log('   Syncing 1 artist (memory-safe mode)...');
+    const result = await artistService.syncArtists(1, false); // maxArtists=1
 
-    if (result.added > 0) {
-      console.log(`\n✅ [CRON] Added ${result.added} artists to research queue`);
-      console.log('━'.repeat(60));
-      console.log('📋 NEXT STEPS:');
-      console.log('━'.repeat(60));
-      console.log('1. Run research worker: node research-worker.js');
-      console.log('2. After research completes, run sync:');
-      console.log('   curl -X POST http://localhost:3000/api/artists/sync');
-      console.log('━'.repeat(60) + '\n');
-    } else {
-      console.log('✅ [CRON] No new artists found - queue is up to date\n');
+    if (result.status === 'completed') {
+      if (result.results.success.length > 0) {
+        console.log(`\n✅ [CRON] Successfully synced: ${result.results.success[0]}`);
+      } else if (result.results.skipped.length > 0) {
+        console.log(`\n⏭️  [CRON] Artist already exists: ${result.results.skipped[0]}`);
+      } else if (result.results.failed.length > 0) {
+        console.log(`\n❌ [CRON] Failed to sync: ${result.results.failed[0].name}`);
+        console.log(`   Error: ${result.results.failed[0].error}`);
+      }
+    } else if (result.status === 'success') {
+      console.log('✅ [CRON] All artists are already synced - nothing to do\n');
     }
 
   } catch (error) {
-    console.error('❌ [CRON] Research queue update failed:', error.message);
+    console.error('❌ [CRON] Artist sync failed:', error.message);
   }
 }, {
-  timezone: "Europe/Paris" // Ajustez selon votre fuseau horaire
+  timezone: "Europe/Paris"
 });
 
-console.log('🕐 Cron job configured: Artist sync every Sunday at 8:00 PM (Europe/Paris)');
+console.log('🕐 Cron job configured: Sync 1 artist every 2 hours (Europe/Paris)');
