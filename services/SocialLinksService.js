@@ -10,7 +10,7 @@ class SocialLinksService {
 
   /**
    * Recherche les liens sociaux d'un artiste
-   * Fait des recherches ciblées pour chaque réseau social
+   * Fait des recherches ciblées pour chaque réseau social avec délais pour protéger la RAM
    */
   async findSocialLinks(artistName) {
     console.log(`      🔗 Searching for social media links...`);
@@ -22,8 +22,9 @@ class SocialLinksService {
       twitter: ''
     };
 
-    // Attendre 1.5s entre les recherches pour respecter le rate limit de Brave
-    await this.wait(1500);
+    // Attendre 1 minute entre les recherches pour éviter la surcharge RAM
+    console.log(`      ⏸️  RAM cleanup before next social search (60s)...`);
+    await this.wait(60000);
     socialLinks.instagram = await this.findInstagramLink(artistName);
 
     const foundCount = Object.values(socialLinks).filter(link => link !== '').length;

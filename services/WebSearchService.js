@@ -112,20 +112,25 @@ class WebSearchService {
 
   /**
    * Recherche spécifique pour un artiste
-   * Les recherches sont séquencées avec 1.5s entre chaque pour respecter le rate limit de Brave
+   * Les recherches sont séquencées avec 60s entre chaque pour éviter la surcharge RAM
    */
   async searchArtist(artistName, genres = []) {
     const genresStr = genres.length > 0 ? genres.slice(0, 2).join(' ') : 'electronic music';
 
     console.log(`      🔎 Searching web for: ${artistName}...`);
 
-    // Faire 3 recherches ciblées SÉQUENTIELLEMENT (rate limit Brave: 1 req/sec)
+    // Faire 3 recherches ciblées SÉQUENTIELLEMENT avec délais pour protéger la RAM
+    console.log(`      📡 Search 1/3: Biography & Origin...`);
     const bioResults = await this.search(`${artistName} DJ producer ${genresStr} biography nationality origin`);
-    await this.wait(1500); // Attendre 1.5s entre chaque requête
+    console.log(`      ⏸️  RAM cleanup (60s)...`);
+    await this.wait(60000); // Attendre 1 minute entre chaque requête
 
+    console.log(`      📡 Search 2/3: Labels & Discography...`);
     const labelsResults = await this.search(`${artistName} ${genresStr} record labels releases discography`);
-    await this.wait(1500);
+    console.log(`      ⏸️  RAM cleanup (60s)...`);
+    await this.wait(60000);
 
+    console.log(`      📡 Search 3/3: Performances & Collaborations...`);
     const performancesResults = await this.search(`${artistName} festivals performances achievements collaborations`);
 
     const allResults = {

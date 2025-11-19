@@ -225,6 +225,10 @@ class ArtistAutomationService {
   async synthesizeWebResults(artist, webResults) {
     const formattedResults = this.webSearch.formatForClaude(webResults);
 
+    // Délai avant l'appel Claude API pour protéger la RAM
+    console.log('      ⏸️  Preparing Claude API call (10s delay)...');
+    await this.wait(10000);
+
     const prompt = `${this.projectContext}
 
 ---
@@ -262,11 +266,16 @@ IMPORTANT:
 - DO NOT guess or generate social media URLs`;
 
     try {
+      console.log('      🤖 Calling Claude API to synthesize web results...');
       const message = await this.anthropic.messages.create({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 1500,
         messages: [{ role: 'user', content: prompt }]
       });
+
+      // Délai après l'appel Claude API pour libérer la RAM
+      console.log('      ⏸️  Claude API response received, cleanup (10s)...');
+      await this.wait(10000);
 
       const responseText = message.content[0].text;
 
@@ -291,6 +300,10 @@ IMPORTANT:
     const genres = artist.genres?.join(', ') || 'electronic music';
     const popularity = artist.popularity || 50;
 
+    // Délai avant l'appel Claude API pour protéger la RAM
+    console.log('      ⏸️  Preparing Claude API call (10s delay)...');
+    await this.wait(10000);
+
     const prompt = `Based on the genre(s) "${genres}" and Spotify popularity of ${popularity}/100, generate structured information about artist "${artist.name}":
 
 Musical Style: Describe the typical sound characteristics of ${genres} artists
@@ -301,11 +314,16 @@ Artist Profile: What kind of artist bio fits this genre and popularity level
 Format your response with clear sections. Be specific about the genre characteristics, not generic.`;
 
     try {
+      console.log('      🤖 Calling Claude API for fallback research...');
       const message = await this.anthropic.messages.create({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 800,
         messages: [{ role: 'user', content: prompt }]
       });
+
+      // Délai après l'appel Claude API pour libérer la RAM
+      console.log('      ⏸️  Claude API response received, cleanup (10s)...');
+      await this.wait(10000);
 
       return message.content[0].text;
     } catch (error) {
@@ -367,6 +385,10 @@ Artist Profile: An emerging talent in the ${genres} scene with ${popularity > 50
    * Génère une description bilingue (EN/FR) pour un artiste
    */
   async generateBilingualDescription(artist, researchText) {
+    // Délai avant l'appel Claude API pour protéger la RAM
+    console.log('      ⏸️  Preparing Claude API call for bilingual content (10s delay)...');
+    await this.wait(10000);
+
     const prompt = `${this.projectContext}
 
 ---
@@ -421,11 +443,16 @@ Return in this exact JSON format:
 }`;
 
     try {
+      console.log('      🤖 Calling Claude API to generate bilingual descriptions...');
       const message = await this.anthropic.messages.create({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 3500,
         messages: [{ role: 'user', content: prompt }]
       });
+
+      // Délai après l'appel Claude API pour libérer la RAM
+      console.log('      ⏸️  Claude API response received, cleanup (10s)...');
+      await this.wait(10000);
 
       const responseText = message.content[0].text;
 
@@ -602,20 +629,20 @@ Return in this exact JSON format:
           // Recherche d'informations
           console.log('  🔍 Step 3.1: Researching artist information...');
           const research = await this.researchArtist(artist);
-          await this.wait(2000); // Délai pour libérer la RAM après recherche web
-          console.log('      ⏸️  Memory cleanup delay (2s)...');
+          await this.wait(120000); // Délai pour libérer la RAM après recherche web (2 minutes)
+          console.log('      ⏸️  Memory cleanup delay (2 minutes)...');
 
           // Recherche des liens sociaux (recherches ciblées par plateforme)
           console.log('  🔗 Step 3.2: Searching for social media links...');
           const socialLinks = await this.socialLinks.findSocialLinks(artist.name);
-          await this.wait(1500); // Délai pour libérer la RAM après recherche sociale
-          console.log('      ⏸️  Memory cleanup delay (1.5s)...');
+          await this.wait(120000); // Délai pour libérer la RAM après recherche sociale (2 minutes)
+          console.log('      ⏸️  Memory cleanup delay (2 minutes)...');
 
           // Génération du contenu bilingue
           console.log('  ✍️  Step 3.3: Generating bilingual content (EN/FR)...');
           const content = await this.generateBilingualDescription(artist, research.formatted);
-          await this.wait(2000); // Délai pour libérer la RAM après Claude AI
-          console.log('      ⏸️  Memory cleanup delay (2s)...');
+          await this.wait(120000); // Délai pour libérer la RAM après Claude AI (2 minutes)
+          console.log('      ⏸️  Memory cleanup delay (2 minutes)...');
 
           // Upload de l'image depuis Spotify
           console.log('  🖼️  Step 3.4: Processing artist image from Spotify...');
@@ -633,8 +660,8 @@ Return in this exact JSON format:
               console.log(`      → Found existing image ID: ${imageId}`);
             }
           }
-          await this.wait(1500); // Délai pour libérer la RAM après upload image
-          console.log('      ⏸️  Memory cleanup delay (1.5s)...');
+          await this.wait(120000); // Délai pour libérer la RAM après upload image (2 minutes)
+          console.log('      ⏸️  Memory cleanup delay (2 minutes)...');
 
           // Création de la page WordPress
           console.log('  📄 Step 3.5: Creating bilingual WordPress pages...');
@@ -654,8 +681,8 @@ Return in this exact JSON format:
 
           // Pause entre les artistes pour éviter les rate limits et libérer la RAM
           if (i < missingArtists.length - 1) {
-            console.log(`\n  ⏸️  Waiting 10s before next artist (memory cleanup)...\n`);
-            await this.wait(10000); // Augmenté de 2s à 10s pour libérer plus de RAM
+            console.log(`\n  ⏸️  Waiting 2 minutes before next artist (memory cleanup)...\n`);
+            await this.wait(120000); // 2 minutes pour garantir la libération complète de la RAM
           }
 
         } catch (error) {

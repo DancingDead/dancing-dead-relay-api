@@ -157,6 +157,8 @@ class WordPressMCPService {
             hasMore = false;
           } else {
             page++;
+            // Délai entre les pages pour éviter la surcharge RAM
+            await this.wait(5000); // 5s entre chaque page
           }
         }
       }
@@ -173,6 +175,13 @@ class WordPressMCPService {
       console.error('   ⚠️  Error fetching WordPress artists:', error.message);
       return [];
     }
+  }
+
+  /**
+   * Attendre (délai pour protéger la RAM)
+   */
+  async wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 
   /**
@@ -209,6 +218,10 @@ class WordPressMCPService {
       const idEN = postEN.ID || postEN.id || postEN;
       console.log(`   ✅ English page created (ID: ${idEN})`);
 
+      // Délai pour libérer la RAM
+      console.log('   ⏸️  RAM cleanup (30s)...');
+      await this.wait(30000);
+
       // 2. Créer la page FR
       console.log('   📄 Creating French page...');
       const postFR = await this.callTool('wp_create_post', {
@@ -236,6 +249,10 @@ class WordPressMCPService {
       const idFR = postFR.ID || postFR.id || postFR;
       console.log(`   ✅ French page created (ID: ${idFR})`);
 
+      // Délai pour libérer la RAM
+      console.log('   ⏸️  RAM cleanup (30s)...');
+      await this.wait(30000);
+
       // 3. Lier avec Polylang (optional - skip if tools not available)
       try {
         console.log('   🌐 Linking pages with Polylang...');
@@ -248,12 +265,16 @@ class WordPressMCPService {
           append: false
         });
 
+        await this.wait(10000); // 10s entre chaque opération Polylang
+
         await this.callTool('wp_add_post_terms', {
           ID: idFR,
           taxonomy: 'language',
           terms: [7], // FR
           append: false
         });
+
+        await this.wait(10000); // 10s entre chaque opération Polylang
 
         // Créer le terme de traduction
         const termName = `pll_${Date.now().toString(16)}${Math.random().toString(36).substr(2, 9)}`;
@@ -264,6 +285,8 @@ class WordPressMCPService {
 
         const termId = translationTerm.term_id || translationTerm.id || translationTerm;
 
+        await this.wait(10000); // 10s entre chaque opération Polylang
+
         // Assigner le terme aux deux pages
         await this.callTool('wp_add_post_terms', {
           ID: idEN,
@@ -272,12 +295,16 @@ class WordPressMCPService {
           append: false
         });
 
+        await this.wait(10000); // 10s entre chaque opération Polylang
+
         await this.callTool('wp_add_post_terms', {
           ID: idFR,
           taxonomy: 'post_translations',
           terms: [termId],
           append: false
         });
+
+        await this.wait(10000); // 10s entre chaque opération Polylang
 
         // Mettre à jour la description du terme (lien Polylang)
         const description = `a:2:{s:2:"en";i:${idEN};s:2:"fr";i:${idFR};}`;
@@ -292,6 +319,10 @@ class WordPressMCPService {
         console.log('   ⚠️  Polylang linking skipped (required MCP tools not available)');
         console.log('   ℹ️  Pages created successfully but not linked as translations');
       }
+
+      // Délai pour libérer la RAM après Polylang
+      console.log('   ⏸️  RAM cleanup (30s)...');
+      await this.wait(30000);
 
       // 4. Assigner l'image et les champs ACF
       if (content.imageId || content.socialLinks) {
@@ -317,6 +348,9 @@ class WordPressMCPService {
         // Assigner l'image mise en avant si disponible
         if (content.imageId) {
           const imageAssignedEN = await this.setFeaturedImage(idEN, content.imageId);
+
+          await this.wait(10000); // 10s entre les 2 assignations d'image
+
           const imageAssignedFR = await this.setFeaturedImage(idFR, content.imageId);
 
           if (imageAssignedEN && imageAssignedFR) {
@@ -328,6 +362,9 @@ class WordPressMCPService {
         if (Object.keys(acfFields).length > 0) {
           console.log(`   🔍 DEBUG: ACF fields to update:`, JSON.stringify(acfFields, null, 2));
           const acfUpdatedEN = await this.updateACFFields(idEN, acfFields);
+
+          await this.wait(10000); // 10s entre les 2 mises à jour ACF
+
           const acfUpdatedFR = await this.updateACFFields(idFR, acfFields);
 
           if (acfUpdatedEN && acfUpdatedFR) {
