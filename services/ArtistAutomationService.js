@@ -172,6 +172,8 @@ class ArtistAutomationService {
    * 2. Fait une recherche web réelle (Brave/DuckDuckGo)
    * 3. Demande à Claude de synthétiser les résultats
    * 4. Sauvegarde dans le cache
+   *
+   * Retourne les données structurées COMPLÈTES (pas seulement le texte formaté)
    */
   async researchArtist(artist) {
     // PRIORITÉ 1: Vérifier si on a des données de recherche web réelles en cache
@@ -180,7 +182,7 @@ class ArtistAutomationService {
     if (cachedResearch) {
       console.log('      ✅ Using cached web research data');
       return {
-        formatted: this.formatWebResearch(cachedResearch),
+        data: cachedResearch, // Données structurées complètes
         social_links: cachedResearch.social_links || {}
       };
     }
@@ -202,7 +204,7 @@ class ArtistAutomationService {
       }
 
       return {
-        formatted: this.formatWebResearch(synthesizedData),
+        data: synthesizedData, // Données structurées complètes avec résultats web bruts
         social_links: synthesizedData?.social_links || {}
       };
 
@@ -213,7 +215,8 @@ class ArtistAutomationService {
       console.log('      📝 Using Claude knowledge fallback (less accurate)');
       const fallbackText = await this.fallbackResearch(artist);
       return {
-        formatted: fallbackText,
+        data: null, // Pas de données structurées en fallback
+        fallback: fallbackText,
         social_links: {}
       };
     }
@@ -221,6 +224,7 @@ class ArtistAutomationService {
 
   /**
    * Synthétise les résultats web avec Claude
+   * Retourne à la fois les données structurées ET les résultats web bruts pour la génération de description
    */
   async synthesizeWebResults(artist, webResults) {
     const formattedResults = this.webSearch.formatForClaude(webResults);
@@ -282,7 +286,12 @@ IMPORTANT:
       // Extraire le JSON de la réponse
       const jsonMatch = responseText.match(/\{[\s\S]*\}/);
       if (jsonMatch) {
-        return JSON.parse(jsonMatch[0]);
+        const structuredData = JSON.parse(jsonMatch[0]);
+
+        // NOUVEAU: Inclure les résultats web bruts pour la génération de description
+        structuredData._raw_web_results = webResults;
+
+        return structuredData;
       }
 
       throw new Error('Failed to parse JSON from Claude response');
@@ -382,12 +391,151 @@ Artist Profile: An emerging talent in the ${genres} scene with ${popularity > 50
   }
 
   /**
-   * Génère une description bilingue (EN/FR) pour un artiste
+   * Fournit un contexte riche sur un genre musical pour enrichir les descriptions
    */
-  async generateBilingualDescription(artist, researchText) {
+  getGenreContext(genres) {
+    if (!genres || genres.length === 0) {
+      return 'Electronic music scene with diverse production styles.';
+    }
+
+    // Base de connaissances des genres avec caractéristiques spécifiques
+    const genreKnowledge = {
+      'drift phonk': {
+        description: 'A subgenre of phonk characterized by dark, atmospheric production with heavy bass, cowbell samples, and slowed-down Memphis rap influences',
+        characteristics: 'Aggressive bass, eerie atmosphere, car culture aesthetic, viral on TikTok',
+        scene: 'Underground internet culture, car meet communities, streaming platforms',
+        typical_elements: 'Cowbells, 808 bass, vocal chops, dark synths, drift racing visuals'
+      },
+      'phonk': {
+        description: 'Underground hip-hop subgenre sampling 90s Memphis rap with lo-fi production',
+        characteristics: 'Lo-fi aesthetics, heavy bass, Memphis rap samples, dark atmosphere',
+        scene: 'SoundCloud underground, Memphis rap culture',
+        typical_elements: 'Vintage samples, distorted bass, vocal samples, nostalgic feel'
+      },
+      'electro house': {
+        description: 'High-energy electronic dance music with heavy bass and electro-influenced synths',
+        characteristics: 'Punchy drums, aggressive basslines, festival-ready drops',
+        scene: 'EDM festivals, club circuits, mainstream dance music',
+        typical_elements: 'Sawtooth synths, big room drops, festival energy'
+      },
+      'bass music': {
+        description: 'Electronic music focused on sub-bass frequencies and low-end sound design',
+        characteristics: 'Sub-bass emphasis, sound system culture, experimental production',
+        scene: 'Bass music festivals, underground clubs, sound system culture',
+        typical_elements: 'Deep sub-bass, wobbles, sound design experimentation'
+      },
+      'dubstep': {
+        description: 'Bass-heavy electronic music with half-time rhythms and aggressive sound design',
+        characteristics: 'Wobble bass, heavy drops, 140 BPM',
+        scene: 'Bass music festivals, underground clubs, UK sound system culture',
+        typical_elements: 'LFO bass wobbles, half-time drums, aggressive drops'
+      },
+      'trap': {
+        description: 'Hip-hop subgenre with rolling hi-hats, heavy 808s, and dark atmospheres',
+        characteristics: 'Rolling hi-hats, 808 kicks, dark melodies',
+        scene: 'Hip-hop scene, trap festivals, streaming culture',
+        typical_elements: '808 drums, rapid hi-hats, heavy bass, dark synths'
+      },
+      'hardstyle': {
+        description: 'Hard dance music with distorted kicks, energetic melodies, and high BPM',
+        characteristics: 'Reverse bass, euphoric melodies, 150 BPM, raw energy',
+        scene: 'European festivals (Defqon.1, Qlimax), dedicated hardstyle community',
+        typical_elements: 'Distorted kicks, reverse bass, euphoric leads'
+      },
+      'techno': {
+        description: 'Repetitive electronic music focused on hypnotic rhythms and industrial sounds',
+        characteristics: 'Four-on-the-floor, industrial textures, minimalist approach',
+        scene: 'Berlin clubs, underground raves, techno festivals',
+        typical_elements: 'Kick drums, synthesizers, repetitive structures'
+      },
+      'house': {
+        description: 'Four-on-the-floor dance music with soulful influences and groovy basslines',
+        characteristics: 'Four-on-the-floor beat, groovy bass, disco influences',
+        scene: 'Clubs, festivals, mainstream dance culture',
+        typical_elements: 'Four-to-the-floor, disco samples, groovy bass'
+      },
+      'electronic': {
+        description: 'Diverse electronic music production spanning multiple sub-genres',
+        characteristics: 'Synthesizers, digital production, varied styles',
+        scene: 'Global electronic music scene, festivals, streaming platforms',
+        typical_elements: 'Synthesizers, drum machines, digital effects'
+      }
+    };
+
+    // Construire le contexte pour les genres de l'artiste
+    const contextParts = [];
+
+    genres.forEach(genre => {
+      const genreKey = genre.toLowerCase();
+      const knowledge = genreKnowledge[genreKey];
+
+      if (knowledge) {
+        contextParts.push(`${genre.toUpperCase()}: ${knowledge.description}
+Characteristics: ${knowledge.characteristics}
+Scene: ${knowledge.scene}
+Typical elements: ${knowledge.typical_elements}`);
+      } else {
+        // Genre inconnu, donner un contexte générique
+        contextParts.push(`${genre.toUpperCase()}: A style within the electronic music spectrum with its own unique characteristics and audience.`);
+      }
+    });
+
+    return contextParts.length > 0
+      ? `Genre Context:\n${contextParts.join('\n\n')}`
+      : 'Electronic music with diverse influences.';
+  }
+
+  /**
+   * Génère une description bilingue (EN/FR) pour un artiste
+   * Utilise les données web BRUTES pour créer une description originale et précise
+   */
+  async generateBilingualDescription(artist, researchData) {
     // Délai avant l'appel Claude API pour protéger la RAM
     console.log('      ⏸️  Preparing Claude API call for bilingual content (10s delay)...');
     await this.wait(10000);
+
+    // Enrichir le contexte avec des informations sur le genre
+    const genreContext = this.getGenreContext(artist.genres);
+
+    // Préparer le contexte de recherche selon le type de données disponibles
+    let researchContext = '';
+
+    if (researchData?.data && researchData.data._raw_web_results) {
+      // CAS 1: Données web brutes disponibles - les formater pour Claude
+      const rawResults = researchData.data._raw_web_results;
+      const structuredData = researchData.data;
+
+      researchContext = `WEB RESEARCH RESULTS (use these to write an original, detailed description):
+
+${this.webSearch.formatForClaude(rawResults)}
+
+STRUCTURED DATA EXTRACTED (use this as reference points):
+- Nationality/Origin: ${structuredData.nationality || 'Unknown'} ${structuredData.origin ? `(${structuredData.origin})` : ''}
+- Record Labels: ${structuredData.labels?.join(', ') || 'None found'}
+- Musical Style: ${structuredData.style || 'See genre context'}
+- Notable Collaborations: ${structuredData.collaborations?.join(', ') || 'None found'}
+- Festivals/Performances: ${structuredData.festivals?.join(', ') || 'None found'}
+- Key Achievements: ${structuredData.achievements?.join(', ') || 'None found'}
+- Bio Summary: ${structuredData.bio || 'Not available'}
+
+${genreContext}
+
+INSTRUCTIONS: Write an ORIGINAL description based on the web search results above. Do NOT copy-paste from the bio summary. Use the web results to craft a unique narrative.`;
+
+    } else if (researchData?.fallback) {
+      // CAS 2: Fallback sans données web
+      researchContext = `${genreContext}
+
+Note: Limited web research available. Use genre knowledge and Spotify data to create compelling narrative.
+
+${researchData.fallback}`;
+
+    } else {
+      // CAS 3: Aucune donnée (ne devrait pas arriver)
+      researchContext = `${genreContext}
+
+Note: No web research available. Use genre knowledge and Spotify data to create compelling narrative.`;
+    }
 
     const prompt = `${this.projectContext}
 
@@ -399,34 +547,54 @@ Artist: ${artist.name}
 Spotify Genres: ${artist.genres?.join(', ') || 'Electronic'}
 Popularity: ${artist.popularity}/100
 
-Research findings:
-${researchText}
+${researchContext}
 
-IMPORTANT: Create RICH, DETAILED, NARRATIVE descriptions similar to this example style:
+CRITICAL INSTRUCTIONS FOR QUALITY CONTENT:
 
-"Artiste polyvalent et visionnaire de la scène électronique, [Artist] fusionne les énergies de [genres] pour créer des compositions puissantes et émotionnelles. [Mention past projects, groups, or significant achievements]. Ces morceaux ont accumulé des millions d'écoutes sur des plateformes comme Spotify et YouTube, consolidant sa réputation internationale.
+1. AVOID GENERIC TEMPLATES - Do NOT use filler phrases like:
+   ❌ "Versatile artist and visionary producer"
+   ❌ "powerful and emotional compositions"
+   ❌ "innovative production techniques"
+   ❌ "bold artistic vision"
 
-[Career evolution, label signings]. Il a signé plusieurs productions sur des labels prestigieux tels que Dancing Dead Records, [other labels], explorant des sonorités allant de [genre] à [genre]. Ses collaborations avec des artistes comme [names] témoignent de sa capacité à repousser les frontières du genre.
+2. USE GENRE-SPECIFIC LANGUAGE - Instead of generic terms, use:
+   ✅ Specific genre characteristics (e.g., "808 cowbell-driven drift phonk", "distorted hardstyle kicks")
+   ✅ Scene-specific references (e.g., "TikTok viral phonk", "Defqon.1 hardstyle")
+   ✅ Production technique details (e.g., "slowed-down Memphis samples", "reverse bass design")
+   ✅ Cultural context (e.g., "car culture aesthetic", "underground SoundCloud scene")
 
-Passionné par [artistic vision], [Artist] s'adresse à un public international de créateurs, de DJs et de mélomanes. Ses performances en festivals et clubs, ainsi que ses remixes et productions originales, font de lui une figure incontournable de la scène électronique contemporaine.
+3. CREATE BELIEVABLE NARRATIVES based on:
+   - Spotify popularity level (low = underground/emerging, high = established/touring)
+   - Genre characteristics (drift phonk = internet culture, hardstyle = festival circuit)
+   - Typical career paths for that genre (labels, platforms, audience)
 
-Avec une vision artistique audacieuse et une maîtrise technique impressionnante, [Artist] continue d'influencer et d'inspirer la scène électronique mondiale."
+4. STRUCTURE (4 paragraphs, ~250-350 words total):
+   Para 1: Genre-specific introduction with production style details
+   Para 2: Career trajectory appropriate to popularity level and genre scene
+   Para 3: Label connection (Dancing Dead Records) + genre evolution
+   Para 4: Audience reach and cultural impact specific to genre
 
-Generate TWO descriptions (4 FULL paragraphs each):
+EXAMPLE OF GOOD (SPECIFIC) vs BAD (GENERIC):
 
-1. ENGLISH description (4 detailed paragraphs, ~300-400 words):
-   - Para 1: Artist introduction, genre fusion, artistic vision, use <strong> for main genres
-   - Para 2: Career highlights, past projects/groups, hit tracks, streaming success, label signings
-   - Para 3: Collaborations, artistic evolution, genre exploration, mention Dancing Dead Records
-   - Para 4: Impact on scene, performances, target audience, artistic philosophy
+❌ BAD (generic template):
+"Versatile artist in the electronic music scene, Artist specializes in drift phonk to create powerful compositions. With innovative production techniques, this artist has carved out a unique space..."
+
+✅ GOOD (genre-specific):
+"Emerging from the underground drift phonk scene, Artist crafts bass-heavy tracks characterized by haunting 808 cowbells, slowed Memphis rap samples, and dark atmospheric synths. Building a following through viral TikTok placements and SoundCloud releases..."
+
+Generate TWO descriptions (4 paragraphs each):
+
+1. ENGLISH description (~250-350 words):
+   - Use <strong> tags for main genres ONLY
    - Use <br><br> between paragraphs
-   - Rich, narrative style with specific details
-   - If research data is limited, create plausible narrative based on genres and Spotify popularity
+   - Write as if for a music blog/magazine, NOT a corporate bio
+   - Be SPECIFIC to the genre scene, audience, and typical career path
+   - Avoid generic "powerful/innovative/visionary" filler words
 
-2. FRENCH description (4 detailed paragraphs, natural French):
-   - Same rich structure as English
-   - NOT a literal translation - adapt for French music journalism style
-   - Maintain passionate, artistic tone
+2. FRENCH description (~250-350 words):
+   - Same structure, adapted to French music journalism style
+   - Natural French, NOT literal translation
+   - Maintain genre-specific authenticity
 
 Return in this exact JSON format:
 {
@@ -666,7 +834,7 @@ Return in this exact JSON format:
 
           // Génération du contenu bilingue
           console.log('  ✍️  Step 3.3: Generating bilingual content (EN/FR)...');
-          const content = await this.generateBilingualDescription(artist, research.formatted);
+          const content = await this.generateBilingualDescription(artist, research);
           await this.wait(120000); // Délai pour libérer la RAM après Claude AI (2 minutes)
           console.log('      ⏸️  Memory cleanup delay (2 minutes)...');
 
