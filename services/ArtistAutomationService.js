@@ -6,6 +6,7 @@ const ResearchQueueService = require('./ResearchQueueService');
 const WebSearchService = require('./WebSearchService');
 const ImageUploadService = require('./ImageUploadService');
 const SocialLinksService = require('./SocialLinksService');
+const { wordpressSlugify } = require('../utils/wordpressSlugify');
 
 class ArtistAutomationService {
   constructor() {
@@ -149,21 +150,20 @@ class ArtistAutomationService {
 
   /**
    * Normalise le nom d'un artiste pour la comparaison
+   * Utilise la même méthode que WordPress pour éviter les doublons
    */
   normalizeArtistName(name) {
-    return name.toLowerCase().trim();
+    // Utiliser la slugification WordPress pour la comparaison
+    // Cela garantit qu'on détecte les doublons comme "Rhi'N'B" et "RhiNB"
+    return wordpressSlugify(name);
   }
 
   /**
    * Génère un slug WordPress à partir d'un nom d'artiste
+   * Utilise wordpressSlugify pour reproduire EXACTEMENT le comportement de WordPress
    */
   generateSlug(artistName) {
-    return artistName
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '') // Retire les accents
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '');
+    return wordpressSlugify(artistName);
   }
 
   /**
@@ -470,21 +470,47 @@ Return in this exact JSON format:
       const genres = artist.genres?.join(', ') || 'Electronic';
       const genreList = artist.genres || ['Electronic'];
       const mainGenre = genreList[0] || 'Electronic';
-      const secondaryGenre = genreList[1] || mainGenre;
+      const secondaryGenre = genreList[1] || 'bass music'; // Genre par défaut différent pour éviter "Electronic et Electronic"
+      const hasMultipleGenres = genreList.length > 1;
       const popularity = artist.popularity || 50;
       const recognition = popularity > 60 ? 'growing international recognition' : 'dedicated underground following';
       const recognitionFR = popularity > 60 ? 'reconnaissance internationale croissante' : 'base de fans underground dédiée';
       const impact = popularity > 70 ? 'established' : popularity > 50 ? 'rising' : 'emerging';
 
+      // Templates adaptatifs selon le nombre de genres
+      const genreIntro = hasMultipleGenres
+        ? `fuses the energies of <strong>${mainGenre}</strong> and <strong>${secondaryGenre}</strong>`
+        : `specializes in <strong>${mainGenre}</strong>`;
+
+      const genreIntroFR = hasMultipleGenres
+        ? `fusionne les énergies du <strong>${mainGenre}</strong> et du <strong>${secondaryGenre}</strong>`
+        : `se spécialise dans le <strong>${mainGenre}</strong>`;
+
+      const genreBlend = hasMultipleGenres
+        ? `a masterful blend of ${mainGenre} intensity with ${secondaryGenre} sensibilities`
+        : `a signature ${mainGenre} sound with innovative production techniques`;
+
+      const genreBlendFR = hasMultipleGenres
+        ? `un mélange magistral de l'intensité ${mainGenre} avec les sensibilités ${secondaryGenre}`
+        : `un son ${mainGenre} signature avec des techniques de production innovantes`;
+
+      const metaGenres = hasMultipleGenres
+        ? `${mainGenre} and ${secondaryGenre}`
+        : mainGenre;
+
+      const metaGenresFR = hasMultipleGenres
+        ? `${mainGenre} et ${secondaryGenre}`
+        : mainGenre;
+
       return {
         en: {
-          description: `Versatile artist and visionary producer in the electronic music scene, ${artist.name} fuses the energies of <strong>${mainGenre}</strong> and <strong>${secondaryGenre}</strong> to create powerful and emotional compositions. With a distinctive sound characterized by innovative production techniques, heavy basslines, and intricate sound design, this artist has carved out a unique space in the ${mainGenre} landscape.<br><br>Building a career through releases on forward-thinking labels including <strong>Dancing Dead Records</strong>, ${artist.name} has developed a signature style that pushes genre boundaries. The artist's productions showcase a masterful blend of ${mainGenre} intensity with ${secondaryGenre} sensibilities, creating immersive sonic experiences that resonate with audiences across digital platforms and streaming services, earning a ${recognition}.<br><br>Passionate about sonic innovation and pushing creative boundaries, ${artist.name} addresses an international audience of creators, DJs, and electronic music enthusiasts. Through performances, original productions, and remixes, this ${impact} talent contributes to the evolution of modern electronic music, bringing fresh perspectives to the global scene.<br><br>With bold artistic vision and impressive technical mastery, ${artist.name} continues to influence and inspire the electronic music community worldwide, establishing a distinctive voice in contemporary ${mainGenre} and beyond.`,
-          meta_description: `${artist.name} - ${mainGenre} and ${secondaryGenre} producer and DJ bringing innovative sounds and powerful compositions to the international electronic music scene.`,
+          description: `Versatile artist and visionary producer in the electronic music scene, ${artist.name} ${genreIntro} to create powerful and emotional compositions. With a distinctive sound characterized by innovative production techniques, heavy basslines, and intricate sound design, this artist has carved out a unique space in the ${mainGenre} landscape.<br><br>Building a career through releases on forward-thinking labels including <strong>Dancing Dead Records</strong>, ${artist.name} has developed a signature style that pushes genre boundaries. The artist's productions showcase ${genreBlend}, creating immersive sonic experiences that resonate with audiences across digital platforms and streaming services, earning a ${recognition}.<br><br>Passionate about sonic innovation and pushing creative boundaries, ${artist.name} addresses an international audience of creators, DJs, and electronic music enthusiasts. Through performances, original productions, and remixes, this ${impact} talent contributes to the evolution of modern electronic music, bringing fresh perspectives to the global scene.<br><br>With bold artistic vision and impressive technical mastery, ${artist.name} continues to influence and inspire the electronic music community worldwide, establishing a distinctive voice in contemporary ${mainGenre} and beyond.`,
+          meta_description: `${artist.name} - ${metaGenres} producer and DJ bringing innovative sounds and powerful compositions to the international electronic music scene.`,
           role: 'DJ & Producer'
         },
         fr: {
-          description: `Artiste polyvalent et producteur visionnaire de la scène électronique, ${artist.name} fusionne les énergies du <strong>${mainGenre}</strong> et du <strong>${secondaryGenre}</strong> pour créer des compositions puissantes et émotionnelles. Avec un son distinctif caractérisé par des techniques de production innovantes, des basses lourdes et un sound design complexe, cet artiste a sculpté un espace unique dans le paysage du ${mainGenre}.<br><br>Construisant une carrière à travers des sorties sur des labels avant-gardistes dont <strong>Dancing Dead Records</strong>, ${artist.name} a développé un style signature qui repousse les frontières des genres. Les productions de l'artiste présentent un mélange magistral de l'intensité ${mainGenre} avec les sensibilités ${secondaryGenre}, créant des expériences sonores immersives qui résonnent avec les audiences sur les plateformes digitales et services de streaming, gagnant une ${recognitionFR}.<br><br>Passionné par l'innovation sonore et le dépassement des limites créatives, ${artist.name} s'adresse à un public international de créateurs, DJs et passionnés de musique électronique. À travers ses performances, productions originales et remixes, ce talent ${impact === 'established' ? 'établi' : impact === 'rising' ? 'émergent' : 'en devenir'} contribue à l'évolution de la musique électronique moderne, apportant des perspectives fraîches à la scène mondiale.<br><br>Avec une vision artistique audacieuse et une maîtrise technique impressionnante, ${artist.name} continue d'influencer et d'inspirer la communauté de musique électronique mondiale, établissant une voix distinctive dans le ${mainGenre} contemporain et au-delà.`,
-          meta_description: `${artist.name} - Producteur et DJ ${mainGenre} et ${secondaryGenre} apportant des sons innovants et compositions puissantes à la scène électronique internationale.`,
+          description: `Artiste polyvalent et producteur visionnaire de la scène électronique, ${artist.name} ${genreIntroFR} pour créer des compositions puissantes et émotionnelles. Avec un son distinctif caractérisé par des techniques de production innovantes, des basses lourdes et un sound design complexe, cet artiste a sculpté un espace unique dans le paysage du ${mainGenre}.<br><br>Construisant une carrière à travers des sorties sur des labels avant-gardistes dont <strong>Dancing Dead Records</strong>, ${artist.name} a développé un style signature qui repousse les frontières des genres. Les productions de l'artiste présentent ${genreBlendFR}, créant des expériences sonores immersives qui résonnent avec les audiences sur les plateformes digitales et services de streaming, gagnant une ${recognitionFR}.<br><br>Passionné par l'innovation sonore et le dépassement des limites créatives, ${artist.name} s'adresse à un public international de créateurs, DJs et passionnés de musique électronique. À travers ses performances, productions originales et remixes, ce talent ${impact === 'established' ? 'établi' : impact === 'rising' ? 'émergent' : 'en devenir'} contribue à l'évolution de la musique électronique moderne, apportant des perspectives fraîches à la scène mondiale.<br><br>Avec une vision artistique audacieuse et une maîtrise technique impressionnante, ${artist.name} continue d'influencer et d'inspirer la communauté de musique électronique mondiale, établissant une voix distinctive dans le ${mainGenre} contemporain et au-delà.`,
+          meta_description: `${artist.name} - Producteur et DJ ${metaGenresFR} apportant des sons innovants et compositions puissantes à la scène électronique internationale.`,
           role: 'DJ & Producteur'
         }
       };
