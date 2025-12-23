@@ -187,6 +187,13 @@ class WordPressAIWUService {
 
       console.log(`   ✅ English page created (ID: ${postEN})`);
 
+      // Forcer la mise à jour du slug (WordPress peut ignorer post_name lors de la création)
+      console.log(`   🔧 Forcing slug update to: ${content.slug}`);
+      await this.updatePost(postEN, {
+        post_name: content.slug
+      });
+      console.log(`   ✅ Slug updated`);
+
       // 2. Créer la page FR
       console.log('   📄 Creating French page...');
       const postFR = await this.createPost({
@@ -215,6 +222,13 @@ class WordPressAIWUService {
       }
 
       console.log(`   ✅ French page created (ID: ${postFR})`);
+
+      // Forcer la mise à jour du slug (WordPress peut ignorer post_name lors de la création)
+      console.log(`   🔧 Forcing slug update to: ${content.slug}`);
+      await this.updatePost(postFR, {
+        post_name: content.slug
+      });
+      console.log(`   ✅ Slug updated`);
 
       // 3. Assigner les langues (Polylang)
       console.log('   🌐 Linking pages with Polylang...');

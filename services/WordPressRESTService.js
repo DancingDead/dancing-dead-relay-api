@@ -150,6 +150,14 @@ class WordPressRESTService {
       });
 
       console.log(`   ✅ Page created (ID: ${postId})`);
+
+      // Forcer la mise à jour du slug (WordPress peut ignorer le slug lors de la création)
+      console.log(`   🔧 Forcing slug update to: ${content.slug}`);
+      await this.updatePost(postId, {
+        slug: content.slug
+      });
+      console.log(`   ✅ Slug updated`);
+
       console.log(`   🌍 URL: ${this.baseUrl}/artists/${content.slug}/`);
 
       return {

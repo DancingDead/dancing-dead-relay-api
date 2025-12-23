@@ -218,6 +218,14 @@ class WordPressMCPService {
       const idEN = postEN.ID || postEN.id || postEN;
       console.log(`   ✅ English page created (ID: ${idEN})`);
 
+      // Forcer la mise à jour du slug (WordPress peut ignorer post_name lors de la création)
+      console.log(`   🔧 Forcing slug update to: ${content.slug}`);
+      await this.callTool('wp_update_post', {
+        ID: idEN,
+        post_name: content.slug
+      });
+      console.log(`   ✅ Slug updated`);
+
       // Délai pour libérer la RAM
       console.log('   ⏸️  RAM cleanup (30s)...');
       await this.wait(30000);
@@ -248,6 +256,14 @@ class WordPressMCPService {
 
       const idFR = postFR.ID || postFR.id || postFR;
       console.log(`   ✅ French page created (ID: ${idFR})`);
+
+      // Forcer la mise à jour du slug (WordPress peut ignorer post_name lors de la création)
+      console.log(`   🔧 Forcing slug update to: ${content.slug}`);
+      await this.callTool('wp_update_post', {
+        ID: idFR,
+        post_name: content.slug
+      });
+      console.log(`   ✅ Slug updated`);
 
       // Délai pour libérer la RAM
       console.log('   ⏸️  RAM cleanup (30s)...');
