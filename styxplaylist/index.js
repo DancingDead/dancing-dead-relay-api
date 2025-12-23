@@ -147,7 +147,7 @@ async function updateDataInBackground(playlistId) {
 
 router.get("/", async (req, res) => {
     try {
-        const playlistId = "6LJhvzEEnw6Eh8qGbYRl0T"; // ID de la playlist
+        const playlistId = "6ZdsD65BwGtuRzvBl2OpqF"; // ID de la playlist
         const cachedData = readDataFromFile();
 
         // Utiliser les données en cache si elles existent
