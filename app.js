@@ -43,7 +43,9 @@ const allowedOrigins = [
   'https://dancingdeadrecords.com',
   'https://www.dancingdeadrecords.com',
   'https://denhakurecords.com',
-  'https://www.denhakurecords.com'
+  'https://www.denhakurecords.com',
+  'https://naeleck.com',
+  'https://www.naeleck.com'
 ];
 
 app.use(cors({
