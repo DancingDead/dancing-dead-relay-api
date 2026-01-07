@@ -120,6 +120,36 @@ class WordPressMCPService {
   }
 
   /**
+   * Décode les entités HTML d'une chaîne
+   * Convertit &rsquo; en ', &amp; en &, etc.
+   */
+  decodeHTMLEntities(text) {
+    if (!text || typeof text !== 'string') {
+      return text;
+    }
+
+    const entities = {
+      '&rsquo;': "'",
+      '&lsquo;': "'",
+      '&quot;': '"',
+      '&ldquo;': '"',
+      '&rdquo;': '"',
+      '&amp;': '&',
+      '&lt;': '<',
+      '&gt;': '>',
+      '&nbsp;': ' ',
+      '&#039;': "'"
+    };
+
+    let decoded = text;
+    for (const [entity, char] of Object.entries(entities)) {
+      decoded = decoded.replace(new RegExp(entity, 'g'), char);
+    }
+
+    return decoded;
+  }
+
+  /**
    * Récupère les artistes WordPress existants via REST API
    * (MCP wp_get_posts a une limite de 10 posts et ne supporte pas la pagination)
    */
@@ -165,12 +195,15 @@ class WordPressMCPService {
 
       console.log(`   ✅ Fetched ${allPosts.length} artists from WordPress`);
 
-      return allPosts.map(post => ({
-        id: post.id || post.ID,
-        name: post.title?.rendered || post.post_title || post.title,
-        slug: post.slug || post.post_name,
-        lang: post.lang || 'en'
-      }));
+      return allPosts.map(post => {
+        const rawTitle = post.title?.rendered || post.post_title || post.title;
+        return {
+          id: post.id || post.ID,
+          name: this.decodeHTMLEntities(rawTitle),
+          slug: post.slug || post.post_name,
+          lang: post.lang || 'en'
+        };
+      });
     } catch (error) {
       console.error('   ⚠️  Error fetching WordPress artists:', error.message);
       return [];
