@@ -34,6 +34,7 @@ const generaldownloadstyx = require("./generaldownloadstyx");
 const dancingdeadshows = require("./dancingdeadshows");
 const ai = require("./ai");
 const apiArtists = require("./api/artists");
+const webhook = require("./api/webhook");
 
 app.use(express.json({ limit: '50mb' })); // Increased size limit
 // Configure CORS explicitly to allow requests depuis le domaine avec et sans 'www'
@@ -100,6 +101,7 @@ app.use(withBase('/generaldownloadstyx'), generaldownloadstyx);
 app.use(withBase('/dancingdeadshows'), dancingdeadshows);
 app.use(withBase('/ai'), ai);
 app.use(withBase('/api/artists'), apiArtists);
+app.use(withBase('/webhook'), webhook);
 
 // Chemin pour récupérer les données de landingpage.json
 app.get(withBase('/storage/landingpage.json'), (req, res) => {
