@@ -1,3 +1,6 @@
 Test webhook deployment
-Timestamp: 2026-01-07 17:30:00
+Timestamp: 2026-01-07 17:35:00
 This file tests the automatic deployment system via GitHub webhook.
+
+Test #2 - Second webhook trigger test
+Checking if automatic deployment works correctly.
