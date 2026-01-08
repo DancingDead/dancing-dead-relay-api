@@ -121,13 +121,25 @@ class WordPressMCPService {
 
   /**
    * Décode les entités HTML d'une chaîne
-   * Convertit &rsquo; en ', &amp; en &, etc.
+   * Convertit &rsquo; en ', &amp; en &, &#38; en &, etc.
+   * Supporte les entités nommées ET numériques (décimales et hexadécimales)
    */
   decodeHTMLEntities(text) {
     if (!text || typeof text !== 'string') {
       return text;
     }
 
+    // Étape 1: Décoder les entités numériques hexadécimales (&#xHH;)
+    let decoded = text.replace(/&#x([0-9A-Fa-f]+);/g, (match, hex) => {
+      return String.fromCharCode(parseInt(hex, 16));
+    });
+
+    // Étape 2: Décoder les entités numériques décimales (&#NNN;)
+    decoded = decoded.replace(/&#(\d+);/g, (match, dec) => {
+      return String.fromCharCode(parseInt(dec, 10));
+    });
+
+    // Étape 3: Décoder les entités nommées communes
     const entities = {
       '&rsquo;': "'",
       '&lsquo;': "'",
@@ -141,7 +153,6 @@ class WordPressMCPService {
       '&#039;': "'"
     };
 
-    let decoded = text;
     for (const [entity, char] of Object.entries(entities)) {
       decoded = decoded.replace(new RegExp(entity, 'g'), char);
     }
