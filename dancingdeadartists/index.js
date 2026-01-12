@@ -238,7 +238,15 @@ async function fetchAndCacheArtistsImages() {
 
         allReleasesFromAllPlaylists = allReleasesFromAllPlaylists.concat(latestReleasesOfPlaylist);
 
+        let processedTracks = 0;
         for (const release of latestReleasesOfPlaylist) {
+            processedTracks++;
+
+            // Log progression tous les 25 tracks
+            if (processedTracks % 25 === 0) {
+                logger.info(`Progress: ${processedTracks}/${latestReleasesOfPlaylist.length} tracks processed (${artistsWithImages.length} artists found so far)`);
+            }
+
             // Récupérer TOUS les artistes de la track (principal + collaborateurs)
             for (const artist of release.artists) {
                 const artistDetails = await getArtistsDetails(token, [artist]);
@@ -247,6 +255,8 @@ async function fetchAndCacheArtistsImages() {
                 }
             }
         }
+
+        logger.info(`Completed playlist ${playlistId}: ${processedTracks} tracks, ${artistsWithImages.length} artists total`);
     }
 
     logger.info(`Total tracks processed: ${allReleasesFromAllPlaylists.length}`);
