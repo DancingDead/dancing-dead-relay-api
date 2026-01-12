@@ -214,23 +214,33 @@ function filterUniqueAndBlacklistedArtists(artistsWithImages) {
 }
 
 async function fetchAndCacheArtistsImages() {
-    const playlistId = "0yN1AKMSboq8tsgmjSL3ky"; // Spotify playlist ID
+    const playlistIds = [
+        "0yN1AKMSboq8tsgmjSL3ky", // Playlist principale
+        "6ZdsD65BwGtuRzvBl2OpqF"  // Playlist additionnelle
+    ];
+
     const token = await getToken();
-    const latestReleasesOfPlaylist = await getLatestPlaylist(playlistId, token);
-
     const artistsWithImages = [];
+    let allReleasesFromAllPlaylists = [];
 
-    for (const release of latestReleasesOfPlaylist) {
-        // Récupérer TOUS les artistes de la track (principal + collaborateurs)
-        for (const artist of release.artists) {
-            const artistDetails = await getArtistsDetails(token, [artist]);
-            if (artistDetails && artistDetails.length > 0) {
-                artistsWithImages.push(...artistDetails);
+    // Boucle sur toutes les playlists
+    for (const playlistId of playlistIds) {
+        console.log(`Fetching artists from playlist: ${playlistId}`);
+        const latestReleasesOfPlaylist = await getLatestPlaylist(playlistId, token);
+        allReleasesFromAllPlaylists = allReleasesFromAllPlaylists.concat(latestReleasesOfPlaylist);
+
+        for (const release of latestReleasesOfPlaylist) {
+            // Récupérer TOUS les artistes de la track (principal + collaborateurs)
+            for (const artist of release.artists) {
+                const artistDetails = await getArtistsDetails(token, [artist]);
+                if (artistDetails && artistDetails.length > 0) {
+                    artistsWithImages.push(...artistDetails);
+                }
             }
         }
     }
 
-    writeDataToFile({ latestReleasesOfPlaylist, artistsWithImages });
+    writeDataToFile({ latestReleasesOfPlaylist: allReleasesFromAllPlaylists, artistsWithImages });
     return artistsWithImages;
 }
 
