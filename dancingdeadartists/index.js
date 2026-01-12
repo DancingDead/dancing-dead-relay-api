@@ -4,6 +4,9 @@ const router = express.Router();
 const fetch = require("node-fetch");
 const fs = require("fs");
 const path = require("path");
+const Logger = require("../utils/logger");
+
+const logger = new Logger('dancingdeadartists.log');
 
 const DATA_FILE_PATH = path.join(__dirname, 'data.json'); // Chemin vers le fichier JSON contenant les données
 
@@ -219,14 +222,20 @@ async function fetchAndCacheArtistsImages() {
         "6ZdsD65BwGtuRzvBl2OpqF"  // Playlist additionnelle
     ];
 
+    logger.info(`Starting fetch for ${playlistIds.length} playlists`);
+
     const token = await getToken();
+    logger.info("Spotify token obtained successfully");
+
     const artistsWithImages = [];
     let allReleasesFromAllPlaylists = [];
 
     // Boucle sur toutes les playlists
     for (const playlistId of playlistIds) {
-        console.log(`Fetching artists from playlist: ${playlistId}`);
+        logger.info(`Fetching artists from playlist: ${playlistId}`);
         const latestReleasesOfPlaylist = await getLatestPlaylist(playlistId, token);
+        logger.info(`Found ${latestReleasesOfPlaylist.length} tracks in playlist ${playlistId}`);
+
         allReleasesFromAllPlaylists = allReleasesFromAllPlaylists.concat(latestReleasesOfPlaylist);
 
         for (const release of latestReleasesOfPlaylist) {
@@ -240,7 +249,12 @@ async function fetchAndCacheArtistsImages() {
         }
     }
 
+    logger.info(`Total tracks processed: ${allReleasesFromAllPlaylists.length}`);
+    logger.info(`Total artists found (before filtering): ${artistsWithImages.length}`);
+
     writeDataToFile({ latestReleasesOfPlaylist: allReleasesFromAllPlaylists, artistsWithImages });
+    logger.success("Data written to file successfully", { path: DATA_FILE_PATH });
+
     return artistsWithImages;
 }
 
@@ -270,12 +284,37 @@ router.get("/", async (req, res) => {
 // Nouvelle route pour forcer la mise à jour du cache
 router.post("/update", async (req, res) => {
     try {
-        console.log("Forcing data update...");
-        const artistsWithImages = await fetchAndCacheArtistsImages(); // Met à jour les données manuellement
-        res.status(200).json({ message: "Data updated successfully", artists: artistsWithImages });
+        logger.info("=== DÉBUT DE LA MISE À JOUR FORCÉE ===");
+        logger.info("Request received from:", { ip: req.ip, userAgent: req.get('user-agent') });
+
+        const startTime = Date.now();
+        logger.info("Fetching artists from Spotify...");
+
+        const artistsWithImages = await fetchAndCacheArtistsImages();
+
+        const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+        logger.success("Update completed successfully", {
+            artistsCount: artistsWithImages.length,
+            duration: `${duration}s`
+        });
+
+        res.status(200).json({
+            message: "Data updated successfully",
+            artists: artistsWithImages,
+            stats: {
+                count: artistsWithImages.length,
+                duration: `${duration}s`
+            }
+        });
     } catch (error) {
-        console.error("Error during manual update:", error);
-        res.status(500).json({ error: "An error occurred while updating data manually" });
+        logger.error("Error during manual update:", {
+            message: error.message,
+            stack: error.stack
+        });
+        res.status(500).json({
+            error: "An error occurred while updating data manually",
+            details: error.message
+        });
     }
 });
 
