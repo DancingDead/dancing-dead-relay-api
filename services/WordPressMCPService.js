@@ -598,6 +598,62 @@ class WordPressMCPService {
       return null;
     }
   }
+
+  /**
+   * Vérifie si un artiste existe déjà par son Spotify ID
+   * @param {string} spotifyId - L'ID Spotify de l'artiste
+   * @returns {Promise<Object|null>} Post existant ou null
+   */
+  async findArtistBySpotifyId(spotifyId) {
+    try {
+      const fetch = require('node-fetch');
+      const baseUrl = process.env.WORDPRESS_URL || 'https://dancingdeadrecords.com';
+
+      // Recherche par meta_value (champ spotify_link ou spotify_id)
+      // Note: Cette recherche utilise l'API REST WordPress avec meta_query
+      const spotifyUrl = `https://open.spotify.com/artist/${spotifyId}`;
+
+      // Essayer de chercher dans les meta fields
+      const response = await fetch(
+        `${baseUrl}/wp-json/wp/v2/artist?per_page=100&_fields=id,title,slug,lang,meta&status=publish`,
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      if (!response.ok) {
+        return null;
+      }
+
+      const posts = await response.json();
+
+      // Rechercher manuellement dans les posts
+      for (const post of posts) {
+        const spotifyLink = post.meta?.spotify_link || post.meta?.spotify_url || '';
+
+        // Vérifier si le lien Spotify contient l'ID
+        if (spotifyLink && spotifyLink.includes(spotifyId)) {
+          console.log(`   ✅ Found existing artist by Spotify ID: ${spotifyId} (Post ID: ${post.id})`);
+          return {
+            id: post.id,
+            title: post.title?.rendered || post.title,
+            slug: post.slug,
+            lang: post.lang || 'en',
+            spotifyLink
+          };
+        }
+      }
+
+      return null;
+
+    } catch (error) {
+      console.error(`   ⚠️  Error finding artist by Spotify ID:`, error.message);
+      return null;
+    }
+  }
 }
 
 module.exports = WordPressMCPService;

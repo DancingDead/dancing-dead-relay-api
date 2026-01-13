@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const ArtistAutomationService = require('../../services/ArtistAutomationService');
+const SyncLockService = require('../../services/SyncLockService');
 
 // Instance du service
 const artistService = new ArtistAutomationService();
+
+// Service de lock persistant (fichier)
+const syncLock = new SyncLockService();
 
 // Variable pour stocker le statut de la dernière synchronisation
 let lastSyncStatus = {
@@ -11,9 +15,6 @@ let lastSyncStatus = {
   status: 'never_run',
   results: null
 };
-
-// Lock pour éviter les synchronisations concurrentes
-let syncInProgress = false;
 
 /**
  * POST /api/artists/sync
@@ -37,19 +38,26 @@ router.post('/sync', async (req, res) => {
       });
     }
 
-    // PROTECTION ANTI-DOUBLON: Vérifier si une sync est déjà en cours
-    if (syncInProgress) {
-      console.log('\n⚠️  Sync request BLOCKED - another sync is already in progress');
+    // PROTECTION ANTI-DOUBLON: Vérifier si une sync est déjà en cours avec lock fichier persistant
+    const lockMetadata = {
+      ip: req.ip,
+      userAgent: req.get('user-agent')
+    };
+
+    if (!syncLock.acquire(lockMetadata)) {
+      const lockInfo = syncLock.getLockInfo();
       return res.status(409).json({
         success: false,
         error: 'Synchronization already in progress. Please wait for the current sync to complete.',
-        status: 'conflict'
+        status: 'conflict',
+        lockInfo: lockInfo ? {
+          acquiredAt: new Date(lockInfo.timestamp).toISOString(),
+          age: `${Math.round(lockInfo.age / 1000)}s`,
+          maxAge: `${lockInfo.maxAge / 1000}s`,
+          ip: lockInfo.ip
+        } : null
       });
     }
-
-    // Verrouiller pour empêcher les syncs concurrentes
-    syncInProgress = true;
-    console.log('🔒 Sync lock acquired');
 
     const limit = req.body?.limit || null;
     const skipSpotifyUpdate = req.body?.skipSpotifyUpdate || false;
@@ -66,7 +74,7 @@ router.post('/sync', async (req, res) => {
 
     // Vérifier si ANTHROPIC_API_KEY est configurée
     if (!process.env.ANTHROPIC_API_KEY) {
-      syncInProgress = false; // Libérer le lock
+      syncLock.release(); // Libérer le lock
       return res.status(500).json({
         success: false,
         error: 'ANTHROPIC_API_KEY not configured in environment variables'
@@ -84,8 +92,7 @@ router.post('/sync', async (req, res) => {
     };
 
     // Libérer le lock
-    syncInProgress = false;
-    console.log('🔓 Sync lock released');
+    syncLock.release();
 
     res.json({
       success: true,
@@ -103,8 +110,7 @@ router.post('/sync', async (req, res) => {
     };
 
     // Libérer le lock en cas d'erreur
-    syncInProgress = false;
-    console.log('🔓 Sync lock released (error)');
+    syncLock.release();
 
     res.status(500).json({
       success: false,
@@ -115,7 +121,7 @@ router.post('/sync', async (req, res) => {
 
 /**
  * GET /api/artists/status
- * Obtient le statut de la synchronisation
+ * Obtient le statut de la synchronisation (avec info lock)
  */
 router.get('/status', async (req, res) => {
   try {
@@ -125,11 +131,24 @@ router.get('/status', async (req, res) => {
     // Compter les artistes en attente
     const missingArtists = await artistService.findMissingArtists();
 
+    // Obtenir les infos du lock actuel
+    const lockInfo = syncLock.getLockInfo();
+
     res.json({
       lastSync: lastSyncStatus,
       nextScheduledSync: nextFriday,
       pendingArtists: missingArtists.length,
-      apiKeyConfigured: !!process.env.ANTHROPIC_API_KEY
+      apiKeyConfigured: !!process.env.ANTHROPIC_API_KEY,
+      syncLock: lockInfo ? {
+        active: true,
+        acquiredAt: new Date(lockInfo.timestamp).toISOString(),
+        age: `${Math.round(lockInfo.age / 1000)}s`,
+        maxAge: `${lockInfo.maxAge / 1000}s`,
+        ip: lockInfo.ip,
+        requestId: lockInfo.requestId
+      } : {
+        active: false
+      }
     });
 
   } catch (error) {
@@ -272,6 +291,55 @@ router.get('/test-search', async (req, res) => {
       success: false,
       error: error.message,
       braveApiConfigured: !!process.env.BRAVE_SEARCH_API_KEY
+    });
+  }
+});
+
+/**
+ * POST /api/artists/force-unlock
+ * Force la libération du lock (utiliser avec précaution)
+ * Utile si un sync plante et laisse le lock orphelin
+ */
+router.post('/force-unlock', async (req, res) => {
+  try {
+    console.log('\n⚠️  Force unlock requested');
+
+    const lockInfo = syncLock.getLockInfo();
+
+    if (!lockInfo) {
+      return res.json({
+        success: true,
+        message: 'No active lock to release',
+        wasLocked: false
+      });
+    }
+
+    const released = syncLock.forceRelease();
+
+    if (released) {
+      console.log(`   Lock forcibly released (was held by ${lockInfo.ip})`);
+      return res.json({
+        success: true,
+        message: 'Lock forcibly released',
+        wasLocked: true,
+        previousLock: {
+          acquiredAt: new Date(lockInfo.timestamp).toISOString(),
+          age: `${Math.round(lockInfo.age / 1000)}s`,
+          ip: lockInfo.ip
+        }
+      });
+    } else {
+      return res.status(500).json({
+        success: false,
+        error: 'Failed to release lock'
+      });
+    }
+
+  } catch (error) {
+    console.error('Error forcing unlock:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
     });
   }
 });

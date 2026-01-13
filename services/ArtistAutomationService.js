@@ -805,16 +805,32 @@ Return in this exact JSON format:
         console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
 
         try {
-          // PROTECTION ANTI-DOUBLON: Re-vérifier si l'artiste existe déjà
-          console.log('  🔍 Step 3.0: Checking if artist already exists in WordPress...');
+          // PROTECTION ANTI-DOUBLON NIVEAU 1: Vérification par Spotify ID (plus fiable)
+          console.log('  🔍 Step 3.0a: Checking if artist exists by Spotify ID...');
+          let artistExistsBySpotifyId = null;
+          if (artist.id) {
+            artistExistsBySpotifyId = await this.wordpress.findArtistBySpotifyId(artist.id);
+            if (artistExistsBySpotifyId) {
+              console.log(`  ⚠️  Artist "${artist.name}" already exists (Spotify ID: ${artist.id}) - SKIPPING to prevent duplicate`);
+              console.log(`      Existing post ID: ${artistExistsBySpotifyId.id} (${artistExistsBySpotifyId.lang})`);
+              results.skipped.push(artist.name);
+              continue; // Passer au prochain artiste
+            }
+            console.log(`  ✅ No artist found with Spotify ID: ${artist.id}`);
+          } else {
+            console.log(`  ⚠️  No Spotify ID available for ${artist.name}, skipping ID check`);
+          }
+
+          // PROTECTION ANTI-DOUBLON NIVEAU 2: Vérification par nom (fallback)
+          console.log('  🔍 Step 3.0b: Checking if artist exists by name...');
           const currentWordPressArtists = await this.getWordPressArtists();
           const normalizedArtistName = this.normalizeArtistName(artist.name);
-          const artistExists = currentWordPressArtists.some(
+          const artistExistsByName = currentWordPressArtists.some(
             wpArtist => this.normalizeArtistName(wpArtist.name) === normalizedArtistName
           );
 
-          if (artistExists) {
-            console.log(`  ⚠️  Artist "${artist.name}" already exists - SKIPPING to prevent duplicate`);
+          if (artistExistsByName) {
+            console.log(`  ⚠️  Artist "${artist.name}" already exists by name - SKIPPING to prevent duplicate`);
             results.skipped.push(artist.name);
             continue; // Passer au prochain artiste
           }

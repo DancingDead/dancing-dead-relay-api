@@ -13,3 +13,6 @@ test-*.js
 
 # Temporary data
 claude-context.md
+
+# Lock files (synchronization)
+.locks/
