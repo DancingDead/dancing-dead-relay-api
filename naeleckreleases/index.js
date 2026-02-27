@@ -11,7 +11,7 @@ const ARTIST_ID = "5171418"; // Naeleck on Deezer
 async function fetchAndCache() {
     logger.info("Fetching fresh Naeleck releases from Deezer...");
     const startTime = Date.now();
-    const albums = await deezer.getArtistAlbums(ARTIST_ID, logger, 10);
+    const albums = await deezer.getArtistAlbums(ARTIST_ID, logger, 25);
 
     const latestReleases = albums
         .map((album) => ({
