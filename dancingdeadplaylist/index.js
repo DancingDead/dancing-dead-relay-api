@@ -1,177 +1,94 @@
 const express = require("express");
 const router = express.Router();
-const fetch = require("node-fetch");
-const fs = require("fs");
 const path = require("path");
+const Logger = require("../utils/logger");
+const spotify = require("../utils/spotify");
 
-const DATA_FILE_PATH = path.join(__dirname, 'data.json'); // Chemin vers le fichier JSON contenant le cache
+const logger = new Logger('dancingdeadplaylist.log');
+const DATA_FILE_PATH = path.join(__dirname, 'data.json');
+const PLAYLIST_ID = "0yN1AKMSboq8tsgmjSL3ky";
 
-// Fonction pour attendre un délai spécifié en millisecondes
-function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-// Fonction pour lire les données depuis le fichier JSON
-function readDataFromFile() {
-    try {
-        if (fs.existsSync(DATA_FILE_PATH)) {
-            const rawdata = fs.readFileSync(DATA_FILE_PATH, 'utf8');
-            return rawdata ? JSON.parse(rawdata) : {};
-        } else {
-            return {};
-        }
-    } catch (error) {
-        console.error("Error reading data from file:", error);
-        return {};
-    }
-}
-
-// Fonction pour écrire les données dans le fichier JSON
-function writeDataToFile(data) {
-    try {
-        fs.writeFileSync(DATA_FILE_PATH, JSON.stringify(data, null, 2));
-    } catch (error) {
-        console.error("Error writing data to file:", error);
-    }
-}
-
-// Fonction pour récupérer le token d'accès depuis Spotify avec réessai en cas d'échec
-async function getToken(retryCount = 3) {
-    while (retryCount > 0) {
-        try {
-            const requestBody = new URLSearchParams();
-            requestBody.append("grant_type", "client_credentials");
-            requestBody.append("client_id", process.env.SPOTIFY_CLIENT_ID);
-            requestBody.append("client_secret", process.env.SPOTIFY_CLIENT_SECRET);
-
-            const response = await fetch("https://accounts.spotify.com/api/token", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-                body: requestBody,
-            });
-
-            if (!response.ok) {
-                if (response.status === 503) {
-                    throw new Error("Service unavailable, retrying...");
-                }
-                throw new Error("Erreur lors de la requête : " + response.status);
-            }
-
-            const data = await response.json();
-            return data.access_token;
-        } catch (error) {
-            console.error("Error fetching token:", error.message);
-            retryCount--;
-            if (retryCount > 0) {
-                await wait(2000); // Attendre 2 secondes avant de réessayer
-            } else {
-                throw new Error("Failed to fetch token after retries");
-            }
-        }
-    }
-}
-
-
-
-async function getAllTracksFromPlaylist(playlistId, token) {
-    let allTracks = [];
-    let nextUrl = `https://api.spotify.com/v1/playlists/${playlistId}/tracks`;
-
-    while (nextUrl) {
-        const response = await fetch(nextUrl, {
-            headers: {
-                Authorization: `Bearer ${token}`,
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error("Erreur lors de la requête : " + response.status);
-        }
-
-        const data = await response.json();
-        allTracks = allTracks.concat(data.items);
-        nextUrl = data.next; // URL pour la prochaine page de résultats, null si c'est la dernière page
-    }
-
-    return allTracks;
-}
-
-// Fonction pour récupérer les dernières sorties de la playlist spécifiée
-async function getLatestPlaylist(playlistId, token) {
-    const tracks = await getAllTracksFromPlaylist(playlistId, token);
-
+function processPlaylistTracks(tracks) {
     const seenAlbums = new Set();
-
     return tracks
-        .map((trackItem) => {
-            return {
-                name: trackItem.track.name,
-                artists: trackItem.track.artists.map((artist) => artist.name).join(", "),
-                album: trackItem.track.album.name,
-                release_date: trackItem.track.album.release_date,
-                duration_ms: trackItem.track.duration_ms,
-                popularity: trackItem.track.popularity,
-                preview_url: trackItem.track.preview_url,
-                cover_url: trackItem.track.album.images.length > 0 ? trackItem.track.album.images[0].url : null,
-                external_urls: trackItem.track.external_urls,
-            };
-        })
+        .map((trackItem) => ({
+            name: trackItem.track.name,
+            artists: trackItem.track.artists.map((artist) => artist.name).join(", "),
+            album: trackItem.track.album.name,
+            release_date: trackItem.track.album.release_date,
+            duration_ms: trackItem.track.duration_ms,
+            popularity: trackItem.track.popularity,
+            preview_url: trackItem.track.preview_url,
+            cover_url: trackItem.track.album.images.length > 0 ? trackItem.track.album.images[0].url : null,
+            external_urls: trackItem.track.external_urls,
+        }))
         .filter((track) => {
-            // Si l'album n'a pas encore été vu, on l'ajoute au Set et on garde la piste
             if (!seenAlbums.has(track.album)) {
                 seenAlbums.add(track.album);
                 return true;
             }
-            // Sinon, on ignore cette piste
             return false;
         });
 }
 
-// Fonction pour mettre à jour les données en arrière-plan
-async function updateDataInBackground(playlistId) {
-    try {
-        const token = await getToken();
-        const latestReleasesOfPlaylist = await getLatestPlaylist(playlistId, token);
+async function fetchAndCache() {
+    logger.info("Fetching fresh data from Spotify...");
+    const startTime = Date.now();
+    const token = await spotify.getToken(logger);
+    const tracks = await spotify.getAllTracksFromPlaylist(PLAYLIST_ID, token, logger);
+    const latestReleasesOfPlaylist = processPlaylistTracks(tracks);
+    spotify.writeDataToFile(DATA_FILE_PATH, { latestReleasesOfPlaylist }, logger);
+    const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+    logger.success(`Data refreshed: ${latestReleasesOfPlaylist.length} releases in ${duration}s`);
+    return latestReleasesOfPlaylist;
+}
 
-        // Écrire les données dans le fichier JSON pour le cache
-        writeDataToFile({ latestReleasesOfPlaylist });
-        console.log("Data updated in background.");
+async function updateDataInBackground() {
+    try {
+        await fetchAndCache();
     } catch (error) {
-        console.error("Error occurred during background update:", error.message);
+        logger.error("Background update failed", { message: error.message, stack: error.stack });
     }
 }
 
 router.get("/", async (req, res) => {
     try {
-        const playlistId = "0yN1AKMSboq8tsgmjSL3ky"; // ID de la playlist
-        const cachedData = readDataFromFile();
+        const cachedData = spotify.readDataFromFile(DATA_FILE_PATH, logger);
+        const isStale = spotify.isCacheStale(cachedData);
 
-        // Utiliser les données en cache si elles existent
         if (cachedData && cachedData.latestReleasesOfPlaylist) {
-            console.log("Using cached data");
+            logger.info(`Using cached data (stale: ${isStale})`);
             res.json(cachedData.latestReleasesOfPlaylist);
+
+            if (isStale) {
+                logger.info("Cache is stale, triggering background refresh");
+                setTimeout(() => updateDataInBackground(), 2000);
+            }
         } else {
-            console.log("No cached data available. Fetching new data...");
-            const token = await getToken();
-            const latestReleasesOfPlaylist = await getLatestPlaylist(playlistId, token);
-
-            // Écrire les données dans le fichier JSON pour le cache
-            writeDataToFile({ latestReleasesOfPlaylist });
-
-            res.json(latestReleasesOfPlaylist);
+            logger.info("No cached data available. Fetching synchronously...");
+            const data = await fetchAndCache();
+            res.json(data);
         }
-
-        // Mettre à jour les données en arrière-plan après la réponse
-        setTimeout(() => {
-            console.log("Starting background data update...");
-            updateDataInBackground(playlistId);
-        }, 2000); // Délai de 2 secondes pour éviter les problèmes de performance
-
     } catch (error) {
-        console.error("Une erreur est survenue :", error.message);
-        res.status(500).json({ error: "Une erreur est survenue lors de la récupération des dernières sorties de la playlist spécifiée" });
+        logger.error("GET / failed", { message: error.message, stack: error.stack });
+        res.status(500).json({ error: "Failed to retrieve playlist releases" });
+    }
+});
+
+router.post("/update", async (req, res) => {
+    try {
+        logger.info("=== FORCED UPDATE TRIGGERED ===", { ip: req.ip });
+        const startTime = Date.now();
+        const data = await fetchAndCache();
+        const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+        logger.success("Forced update completed", { count: data.length, duration: `${duration}s` });
+        res.status(200).json({
+            message: "Data updated successfully",
+            stats: { count: data.length, duration: `${duration}s` }
+        });
+    } catch (error) {
+        logger.error("Forced update failed", { message: error.message, stack: error.stack });
+        res.status(500).json({ error: "Update failed", details: error.message });
     }
 });
 

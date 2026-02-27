@@ -1,145 +1,122 @@
 const express = require("express");
 const router = express.Router();
 const fetch = require("node-fetch");
-const fs = require("fs");
 const path = require("path");
+const Logger = require("../utils/logger");
+const spotify = require("../utils/spotify");
 
-const DATA_FILE_PATH = path.join(__dirname, 'data.json'); // Chemin vers le fichier JSON contenant le cache
+const logger = new Logger('naeleckreleases.log');
+const DATA_FILE_PATH = path.join(__dirname, 'data.json');
+const ARTIST_ID = "2DYDFBqoaBP2i9XrTGpOgF";
 
-// Fonction pour attendre un délai spécifié en millisecondes
-function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-// Fonction pour lire les données depuis le fichier JSON
-function readDataFromFile() {
-    try {
-        if (fs.existsSync(DATA_FILE_PATH)) {
-            const rawdata = fs.readFileSync(DATA_FILE_PATH, 'utf8');
-            return rawdata ? JSON.parse(rawdata) : {};
-        } else {
-            return {};
-        }
-    } catch (error) {
-        console.error("Error reading data from file:", error);
-        return {};
-    }
-}
-
-// Fonction pour écrire les données dans le fichier JSON
-function writeDataToFile(data) {
-    try {
-        fs.writeFileSync(DATA_FILE_PATH, JSON.stringify(data, null, 2));
-    } catch (error) {
-        console.error("Error writing data to file:", error);
-    }
-}
-
-// Fonction pour récupérer le token d'accès
-async function getToken() {
-    const requestBody = new URLSearchParams();
-    requestBody.append("grant_type", "client_credentials");
-    requestBody.append("client_id", process.env.SPOTIFY_CLIENT_ID);
-    requestBody.append("client_secret", process.env.SPOTIFY_CLIENT_SECRET);
-
-    const response = await fetch("https://accounts.spotify.com/api/token", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: requestBody,
-    });
-
-    if (!response.ok) {
-        throw new Error("Erreur lors de la requête : " + response.status);
-    }
-
-    const data = await response.json();
-    return data.access_token;
-}
-
-// Fonction pour récupérer les dernières sorties de l'artiste Naeleck
 async function getLatestReleases(artistId, token) {
-    const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album,single&limit=10`, {
-        headers: {
-            Authorization: `Bearer ${token}`,
-        },
-    });
+    let retries = 3;
+    let waitTime = 2000;
+    let response;
 
-    if (!response.ok) {
-        throw new Error("Erreur lors de la requête : " + response.status);
+    while (retries > 0) {
+        try {
+            response = await fetch(
+                `https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album,single&limit=10`,
+                { headers: { Authorization: `Bearer ${token}` } }
+            );
+        } catch (error) {
+            logger.error("Network error fetching artist albums", { error: error.message });
+            retries--;
+            await spotify.wait(waitTime);
+            waitTime *= 2;
+            continue;
+        }
+
+        if (response.ok) break;
+
+        if (response.status === 429) {
+            const retryAfter = response.headers.get("Retry-After");
+            waitTime = retryAfter ? parseInt(retryAfter) * 1000 : 10000;
+            logger.warn(`Rate limited on artist albums fetch. Waiting ${waitTime}ms...`);
+            await spotify.wait(waitTime);
+            retries--;
+            continue;
+        }
+
+        logger.warn(`Artist albums fetch error: ${response.status}`);
+        retries--;
+        await spotify.wait(waitTime);
+        waitTime *= 2;
+    }
+
+    if (!response || !response.ok) {
+        throw new Error("Failed to fetch artist albums after retries");
     }
 
     const data = await response.json();
-    const latestReleases = [];
-    for (const album of data.items) {
-        const release = {
-            name: album.name,
-            release_date: album.release_date,
-            artists: album.artists.map((artist) => artist.name).join(", "),
-            cover_url: album.images.length > 0 ? album.images[0].url : null,
-            external_urls: album.external_urls,
-            tracks: [],
-        };
-        if (album.tracks) {
-            for (const track of album.tracks.items) {
-                release.tracks.push({
-                    name: track.name,
-                    preview_url: track.preview_url,
-                    external_urls: track.external_urls,
-                });
-                await wait(2000); // Délai de 2 secondes entre chaque requête
-            }
-        }
-        latestReleases.push(release);
-    }
+    return data.items.map((album) => ({
+        name: album.name,
+        release_date: album.release_date,
+        artists: album.artists.map((artist) => artist.name).join(", "),
+        cover_url: album.images.length > 0 ? album.images[0].url : null,
+        external_urls: album.external_urls,
+        tracks: [],
+    }));
+}
+
+async function fetchAndCache() {
+    logger.info("Fetching fresh Naeleck releases from Spotify...");
+    const startTime = Date.now();
+    const token = await spotify.getToken(logger);
+    const latestReleases = await getLatestReleases(ARTIST_ID, token);
+    spotify.writeDataToFile(DATA_FILE_PATH, { latestReleases }, logger);
+    const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+    logger.success(`Naeleck releases refreshed: ${latestReleases.length} releases in ${duration}s`);
     return latestReleases;
 }
 
-// Fonction pour mettre à jour les données en arrière-plan
 async function updateDataInBackground() {
     try {
-        const artistId = "2DYDFBqoaBP2i9XrTGpOgF";
-        const token = await getToken();
-        const latestReleases = await getLatestReleases(artistId, token);
-
-        // Écrire les données dans le fichier JSON pour le cache
-        writeDataToFile({ latestReleases });
-        console.log("Data updated in background.");
+        await fetchAndCache();
     } catch (error) {
-        console.error("Error occurred during background update:", error);
+        logger.error("Background update failed", { message: error.message, stack: error.stack });
     }
 }
 
 router.get("/", async (req, res) => {
     try {
-        const cachedData = readDataFromFile();
+        const cachedData = spotify.readDataFromFile(DATA_FILE_PATH, logger);
+        const isStale = spotify.isCacheStale(cachedData);
 
-        // Utiliser les données en cache si elles existent
         if (cachedData && cachedData.latestReleases) {
-            console.log("Using cached data");
+            logger.info(`Using cached data (stale: ${isStale})`);
             res.json(cachedData.latestReleases);
+
+            if (isStale) {
+                logger.info("Cache is stale, triggering background refresh");
+                setTimeout(() => updateDataInBackground(), 2000);
+            }
         } else {
-            console.log("No cached data available. Fetching new data...");
-            const artistId = "2DYDFBqoaBP2i9XrTGpOgF";
-            const token = await getToken();
-            const latestReleases = await getLatestReleases(artistId, token);
-
-            // Écrire les données dans le fichier JSON pour le cache
-            writeDataToFile({ latestReleases });
-
-            res.json(latestReleases);
+            logger.info("No cached data available. Fetching synchronously...");
+            const data = await fetchAndCache();
+            res.json(data);
         }
-
-        // Mettre à jour les données en arrière-plan après la réponse
-        setTimeout(() => {
-            console.log("Starting background data update...");
-            updateDataInBackground();
-        }, 0);
-
     } catch (error) {
-        console.error("Une erreur est survenue :", error);
-        res.status(500).json({ error: "Une erreur est survenue lors de la récupération des dernières sorties de l'artiste Naeleck" });
+        logger.error("GET / failed", { message: error.message, stack: error.stack });
+        res.status(500).json({ error: "Failed to retrieve Naeleck releases" });
+    }
+});
+
+router.post("/update", async (req, res) => {
+    try {
+        logger.info("=== FORCED UPDATE TRIGGERED ===", { ip: req.ip });
+        const startTime = Date.now();
+        const data = await fetchAndCache();
+        const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+        logger.success("Forced update completed", { count: data.length, duration: `${duration}s` });
+        res.status(200).json({
+            message: "Data updated successfully",
+            stats: { count: data.length, duration: `${duration}s` }
+        });
+    } catch (error) {
+        logger.error("Forced update failed", { message: error.message, stack: error.stack });
+        res.status(500).json({ error: "Update failed", details: error.message });
     }
 });
 
