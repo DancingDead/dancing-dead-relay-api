@@ -2,71 +2,78 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 const Logger = require("../utils/logger");
-const spotify = require("../utils/spotify");
+const deezer = require("../utils/deezer");
 
 const logger = new Logger('dancingdeadplaylist.log');
 const DATA_FILE_PATH = path.join(__dirname, 'data.json');
-const PLAYLIST_ID = "0yN1AKMSboq8tsgmjSL3ky";
+const PLAYLIST_ID = "15000557143";
 
-function processPlaylistTracks(tracks) {
+async function processPlaylistTracks(tracks, logger) {
     const seenAlbums = new Set();
-    return tracks
-        .map((trackItem) => ({
-            name: trackItem.track.name,
-            artists: trackItem.track.artists.map((artist) => artist.name).join(", "),
-            album: trackItem.track.album.name,
-            release_date: trackItem.track.album.release_date,
-            duration_ms: trackItem.track.duration_ms,
-            popularity: trackItem.track.popularity,
-            preview_url: trackItem.track.preview_url,
-            cover_url: trackItem.track.album.images.length > 0 ? trackItem.track.album.images[0].url : null,
-            external_urls: trackItem.track.external_urls,
-        }))
-        .filter((track) => {
-            if (!seenAlbums.has(track.album)) {
-                seenAlbums.add(track.album);
-                return true;
-            }
-            return false;
-        });
+    const uniqueTracks = tracks.filter((track) => {
+        const albumId = track.album.id;
+        if (!seenAlbums.has(albumId)) {
+            seenAlbums.add(albumId);
+            return true;
+        }
+        return false;
+    });
+
+    // Fetch release dates for all unique albums
+    const albumIds = uniqueTracks.map(t => t.album.id);
+    logger.info(`Fetching release dates for ${albumIds.length} unique albums...`);
+    const releaseDates = await deezer.getAlbumReleaseDates(albumIds, logger);
+
+    return uniqueTracks.map((track) => ({
+        name: track.title,
+        artists: track.artist.name,
+        album: track.album.title,
+        release_date: releaseDates[track.album.id] || null,
+        duration_ms: track.duration * 1000,
+        popularity: track.rank,
+        preview_url: track.preview || null,
+        cover_url: track.album.cover_xl || track.album.cover_big || null,
+        external_urls: {
+            deezer: track.link
+        },
+    }));
 }
 
 async function fetchAndCache() {
-    logger.info("Fetching fresh data from Spotify...");
+    logger.info("Fetching fresh data from Deezer...");
     const startTime = Date.now();
-    const token = await spotify.getToken(logger);
-    const tracks = await spotify.getAllTracksFromPlaylist(PLAYLIST_ID, token, logger);
-    const latestReleasesOfPlaylist = processPlaylistTracks(tracks);
-    spotify.writeDataToFile(DATA_FILE_PATH, { latestReleasesOfPlaylist }, logger);
+    const tracks = await deezer.getAllTracksFromPlaylist(PLAYLIST_ID, logger);
+    const latestReleasesOfPlaylist = await processPlaylistTracks(tracks, logger);
+    deezer.writeDataToFile(DATA_FILE_PATH, { latestReleasesOfPlaylist }, logger);
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
     logger.success(`Data refreshed: ${latestReleasesOfPlaylist.length} releases in ${duration}s`);
     return latestReleasesOfPlaylist;
 }
 
 async function updateDataInBackground() {
-    if (spotify.isRefreshing(PLAYLIST_ID)) {
+    if (deezer.isRefreshing(PLAYLIST_ID)) {
         logger.info("Background refresh already in progress, skipping");
         return;
     }
-    spotify.setRefreshing(PLAYLIST_ID, true);
+    deezer.setRefreshing(PLAYLIST_ID, true);
     try {
         await fetchAndCache();
     } catch (error) {
         logger.error("Background update failed", { message: error.message, stack: error.stack });
     } finally {
-        spotify.setRefreshing(PLAYLIST_ID, false);
+        deezer.setRefreshing(PLAYLIST_ID, false);
     }
 }
 
 router.get("/", async (req, res) => {
     try {
-        const cachedData = spotify.readDataFromFile(DATA_FILE_PATH, logger);
-        const isStale = spotify.isCacheStale(cachedData);
+        const cachedData = deezer.readDataFromFile(DATA_FILE_PATH, logger);
+        const isStale = deezer.isCacheStale(cachedData);
 
         if (cachedData && cachedData.latestReleasesOfPlaylist) {
             res.json(cachedData.latestReleasesOfPlaylist);
 
-            if (isStale && !spotify.isRefreshing(PLAYLIST_ID)) {
+            if (isStale && !deezer.isRefreshing(PLAYLIST_ID)) {
                 logger.info("Cache is stale, triggering background refresh");
                 setTimeout(() => updateDataInBackground(), 2000);
             }

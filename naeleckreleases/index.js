@@ -1,101 +1,59 @@
 const express = require("express");
 const router = express.Router();
-const fetch = require("node-fetch");
 const path = require("path");
 const Logger = require("../utils/logger");
-const spotify = require("../utils/spotify");
+const deezer = require("../utils/deezer");
 
 const logger = new Logger('naeleckreleases.log');
 const DATA_FILE_PATH = path.join(__dirname, 'data.json');
-const ARTIST_ID = "2DYDFBqoaBP2i9XrTGpOgF";
-
-async function getLatestReleases(artistId, token) {
-    let retries = 3;
-    let waitTime = 2000;
-    let response;
-
-    while (retries > 0) {
-        try {
-            response = await fetch(
-                `https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album,single&limit=10`,
-                { headers: { Authorization: `Bearer ${token}` } }
-            );
-        } catch (error) {
-            logger.error("Network error fetching artist albums", { error: error.message });
-            retries--;
-            await spotify.wait(waitTime);
-            waitTime *= 2;
-            continue;
-        }
-
-        if (response.ok) break;
-
-        if (response.status === 429) {
-            const retryAfter = response.headers.get("Retry-After");
-            const parsed = retryAfter ? parseInt(retryAfter) * 1000 : 10000;
-            waitTime = Math.min(parsed, 60000);
-            logger.warn(`Rate limited on artist albums fetch. Waiting ${waitTime}ms (Retry-After raw: ${retryAfter})...`);
-            await spotify.wait(waitTime);
-            retries--;
-            continue;
-        }
-
-        logger.warn(`Artist albums fetch error: ${response.status}`);
-        retries--;
-        await spotify.wait(waitTime);
-        waitTime *= 2;
-    }
-
-    if (!response || !response.ok) {
-        throw new Error("Failed to fetch artist albums after retries");
-    }
-
-    const data = await response.json();
-    return data.items.map((album) => ({
-        name: album.name,
-        release_date: album.release_date,
-        artists: album.artists.map((artist) => artist.name).join(", "),
-        cover_url: album.images.length > 0 ? album.images[0].url : null,
-        external_urls: album.external_urls,
-        tracks: [],
-    }));
-}
+const ARTIST_ID = "5171418"; // Naeleck on Deezer
 
 async function fetchAndCache() {
-    logger.info("Fetching fresh Naeleck releases from Spotify...");
+    logger.info("Fetching fresh Naeleck releases from Deezer...");
     const startTime = Date.now();
-    const token = await spotify.getToken(logger);
-    const latestReleases = await getLatestReleases(ARTIST_ID, token);
-    spotify.writeDataToFile(DATA_FILE_PATH, { latestReleases }, logger);
+    const albums = await deezer.getArtistAlbums(ARTIST_ID, logger, 10);
+
+    const latestReleases = albums.map((album) => ({
+        name: album.title,
+        release_date: album.release_date || null,
+        artists: "Naeleck",
+        cover_url: album.cover_xl || album.cover_big || null,
+        external_urls: {
+            deezer: album.link
+        },
+        tracks: [],
+    }));
+
+    deezer.writeDataToFile(DATA_FILE_PATH, { latestReleases }, logger);
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
     logger.success(`Naeleck releases refreshed: ${latestReleases.length} releases in ${duration}s`);
     return latestReleases;
 }
 
 async function updateDataInBackground() {
-    if (spotify.isRefreshing(ARTIST_ID)) {
+    if (deezer.isRefreshing(ARTIST_ID)) {
         logger.info("Background refresh already in progress, skipping");
         return;
     }
-    spotify.setRefreshing(ARTIST_ID, true);
+    deezer.setRefreshing(ARTIST_ID, true);
     try {
         await fetchAndCache();
     } catch (error) {
         logger.error("Background update failed", { message: error.message, stack: error.stack });
     } finally {
-        spotify.setRefreshing(ARTIST_ID, false);
+        deezer.setRefreshing(ARTIST_ID, false);
     }
 }
 
 router.get("/", async (req, res) => {
     try {
-        const cachedData = spotify.readDataFromFile(DATA_FILE_PATH, logger);
-        const isStale = spotify.isCacheStale(cachedData);
+        const cachedData = deezer.readDataFromFile(DATA_FILE_PATH, logger);
+        const isStale = deezer.isCacheStale(cachedData);
 
         if (cachedData && cachedData.latestReleases) {
             res.json(cachedData.latestReleases);
 
-            if (isStale && !spotify.isRefreshing(ARTIST_ID)) {
+            if (isStale && !deezer.isRefreshing(ARTIST_ID)) {
                 logger.info("Cache is stale, triggering background refresh");
                 setTimeout(() => updateDataInBackground(), 2000);
             }
