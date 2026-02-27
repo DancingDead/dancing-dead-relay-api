@@ -44,10 +44,17 @@ async function fetchAndCache() {
 }
 
 async function updateDataInBackground() {
+    if (spotify.isRefreshing(PLAYLIST_ID)) {
+        logger.info("Background refresh already in progress, skipping");
+        return;
+    }
+    spotify.setRefreshing(PLAYLIST_ID, true);
     try {
         await fetchAndCache();
     } catch (error) {
         logger.error("Background update failed", { message: error.message, stack: error.stack });
+    } finally {
+        spotify.setRefreshing(PLAYLIST_ID, false);
     }
 }
 
@@ -57,10 +64,9 @@ router.get("/", async (req, res) => {
         const isStale = spotify.isCacheStale(cachedData);
 
         if (cachedData && cachedData.latestReleasesOfPlaylist) {
-            logger.info(`Using cached data (stale: ${isStale})`);
             res.json(cachedData.latestReleasesOfPlaylist);
 
-            if (isStale) {
+            if (isStale && !spotify.isRefreshing(PLAYLIST_ID)) {
                 logger.info("Cache is stale, triggering background refresh");
                 setTimeout(() => updateDataInBackground(), 2000);
             }

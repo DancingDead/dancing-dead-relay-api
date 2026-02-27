@@ -7,6 +7,26 @@ function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+const MAX_RETRY_WAIT_MS = 60 * 1000; // Never wait more than 60s on a 429
+
+function clampRetryAfter(retryAfterHeader, fallback) {
+    const parsed = retryAfterHeader ? parseInt(retryAfterHeader) * 1000 : fallback;
+    return Math.min(parsed, MAX_RETRY_WAIT_MS);
+}
+
+// --- Refresh lock to prevent concurrent background updates ---
+
+const _refreshInProgress = new Set();
+
+function isRefreshing(key) {
+    return _refreshInProgress.has(key);
+}
+
+function setRefreshing(key, value) {
+    if (value) _refreshInProgress.add(key);
+    else _refreshInProgress.delete(key);
+}
+
 // --- Cache with TTL ---
 
 const CACHE_TTL_MS = 8 * 60 * 60 * 1000; // 8 hours
@@ -74,7 +94,7 @@ async function getToken(logger) {
 
         if (response.status === 429) {
             const retryAfter = response.headers.get("Retry-After");
-            waitTime = retryAfter ? parseInt(retryAfter) * 1000 : waitTime * 2;
+            waitTime = clampRetryAfter(retryAfter, waitTime * 2);
             if (logger) logger.warn(`Rate limited on token fetch. Waiting ${waitTime}ms...`);
             await wait(waitTime);
             retries--;
@@ -110,8 +130,8 @@ async function getAllTracksFromPlaylist(playlistId, token, logger) {
         if (!response.ok) {
             if (response.status === 429) {
                 const retryAfter = response.headers.get("Retry-After");
-                const retryWait = retryAfter ? parseInt(retryAfter) * 1000 : 10000;
-                if (logger) logger.warn(`Rate limited on playlist fetch. Waiting ${retryWait}ms...`);
+                const retryWait = clampRetryAfter(retryAfter, 10000);
+                if (logger) logger.warn(`Rate limited on playlist fetch. Waiting ${retryWait}ms (Retry-After raw: ${retryAfter})...`);
                 await wait(retryWait);
                 continue; // Retry same URL
             }
@@ -140,5 +160,7 @@ module.exports = {
     isCacheStale,
     getToken,
     getAllTracksFromPlaylist,
+    isRefreshing,
+    setRefreshing,
     CACHE_TTL_MS,
 };

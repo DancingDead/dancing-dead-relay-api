@@ -32,8 +32,9 @@ async function getLatestReleases(artistId, token) {
 
         if (response.status === 429) {
             const retryAfter = response.headers.get("Retry-After");
-            waitTime = retryAfter ? parseInt(retryAfter) * 1000 : 10000;
-            logger.warn(`Rate limited on artist albums fetch. Waiting ${waitTime}ms...`);
+            const parsed = retryAfter ? parseInt(retryAfter) * 1000 : 10000;
+            waitTime = Math.min(parsed, 60000);
+            logger.warn(`Rate limited on artist albums fetch. Waiting ${waitTime}ms (Retry-After raw: ${retryAfter})...`);
             await spotify.wait(waitTime);
             retries--;
             continue;
@@ -72,10 +73,17 @@ async function fetchAndCache() {
 }
 
 async function updateDataInBackground() {
+    if (spotify.isRefreshing(ARTIST_ID)) {
+        logger.info("Background refresh already in progress, skipping");
+        return;
+    }
+    spotify.setRefreshing(ARTIST_ID, true);
     try {
         await fetchAndCache();
     } catch (error) {
         logger.error("Background update failed", { message: error.message, stack: error.stack });
+    } finally {
+        spotify.setRefreshing(ARTIST_ID, false);
     }
 }
 
@@ -85,10 +93,9 @@ router.get("/", async (req, res) => {
         const isStale = spotify.isCacheStale(cachedData);
 
         if (cachedData && cachedData.latestReleases) {
-            logger.info(`Using cached data (stale: ${isStale})`);
             res.json(cachedData.latestReleases);
 
-            if (isStale) {
+            if (isStale && !spotify.isRefreshing(ARTIST_ID)) {
                 logger.info("Cache is stale, triggering background refresh");
                 setTimeout(() => updateDataInBackground(), 2000);
             }
