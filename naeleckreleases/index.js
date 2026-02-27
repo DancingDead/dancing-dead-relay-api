@@ -19,7 +19,8 @@ async function fetchAndCache() {
         artists: "Naeleck",
         cover_url: album.cover_xl || album.cover_big || null,
         external_urls: {
-            deezer: album.link
+            deezer: album.link,
+            spotify: `https://open.spotify.com/search/${encodeURIComponent(album.title + ' Naeleck')}`
         },
         tracks: [],
     }));

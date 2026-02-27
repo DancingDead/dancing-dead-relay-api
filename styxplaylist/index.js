@@ -33,7 +33,8 @@ async function processPlaylistTracks(tracks, logger) {
         preview_url: track.preview || null,
         cover_url: track.album.cover_xl || track.album.cover_big || null,
         external_urls: {
-            deezer: track.link
+            deezer: track.link,
+            spotify: `https://open.spotify.com/search/${encodeURIComponent(track.title + ' ' + track.artist.name)}`
         },
     }));
 }
