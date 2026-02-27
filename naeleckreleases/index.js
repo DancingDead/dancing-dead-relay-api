@@ -13,17 +13,19 @@ async function fetchAndCache() {
     const startTime = Date.now();
     const albums = await deezer.getArtistAlbums(ARTIST_ID, logger, 10);
 
-    const latestReleases = albums.map((album) => ({
-        name: album.title,
-        release_date: album.release_date || null,
-        artists: "Naeleck",
-        cover_url: album.cover_xl || album.cover_big || null,
-        external_urls: {
-            deezer: album.link,
-            spotify: `https://open.spotify.com/search/${encodeURIComponent(album.title + ' Naeleck')}`
-        },
-        tracks: [],
-    }));
+    const latestReleases = albums
+        .map((album) => ({
+            name: album.title,
+            release_date: album.release_date || null,
+            artists: "Naeleck",
+            cover_url: album.cover_xl || album.cover_big || null,
+            external_urls: {
+                deezer: album.link,
+                spotify: `https://open.spotify.com/search/${encodeURIComponent(album.title + ' Naeleck')}`
+            },
+            tracks: [],
+        }))
+        .sort((a, b) => new Date(b.release_date) - new Date(a.release_date));
 
     deezer.writeDataToFile(DATA_FILE_PATH, { latestReleases }, logger);
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
